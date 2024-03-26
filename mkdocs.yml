@@ -1,47 +1,47 @@
-site_name: BORIS
+site_name: BORIS documentation
+site_author: Olivier Friard
 
 docs_dir: src
 site_dir: docs
 
-nav:
-  - Home: index.md
-  - Features: features.md
-  - Screenshots: screenshots.md
-  - Download: download.md
-  - Documentation: documentation.md
-  - Other software: other_software.md
-  - About BORIS: about.md
-
-
-markdown_extensions:
-  - toc:
-      baselevel: "1"
-      toc_depth: "1-1"
-  - md_in_html
-  - admonition
-  - attr_list
-  - def_list
-  - pymdownx.keys
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
 theme:
-  features:
-    - navigation.top
-    - navigation.path
-    - navigation.tabs
   name: material
-  logo: images/boris_logo-3.400px.png
-  palette:
-    scheme: default
-    primary: blue grey
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+    - toc.integrate
+    - toc.follow
+    - navigation.path
+    - navigation.top
+
+nav:
+  - Welcome: index.md
+  - User guide:
+      - Installation: install.md
+      - Starting: start.md
+      - Create a project: create_project.md
+      - Create an observation: observations.md
+      - Observations list: observations_list.md
+      - Coding: coding.md
+      - Export events: export_events.md
+      - Playback menu: playback_menu.md
+      - Tools: tools.md
+      - Coding map: coding_map.md
+      - Analysis: analysis.md
+      - Plot: plot.md
+      - Preferences: preferences.md
+      - Various: various.md
+  - Community: community.md
+
+copyright: Copyright &copy; 2012 - 2024 Olivier Friard
 
 extra:
-  boris:
-    version: 8.24.1
-    release_date: 2024-02-13
-
   generator: false
 
   social:
@@ -50,8 +50,24 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://fediscience.org/web/@boris
 
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: "#"
+
+# 
 plugins:
-    - macros:
-        include_dir: src
-    - search
-    - glightbox
+  - macros
+  - search
+
+extra:
+  boris:
+    version: 8.23
