@@ -1,0 +1,57 @@
+site_name: BORIS
+
+docs_dir: src
+site_dir: docs
+
+nav:
+  - Home: index.md
+  - Features: features.md
+  - Screenshots: screenshots.md
+  - Download: download.md
+  - Documentation: documentation.md
+  - Other software: other_software.md
+  - About BORIS: about.md
+
+
+markdown_extensions:
+  - toc:
+      baselevel: "1"
+      toc_depth: "1-1"
+  - md_in_html
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+theme:
+  features:
+    - navigation.top
+    - navigation.path
+    - navigation.tabs
+  name: material
+  logo: images/boris_logo-3.400px.png
+  palette:
+    scheme: default
+    primary: blue grey
+
+extra:
+  boris:
+    version: 8.24.1
+    release_date: 2024-02-13
+
+  generator: false
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/olivierfriard/BORIS
+    - icon: fontawesome/brands/mastodon
+      link: https://fediscience.org/web/@boris
+
+plugins:
+    - macros:
+        include_dir: src
+    - search
+    - glightbox
