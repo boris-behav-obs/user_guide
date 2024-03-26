@@ -10,13 +10,9 @@
         <meta name="author" content="Olivier Friard">
       
       
-        <link rel="canonical" href="http://127.0.0.1:8000/various/">
+        <link rel="canonical" href="http://127.0.0.1:8000/about/">
       
       
-        <link rel="prev" href="../preferences/">
-      
-      
-        <link rel="next" href="../community/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>Various - BORIS documentation</title>
+        <title>about BORIS - BORIS documentation</title>
       
     
     
@@ -66,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#various" class="md-skip">
+        <a href="#about-boris" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Various
+              about BORIS
             
           </span>
         </div>
@@ -184,12 +180,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../install/" class="md-tabs__link">
           
   
@@ -277,8 +271,6 @@
       
   
   
-    
-  
   
   
     
@@ -289,12 +281,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -308,7 +300,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             User guide
@@ -592,30 +584,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Various
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../various/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,71 +596,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#removing-path-of-media-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Removing path of media files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docking-undocking-graphical-elements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docking / undocking graphical elements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lock-the-dockwidgets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lock the dockwidgets
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#valid-keys-for-triggering-behavior" class="md-nav__link">
-    <span class="md-ellipsis">
-      Valid keys for triggering behavior
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -736,80 +643,8 @@
                   
 
 
-<h1 id="various">Various<a class="headerlink" href="#various" title="Permanent link">#</a></h1>
-<h2 id="removing-path-of-media-files">Removing path of media files<a class="headerlink" href="#removing-path-of-media-files" title="Permanent link">#</a></h2>
-<p>Using BORIS you can choose to store the full path of the media/data
-files into the file project (for example:
-<code>/home/user/Video/video_n1.mp4</code> or
-<code>c:\Users\user\Documents\video1.avi</code>).</p>
-<p>If you want to move your project on a different computer or if you want
-to move your media/data files you may want to do not store the full
-path. For this you can choose to add media/data files with relative path
-(See <strong>Add media files</strong> section). You can also remove the full path of
-your media/data files from all observations of the current project
-(<strong>File</strong> &gt; <strong>Remove path from media files</strong>. Please note that this
-operation is irreversible. After remotion the full path of your media
-will be lost and will not be recoverable.</p>
-<p><strong>If you choose to do not store the full path of media/data files the
-path of the media/data files must contain the path of your BORIS project
-file.</strong></p>
-<p>Example: if you BORIS project file is saved in
-<code>/home/user/projects/test.project</code> your media/data files can be saved in
-the <code>/home/user/projects/videos</code> directory but <strong>NOT</strong> in the
-[/home/user/videos]{.title-ref}` directory.</p>
-<h2 id="docking-undocking-graphical-elements">Docking / undocking graphical elements<a class="headerlink" href="#docking-undocking-graphical-elements" title="Permanent link">#</a></h2>
-<p>All elements, including all the media players can be undocked from the
-main window and positioned where you prefer (e.g. they can be on the
-same desktop over one or many screens).</p>
-<p>The position of the various widgets is saved in the <a href="#configuration file">configuration
-file</a> at the end of the work session.</p>
-<p><img alt="Undocked widgets" src="../images/undocked_widgets.png" width="1800px" /></p>
-<p>Click the icon present at the top-right corner of the widget (for MacOS
-the icon is located at the left-top corner) will undock the widgets that
-can be repositioned on another docking area or moved out of the main
-window. A double-click on the top bar of the widget will reposition it
-on the main window.</p>
-<p>For Linux:</p>
-<p><img alt="dock/undock" src="../images/dock_undock1.png" width="100.0%" /></p>
-<p>For Microsoft-Windows:</p>
-<p><img alt="dock/undock" src="../images/dock_undock1_win.png" width="100.0%" /></p>
-<p>For MacOS:</p>
-<p><img alt="dock/undock" src="../images/dock_undock1_mac.png" width="100.0%" /></p>
-<p>If you fill uncomfortable with the dockwidgets you can block them on the
-main window by checking the <strong>Lock dockwidgets</strong> option (see <strong>Tools</strong>
-&gt; <strong>Lock dockwidgets</strong>). All the dockwidgets will be docked on the main
-window and locked on it except the player dockwidgets.</p>
-<h2 id="configuration-files">Configuration files<a class="headerlink" href="#configuration-files" title="Permanent link">#</a></h2>
-<p>BORIS saves the configuration (user preferences, windows position,
-widgets position) in a configuration file. This file is named <strong>.boris</strong>
-and it is saved on the home directory of the current user:</p>
-<pre><code>for Linux:
-/home/USERNAME/.boris
-
-for Microsoft-Windows:
-C:\Users\USERNAME\.boris
-
-for MacOS:
-/Users/USERNAME/.boris
-</code></pre>
-<p>If you have some trouble using BORIS try to close the program, delete
-this file and relaunch BORIS.</p>
-<p>The <strong>recent projects list</strong> is saved on the
-<strong>.boris_recent_projects</strong> file in the home directory of the current
-user.</p>
-<h2 id="lock-the-dockwidgets">Lock the dockwidgets<a class="headerlink" href="#lock-the-dockwidgets" title="Permanent link">#</a></h2>
-<p>The dockwidgets (except the player dockwidgets) can be locked on the
-main window (See <strong>Tools</strong> &gt; <strong>Lock dockwidgets</strong>).</p>
-<h2 id="valid-keys-for-triggering-behavior">Valid keys for triggering behavior<a class="headerlink" href="#valid-keys-for-triggering-behavior" title="Permanent link">#</a></h2>
-<p>BORIS makes difference between lower case and upper case characters</p>
-<ul>
-<li>keys from a to z</li>
-<li>keys from A to Z</li>
-<li>keys from 0 to 9</li>
-<li>function keys from F1 to F12</li>
-<li>à é è ù ì ç</li>
-<li>! " £ $ % &amp; / ( ) = ? ^ [ ] { } @ | § ° #</li>
-</ul>
+<h1 id="about-boris">about BORIS<a class="headerlink" href="#about-boris" title="Permanent link">#</a></h1>
+<p>BORIS is a ....</p>
 
 
 
@@ -842,44 +677,6 @@ main window (See <strong>Tools</strong> &gt; <strong>Lock dockwidgets</strong>).
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../preferences/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Preferences">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Preferences
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../community/" class="md-footer__link md-footer__link--next" aria-label="Next: Community">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Community
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">

@@ -112,6 +112,43 @@
     
     
     
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
   </nav>
   
@@ -768,9 +805,9 @@
                   
 
 
-<h1 id="export-events">Export events</h1>
+<h1 id="export-events">Export events<a class="headerlink" href="#export-events" title="Permanent link">#</a></h1>
 <p>The coded events can be exported in various formats.</p>
-<h2 id="export-events-in-tabular-format">Export events in tabular format</h2>
+<h2 id="export-events-in-tabular-format">Export events in tabular format<a class="headerlink" href="#export-events-in-tabular-format" title="Permanent link">#</a></h2>
 <p><strong>Observations</strong> &gt; <strong>Export events</strong> &gt; <strong>Tabular events</strong></p>
 <p>This function exports the events of selected observations in one or many files.
 Various formats are available:</p>
@@ -811,7 +848,7 @@ suitable for further analysis.</p>
 <p>Example of output of tabular events</p>
 <p><img alt="example of exported events in TSV format (1/2)" src="../images/export_tabular_events_1.png" /></p>
 <p><img alt="example of exported events in TSV format (2/2)" src="../images/export_tabular_events_2.png" /></p>
-<h2 id="export-aggregated-events">Export aggregated events</h2>
+<h2 id="export-aggregated-events">Export aggregated events<a class="headerlink" href="#export-aggregated-events" title="Permanent link">#</a></h2>
 <p><strong>Observations</strong> &gt; <strong>Export events</strong> <strong>Aggregated events</strong></p>
 <p>This function will export the events corresponding to the selected
 subjects and the selected behaviors of the selected observations.</p>
@@ -912,7 +949,7 @@ INSERT INTO "aggregated_events" VALUES(12,'0002','Nautilus','Carry objects','STA
 INSERT INTO "aggregated_events" VALUES(13,'0003','Nina','Locomotion','STATE','Walk',21.626,22.5,'','','NA','NA',NULL,NULL);
 INSERT INTO "aggregated_events" VALUES(14,'0003','Nina','Manipulate','STATE','',0.0,21.625,'','','NA','NA',NULL,NULL);
 </code></pre>
-<h2 id="export-events-as-behavioral-sequences">Export events as behavioral sequences</h2>
+<h2 id="export-events-as-behavioral-sequences">Export events as behavioral sequences<a class="headerlink" href="#export-events-as-behavioral-sequences" title="Permanent link">#</a></h2>
 <p><strong>Observations</strong> &gt; <strong>Export events</strong> <strong>as behavioral sequences</strong></p>
 <p>Behavioral strings can be used with the <strong>Behatrix</strong> program:
 <a href="http://www.boris.unito.it/pages/behatrix">Behatrix</a></p>
@@ -928,7 +965,7 @@ eat|jump|eat|jump
 Subject #2:
 eat|rest|jump|eat|jump
 </code></pre>
-<h2 id="export-events-as-praat-textgrid">Export events as <a href="http://www.fon.hum.uva.nl/praat/">Praat</a> <a href="http://www.fon.hum.uva.nl/praat/manual/TextGrid.html">TextGrid</a></h2>
+<h2 id="export-events-as-praat-textgrid">Export events as <a href="http://www.fon.hum.uva.nl/praat/">Praat</a> <a href="http://www.fon.hum.uva.nl/praat/manual/TextGrid.html">TextGrid</a><a class="headerlink" href="#export-events-as-praat-textgrid" title="Permanent link">#</a></h2>
 <p><strong>Observations</strong> &gt; <strong>Export events</strong> <strong>as Praat TextGrid</strong></p>
 <p>Example:</p>
 <pre><code>File type = "ooTextFile"
@@ -960,7 +997,7 @@ item []:
             xmax = 113.988
             text = "eat"
 </code></pre>
-<h2 id="export-events-for-analysis-with-jwatcher">Export events for analysis with <a href="http://www.jwatcher.ucla.edu">JWatcher</a></h2>
+<h2 id="export-events-for-analysis-with-jwatcher">Export events for analysis with <a href="http://www.jwatcher.ucla.edu">JWatcher</a><a class="headerlink" href="#export-events-for-analysis-with-jwatcher" title="Permanent link">#</a></h2>
 <p><strong>Observations</strong> &gt; <strong>Export events</strong> <strong>for analysis with JWatcher</strong></p>
 <p><a href="http://www.jwatcher.ucla.edu">JWatcher</a> is a powerful tool for the
 quantitative analysis of behavior.</p>
@@ -977,7 +1014,7 @@ files will be created:</p>
 <li>the Focal Master File (.fmf)</li>
 </ul>
 <p>These files can be used to analyze your observations with JWatcher.</p>
-<h2 id="export-events-as-behaviors-binary-table">Export events as Behaviors Binary Table</h2>
+<h2 id="export-events-as-behaviors-binary-table">Export events as Behaviors Binary Table<a class="headerlink" href="#export-events-as-behaviors-binary-table" title="Permanent link">#</a></h2>
 <p><strong>Observations</strong> &gt; <strong>Export events</strong> <strong>as Behaviors Binary Table</strong></p>
 <p>A time interval will be asked to the user (in seconds). The observation
 will be checked every n seconds and the presence (1, absence: 0) of the
@@ -1036,7 +1073,7 @@ subjects.</p>
 48.0    0         0        0            1
 49.0    0         0        0            1
 </code></pre>
-<h2 id="extract-sub-sequences-from-media-files-corresponding-to-coded-events">Extract sub-sequences from media files corresponding to coded events</h2>
+<h2 id="extract-sub-sequences-from-media-files-corresponding-to-coded-events">Extract sub-sequences from media files corresponding to coded events<a class="headerlink" href="#extract-sub-sequences-from-media-files-corresponding-to-coded-events" title="Permanent link">#</a></h2>
 <p>Sequences of media file corresponding to coded events can be extracted
 from media files:</p>
 <ol>
@@ -1062,7 +1099,7 @@ added to the stopping time. All the extracted sequences will be saved in
 the selected directory followind the file name format:</p>
 <p>{observation id}_{player}_{subject}_{behavior}_{start time}-{stop
 time}</p>
-<h2 id="extract-frames-corresponding-to-coded-events">Extract frames corresponding to coded events</h2>
+<h2 id="extract-frames-corresponding-to-coded-events">Extract frames corresponding to coded events<a class="headerlink" href="#extract-frames-corresponding-to-coded-events" title="Permanent link">#</a></h2>
 <p>The frames corresponding to coded events can be extracted and saved as
 images.</p>
 <ol>
@@ -1084,11 +1121,11 @@ images.</p>
 <p>Select a time offset (in seconds, the default value is 0).</p>
 </li>
 </ol>
-<h2 id="export-transitions-matrix">Export transitions matrix</h2>
+<h2 id="export-transitions-matrix">Export transitions matrix<a class="headerlink" href="#export-transitions-matrix" title="Permanent link">#</a></h2>
 <p>3 transitions matrix outputs are available: The matrix of frequencies of
 transitions, the matrix of frequencies of transition after each behavior
 and the matrix of number of transitions.</p>
-<h3 id="matrix-of-frequencies-of-transitions">Matrix of frequencies of transitions</h3>
+<h3 id="matrix-of-frequencies-of-transitions">Matrix of frequencies of transitions<a class="headerlink" href="#matrix-of-frequencies-of-transitions" title="Permanent link">#</a></h3>
 <p>This matrix contains the frequencies of total transitions. The sum of
 all frequencies must be 1.</p>
 <p>Example of frequencies of transitions matrix:</p>
@@ -1100,7 +1137,7 @@ walk     0.286     0.0      0.0
 <p>In this matrix you can see that the <strong>eat</strong> behavior precedes the
 <strong>sleep</strong> behavior with a frequency of <strong>0.286</strong> of the total number of
 transitions.</p>
-<h3 id="matrix-of-frequencies-of-transitions-after-behavior">Matrix of frequencies of transitions after behavior</h3>
+<h3 id="matrix-of-frequencies-of-transitions-after-behavior">Matrix of frequencies of transitions after behavior<a class="headerlink" href="#matrix-of-frequencies-of-transitions-after-behavior" title="Permanent link">#</a></h3>
 <p>This matrix contains the frequencies of transitions after each behavior.
 The sum of each row must be 1.</p>
 <p>Example:</p>
@@ -1112,7 +1149,7 @@ walk    1.0      0.0      0.0
 <p>In this example you can see that <strong>sleep</strong> follows <strong>eat</strong> with a
 frequency of <strong>0.667</strong> and <strong>walk</strong> follows with a frequency of
 <strong>0.333</strong>.</p>
-<h3 id="matrix-of-number-of-transitions">Matrix of number of transitions</h3>
+<h3 id="matrix-of-number-of-transitions">Matrix of number of transitions<a class="headerlink" href="#matrix-of-number-of-transitions" title="Permanent link">#</a></h3>
 <p>This matrix contains the number of transitions after each behavior.</p>
 <p>Example:</p>
 <pre><code>eat   sleep   walk

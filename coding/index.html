@@ -112,6 +112,43 @@
     
     
     
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
   </nav>
   
@@ -951,14 +988,14 @@
                   
 
 
-<h1 id="coding">Coding</h1>
+<h1 id="coding">Coding<a class="headerlink" href="#coding" title="Permanent link">#</a></h1>
 <p>When looking at the BORIS main window, the window title bar shows the
 <strong>Observation id</strong> - <strong>Project name</strong> - <strong>BORIS</strong>. The media (the first
 in the queue) will be loaded in the media player and paused.</p>
-<h2 id="media-based-coding">Media based coding</h2>
-<h3 id="the-toolbar">The toolbar</h3>
+<h2 id="media-based-coding">Media based coding<a class="headerlink" href="#media-based-coding" title="Permanent link">#</a></h2>
+<h3 id="the-toolbar">The toolbar<a class="headerlink" href="#the-toolbar" title="Permanent link">#</a></h3>
 <figure>
-<p><img alt="Image title" src="../images/toolbar.png" />
+<p><img alt="The BORIS toolbar" src="../images/toolbar.png" />
   </p>
 <figcaption>The BORIS toolbar</figcaption>
 </figure>
@@ -996,7 +1033,7 @@ in the queue) will be loaded in the media player and paused.</p>
 <p><span class="keys"><kbd class="key-backspace">Backspace</kbd></span>  Set the playback speed to 1x</p>
 <p><span class="keys"><kbd class="key-arrow-left">Left</kbd></span> Go to the previous frame</p>
 <p><span class="keys"><kbd class="key-arrow-right">Right</kbd></span> Go to the next frame</p>
-<h2 id="live-observations">Live observations</h2>
+<h2 id="live-observations">Live observations<a class="headerlink" href="#live-observations" title="Permanent link">#</a></h2>
 <p>During a live observation the media control toolbar is disabled.</p>
 <p>Press the <strong>Start live observation</strong> button to start your observation.
 If some events are already coded BORIS will ask you for deleting them.</p>
@@ -1007,7 +1044,7 @@ widget.</p>
   </p>
 <figcaption>Live observation</figcaption>
 </figure>
-<h2 id="ethogram-table-in-the-main-window"><strong>Ethogram</strong> table in the main window</h2>
+<h2 id="ethogram-table-in-the-main-window"><strong>Ethogram</strong> table in the main window<a class="headerlink" href="#ethogram-table-in-the-main-window" title="Permanent link">#</a></h2>
 <figure>
 <p><img alt="Image title" src="../images/main_window_ethogram.png" />
   </p>
@@ -1028,7 +1065,7 @@ category</p>
   </p>
 <figcaption>Filter behaviors in ethogram table</figcaption>
 </figure>
-<h2 id="subjects-table-in-the-main-window"><strong>Subjects</strong> table in the main window</h2>
+<h2 id="subjects-table-in-the-main-window"><strong>Subjects</strong> table in the main window<a class="headerlink" href="#subjects-table-in-the-main-window" title="Permanent link">#</a></h2>
 <figure>
 <p><img alt="Image title" src="../images/main_window_subjects.png" />
   </p>
@@ -1048,7 +1085,7 @@ indicates the keyboard key assigned to each subject (if any).</p>
   </p>
 <figcaption>Filter subjects in subjects table</figcaption>
 </figure>
-<h2 id="the-media-player-widgets">The <strong>media player</strong> widgets</h2>
+<h2 id="the-media-player-widgets">The <strong>media player</strong> widgets<a class="headerlink" href="#the-media-player-widgets" title="Permanent link">#</a></h2>
 <figure>
 <p><img alt="3 media players" src="../images/observation_3video_2.png" width="100.0%" />
   </p>
@@ -1063,10 +1100,10 @@ right side of the player).</p>
   </p>
 <figcaption>The widgets are undocked from the main window</figcaption>
 </figure>
-<h2 id="the-events-table">The events table</h2>
+<h2 id="the-events-table">The events table<a class="headerlink" href="#the-events-table" title="Permanent link">#</a></h2>
 <p>The <strong>events table</strong> shows all the recorded behaviors (events).</p>
 <p>The displayed parameters (organized in columns) depend of the type of the observation:</p>
-<h3 id="observation-from-media-file">Observation from media file</h3>
+<h3 id="observation-from-media-file">Observation from media file<a class="headerlink" href="#observation-from-media-file" title="Permanent link">#</a></h3>
 <p><img alt="Events table for a media observation" src="../images/events_table_media.png" /></p>
 <p>The following paramters are displayed:</p>
 <ul>
@@ -1092,11 +1129,10 @@ right side of the player).</p>
 <p><strong>Comment</strong>, is an open field where the user can add notes.</p>
 </li>
 </ul>
-<p>A tracking cursor (red triangle) will visualize the current event. This cursor can be positioned above the current event, see <a href="">tracking cursor position</a> option in Preferences window.</p>
+<p>A tracking cursor (red triangle) will visualize the current event. This cursor can be positioned above the current event, see <a href="../preferences/#tracking-cursor-above-current-event">tracking cursor position</a> option in <strong>Preferences</strong> window.</p>
 <p>A double-click on a row will reposition the media player to the moment
-of the corresponding event. See <a href="">Time offset for media reposition</a> in
-Preferences window to customize the time offset for media repositioning.</p>
-<h3 id="live-observation">Live observation</h3>
+of the corresponding event. See <a href="../preferences/#time-offset-for-media-reposition-seconds">Time offset for media reposition</a> in <strong>Preferences</strong> window to customize the time offset for media repositioning.</p>
+<h3 id="live-observation">Live observation<a class="headerlink" href="#live-observation" title="Permanent link">#</a></h3>
 <p><img alt="Events table for a live observation" src="../images/events_table_live.png" /></p>
 <p>The following paramters are displayed:</p>
 <ul>
@@ -1119,7 +1155,7 @@ Preferences window to customize the time offset for media repositioning.</p>
 <p><strong>Comment</strong>, is an open field where the user can add notes.</p>
 </li>
 </ul>
-<h3 id="observation-from-pictures">Observation from pictures</h3>
+<h3 id="observation-from-pictures">Observation from pictures<a class="headerlink" href="#observation-from-pictures" title="Permanent link">#</a></h3>
 <p><img alt="Events table for a live observation" src="../images/events_table_pictures.png" /></p>
 <p>The following paramters are displayed:</p>
 <ul>
@@ -1149,8 +1185,8 @@ Preferences window to customize the time offset for media repositioning.</p>
 </li>
 </ul>
 <p>To simplify the <strong>events table</strong> the relevant behaviors and subjects can be filtered see <a href="./#filter-events">Filter events</a></p>
-<h2 id="events">Events</h2>
-<h3 id="recording-an-event">Recording an event</h3>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">#</a></h2>
+<h3 id="recording-an-event">Recording an event<a class="headerlink" href="#recording-an-event" title="Permanent link">#</a></h3>
 <p>An event is a unique combination of a <strong>time</strong>, a <strong>subject</strong> and a <strong>behavior</strong>.
 If the subject is not set it will be <strong>No focal subject</strong>.</p>
 <p>Once ready to begin your coding, you can start the media player using
@@ -1216,15 +1252,15 @@ event parameters</em> allows modifying every parameter (e.g. time, subject,
 code, modifiers, and comment).</p>
 <p>The <strong>Observations</strong> &gt; <strong>Add event</strong> menu option allows adding a new
 event by specifying its time and the other parameters.</p>
-<h3 id="the-events-table-context-menu">The Events table context menu</h3>
+<h3 id="the-events-table-context-menu">The Events table context menu<a class="headerlink" href="#the-events-table-context-menu" title="Permanent link">#</a></h3>
 <p>Some functions are available in the Events table context menu.
 Righ-click on the Events table and the menu will pop-up.</p>
 <p><img alt="Events table menu" src="../images/events_table_menu.png" /></p>
 <p>The various functions available in the menu are described below.
 The same functions and others are available in the <strong>Observations</strong> menu.</p>
-<h3 id="undo-an-even-recording">Undo an even recording</h3>
+<h3 id="undo-an-even-recording">Undo an even recording<a class="headerlink" href="#undo-an-even-recording" title="Permanent link">#</a></h3>
 <p>A wrong event can be removed from the events list using the <strong>Undo</strong> function (<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-z">Z</kbd></span>). You can go back till 25 events recorded events. </p>
-<h3 id="add-event">Add event</h3>
+<h3 id="add-event">Add event<a class="headerlink" href="#add-event" title="Permanent link">#</a></h3>
 <p>This option allows adding a new event by specifying its time and the other parameters.</p>
 <figure>
 <p><img alt="Add new event" src="../images/add_event.png" />
@@ -1234,17 +1270,17 @@ The same functions and others are available in the <strong>Observations</strong>
 <p>Select a time format and imput the time value.</p>
 <p>Select the <strong>subject</strong> from the drop-down menu or leave empty for <strong>No focal subject</strong>.</p>
 <p>Select the <strong>behavior</strong> from the drop-down menu.</p>
-<h3 id="edit-selected-events">Edit selected event(s)</h3>
+<h3 id="edit-selected-events">Edit selected event(s)<a class="headerlink" href="#edit-selected-events" title="Permanent link">#</a></h3>
 <p>This option allows to edit the selected event(s). When many events are
 selected you have to choose the field to edit between <strong>Subject</strong>,
 <strong>Behavior</strong> and <strong>Comment</strong>. In this case the new value will apply to
 all selected events.</p>
-<p><img alt="Edit many events" src="../images/edit_many_events.png" width="60.0%" /></p>
-<h3 id="edit-time-of-selected-events">Edit time of selected event(s)</h3>
+<p><img alt="Edit many events" src="../images/edit_many_events.png" /></p>
+<h3 id="edit-time-of-selected-events">Edit time of selected event(s)<a class="headerlink" href="#edit-time-of-selected-events" title="Permanent link">#</a></h3>
 <p>This option allows to add or subtract a time value (in seconds) to all
 selected events. For subtracting a value use a negative value.</p>
-<p><img alt="Edit time of selected events" src="../images/edit_time_events.png" width="60.0%" /></p>
-<h3 id="copy-events">Copy events</h3>
+<p><img alt="Edit time of selected events" src="../images/edit_time_events.png" /></p>
+<h3 id="copy-events">Copy events<a class="headerlink" href="#copy-events" title="Permanent link">#</a></h3>
 <p>This option allows to copy the selected events in the clipboard. The
 clipboard will contain the values of the selected events (except the
 <strong>type</strong> field) separated by a <strong>&lt;TAB&gt;</strong> character.
@@ -1285,45 +1321,45 @@ The copied values are: <strong>Time</strong>, <strong>Subject</strong>, <strong>
 58.851  Sharky  Swim            1472
 58.950  Himal   Swim            1474
 </code></pre>
-<h3 id="paste-events">Paste events</h3>
+<h3 id="paste-events">Paste events<a class="headerlink" href="#paste-events" title="Permanent link">#</a></h3>
 <p>This option allows to paste the clipboard content into the events table. The clipboard must respect the format described in the previous section: 5 columns separated by a <strong>&lt;TAB&gt;</strong> character.</p>
-<h3 id="find-in-events">Find in events</h3>
+<h3 id="find-in-events">Find in events<a class="headerlink" href="#find-in-events" title="Permanent link">#</a></h3>
 <p>This option allows to search for a string in the various field of
 events. Select the fields to be searched. The find/replace operation can
 be restricted to the selected events.</p>
 <p><img alt="Find in events" src="../images/find_in_events.png" width="60.0%" /></p>
-<h3 id="findreplace-in-events">Find/Replace in events</h3>
+<h3 id="findreplace-in-events">Find/Replace in events<a class="headerlink" href="#findreplace-in-events" title="Permanent link">#</a></h3>
 <p>This option allows to search for a string and replace it by a new value
 in the various field of events. Select the fields to be searched. The
 find operation can be restricted to the selected events.</p>
 <p><img alt="Find / replace in events" src="../images/find_replace_in_events.png" width="60.0%" /></p>
-<h3 id="filter-events">Filter events</h3>
+<h3 id="filter-events">Filter events<a class="headerlink" href="#filter-events" title="Permanent link">#</a></h3>
 <p>This option allows to filter the events by field value (Subject and Behavior).</p>
 <p><img alt="Filter events" src="../images/filter_events.png" /></p>
-<h3 id="show-all-events">Show all events</h3>
+<h3 id="show-all-events">Show all events<a class="headerlink" href="#show-all-events" title="Permanent link">#</a></h3>
 <p>This option reverts the previous one and allows to visualize all coded events.</p>
-<h3 id="check-state-events">Check state events</h3>
+<h3 id="check-state-events">Check state events<a class="headerlink" href="#check-state-events" title="Permanent link">#</a></h3>
 <p>This option allows to check if the <strong>state events</strong> are <strong>PAIRED</strong>, if
 they have a <strong>START</strong> and a <strong>STOP</strong> occurences.</p>
-<h3 id="delete-selected-events">Delete selected events</h3>
+<h3 id="delete-selected-events">Delete selected events<a class="headerlink" href="#delete-selected-events" title="Permanent link">#</a></h3>
 <p>This option allows to delete the selected events. This operation is irreversible!</p>
-<h3 id="delete-all-events">Delete all events</h3>
+<h3 id="delete-all-events">Delete all events<a class="headerlink" href="#delete-all-events" title="Permanent link">#</a></h3>
 <p>This option is not present in the context menu but only in the main menu (<strong>Observations</strong> &gt; <strong>Delete all events</strong>).</p>
 <p>This option allows to delete all then events in the current observation.
 This operation is irreversible!</p>
-<h3 id="fix-unpaired-state">Fix unpaired state</h3>
+<h3 id="fix-unpaired-state">Fix unpaired state<a class="headerlink" href="#fix-unpaired-state" title="Permanent link">#</a></h3>
 <p>You can use the <strong>Fix unpaired events</strong> function to fix the <strong>state events</strong> without a STOP event.</p>
 <p><strong>Observations</strong> &gt; <strong>Fix unpaired events</strong> (keyboard shortcut: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-u">U</kbd></span>)</p>
 <p>The program will ask for a time at which insert the STOP events for all unpaired <strong>state events</strong></p>
 <p>This function can be run on a set of selected observations (when no
 observation is open). In this case the STOP events will be inserted at
 the end of observation.</p>
-<h3 id="add-frame-indexes">Add frame indexes</h3>
+<h3 id="add-frame-indexes">Add frame indexes<a class="headerlink" href="#add-frame-indexes" title="Permanent link">#</a></h3>
 <p>This function can be used for the observations from a video.
 The frame index corresponding to the coded events will be added in the events table.</p>
-<h3 id="run-external-program-with-selected-events">Run external program with selected events</h3>
+<h3 id="run-external-program-with-selected-events">Run external program with selected events<a class="headerlink" href="#run-external-program-with-selected-events" title="Permanent link">#</a></h3>
 <p>This function is not yet implemented.</p>
-<h3 id="explore-project">Explore project</h3>
+<h3 id="explore-project">Explore project<a class="headerlink" href="#explore-project" title="Permanent link">#</a></h3>
 <p>You can search information in various fields in all observations in the
 current project (Observations &gt; Explore project).</p>
 <p>The searchable fields are: <strong>subject</strong>, <strong>behavior</strong>, <strong>modifier</strong> and <strong>comment</strong>.</p>
@@ -1333,7 +1369,7 @@ current project (Observations &gt; Explore project).</p>
 the row the corresponding observation will be opened and the
 visualization will be scrolled to the row corresponding to the event.</p>
 <p><img alt="Explore project" src="../images/explore_project_results.png" /></p>
-<h3 id="frame-by-frame-mode">Frame-by-frame mode</h3>
+<h3 id="frame-by-frame-mode">Frame-by-frame mode<a class="headerlink" href="#frame-by-frame-mode" title="Permanent link">#</a></h3>
 <p>You can switch between the media player and the frame-by-frame mode using the <strong>arrow buttons</strong> in the toolbar:</p>
 <p>In frame-by-frame mode the video will stop playing and the user will
 visualize the video frame by frame.</p>

@@ -112,6 +112,43 @@
     
     
     
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
   </nav>
   
@@ -846,11 +883,11 @@
                   
 
 
-<h1 id="tools">Tools</h1>
-<h2 id="plot-events-in-real-time">Plot events in real-time</h2>
+<h1 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">#</a></h1>
+<h2 id="plot-events-in-real-time">Plot events in real-time<a class="headerlink" href="#plot-events-in-real-time" title="Permanent link">#</a></h2>
 <p>This function can be activated with <strong>Tools</strong> &gt; <strong>Plot event in real time</strong>.</p>
 <p><img alt="The real-time plot of events" src="../images/plot_events_rt.png" /></p>
-<h2 id="geometric-measurements"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M352 96c0 14.3-3.1 27.9-8.8 40.2l52.8 91.2c-23.7 25.3-54.2 44.1-88.5 53.6L256 192l-68 117.5c21.5 6.8 44.3 10.5 68.1 10.5 70.7 0 133.8-32.7 174.9-84 11.1-13.8 31.2-16 45-5s16 31.2 5 45c-52.9 65.8-134 108-225 108-35.4 0-69.4-6.4-100.7-18.1l-56.6 97.8c-4.7 8.1-11.7 14.7-20.1 18.9l-55.4 27.7c-5 2.5-10.9 2.2-15.6-.7S0 501.5 0 496v-55.4c0-8.4 2.2-16.7 6.5-24.1l60-103.7c-12.8-11.2-24.7-23.5-35.3-36.8-11.1-13.8-8.8-33.9 5-45s33.9-8.8 45 5c5.7 7.1 11.8 13.8 18.2 20.1l69.4-119.9C163.2 124 160 110.4 160 96c0-53 43-96 96-96s96 43 96 96zm21 297.9c32.6-12.8 62.5-30.8 88.9-52.9l43.7 75.5c4.2 7.3 6.5 15.6 6.5 24.1V496c0 5.5-2.9 10.7-7.6 13.6s-10.6 3.2-15.6.7l-55.4-27.7c-8.4-4.2-15.4-10.8-20.1-18.9L373 393.9zM256 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg></span> Geometric measurements</h2>
+<h2 id="geometric-measurements"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M352 96c0 14.3-3.1 27.9-8.8 40.2l52.8 91.2c-23.7 25.3-54.2 44.1-88.5 53.6L256 192l-68 117.5c21.5 6.8 44.3 10.5 68.1 10.5 70.7 0 133.8-32.7 174.9-84 11.1-13.8 31.2-16 45-5s16 31.2 5 45c-52.9 65.8-134 108-225 108-35.4 0-69.4-6.4-100.7-18.1l-56.6 97.8c-4.7 8.1-11.7 14.7-20.1 18.9l-55.4 27.7c-5 2.5-10.9 2.2-15.6-.7S0 501.5 0 496v-55.4c0-8.4 2.2-16.7 6.5-24.1l60-103.7c-12.8-11.2-24.7-23.5-35.3-36.8-11.1-13.8-8.8-33.9 5-45s33.9-8.8 45 5c5.7 7.1 11.8 13.8 18.2 20.1l69.4-119.9C163.2 124 160 110.4 160 96c0-53 43-96 96-96s96 43 96 96zm21 297.9c32.6-12.8 62.5-30.8 88.9-52.9l43.7 75.5c4.2 7.3 6.5 15.6 6.5 24.1V496c0 5.5-2.9 10.7-7.6 13.6s-10.6 3.2-15.6.7l-55.4-27.7c-8.4-4.2-15.4-10.8-20.1-18.9L373 393.9zM256 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg></span> Geometric measurements<a class="headerlink" href="#geometric-measurements" title="Permanent link">#</a></h2>
 <p>Some geometric measurements can be done: <strong>distances</strong>, <strong>areas</strong> and <strong>angles</strong> can be measured and <strong>point positions</strong> recorded.</p>
 <p>Click on <strong>Tools</strong> &gt; <strong>Geometric measurements</strong> to activate the measurements. </p>
 <figure>
@@ -858,7 +895,7 @@
   </p>
 <figcaption>The geometric measurements window</figcaption>
 </figure>
-<h3 id="mark-color">Mark color</h3>
+<h3 id="mark-color">Mark color<a class="headerlink" href="#mark-color" title="Permanent link">#</a></h3>
 <p>Use the <strong>Choose color of marks</strong> button to select a color. All marks will be drawn with the selected color.
 The color transparency can be set using the <strong>Alpha channel</strong> vale (0 for 100% transparent, 255 for a solid color).</p>
 <figure>
@@ -866,7 +903,7 @@ The color transparency can be set using the <strong>Alpha channel</strong> vale 
   </p>
 <figcaption>The color selection window</figcaption>
 </figure>
-<h3 id="setting-the-scale">Setting the scale</h3>
+<h3 id="setting-the-scale">Setting the scale<a class="headerlink" href="#setting-the-scale" title="Permanent link">#</a></h3>
 <p>For distance and area measurements you can set a scale in order to have
 results of measurements in a real unit (like centimeters, meters etc).</p>
 <figure>
@@ -885,10 +922,10 @@ results of measurements in a real unit (like centimeters, meters etc).</p>
     box (must be a number without unit).</p>
 </li>
 </ol>
-<h3 id="point">Point</h3>
+<h3 id="point">Point<a class="headerlink" href="#point" title="Permanent link">#</a></h3>
 <p>Select the <strong>Point</strong> radio button. Click the left mouse button on the video/image to record the position of the clicked pixel.</p>
 <p><img alt="Recording point positions" src="../images/geometric_measurements_point.png" /></p>
-<h3 id="distance-measurements">Distance measurements</h3>
+<h3 id="distance-measurements">Distance measurements<a class="headerlink" href="#distance-measurements" title="Permanent link">#</a></h3>
 <p>Select the <strong>Distance</strong> radio button. Click the left mouse button on the
 frame bitmap to set the start of the segment that will be measured. A
 circle with a cross will be drawn. Click the right mouse button to set
@@ -896,34 +933,34 @@ the end. A red circle with a cross will be drawn. The distance between
 the two selected points will be available in the text area of the
 <strong>Measurements window</strong>.</p>
 <p><img alt="distances measurement" src="../images/geometric_measurements_polyline.png" /></p>
-<h3 id="area-measurements">Area measurements</h3>
+<h3 id="area-measurements">Area measurements<a class="headerlink" href="#area-measurements" title="Permanent link">#</a></h3>
 <p>Select the <strong>Area</strong> radio button. Click the left mouse button on the
 frame bitmap to set the area vertices. Circles with a cross will be
 drawn. Click the right mouse button to close the area. The area of the
 drawn polygon will be available in the text area of the <strong>Measurements
 window</strong>.</p>
-<h3 id="angle-measurements">Angle measurements</h3>
+<h3 id="angle-measurements">Angle measurements<a class="headerlink" href="#angle-measurements" title="Permanent link">#</a></h3>
 <p>Select the <strong>Angle</strong> radio button. Click the left mouse button on the
 frame bitmap to set the angle vertex. A red circle with a cross will be
 drawn. Click the right mouse button to set the two segments. Circles
 with a cross will be drawn. The angle between the two drawn segments
 will be available in the text area of the <strong>Measurements window</strong>.</p>
-<h3 id="persistent-measurements">Persistent measurements</h3>
+<h3 id="persistent-measurements">Persistent measurements<a class="headerlink" href="#persistent-measurements" title="Permanent link">#</a></h3>
 <p>If the <strong>Measurements are persistent</strong> checkbox is checked the
 measurement schemes will be available on all frames otherwise they will
 be deleted between frames.</p>
 <p>The marks selected on other frames will be drawn in red.</p>
-<h2 id="coding-pad">Coding pad</h2>
+<h2 id="coding-pad">Coding pad<a class="headerlink" href="#coding-pad" title="Permanent link">#</a></h2>
 <p>During observation a coding pad with the available behaviors can be
 displayed (<strong>Tools</strong> &gt; <strong>Coding pad</strong>). This <strong>Coding pad</strong> allows the
 user to code using a touch-screen or by clicking on the buttons. When
 the <strong>Coding pad</strong> is displayed you can continue to code using the
 keyboard or the ethogram.</p>
-<p><img alt="Coding pad" src="../images/coding_pad.png" width="90.0%" /></p>
+<p><img alt="Coding pad" src="../images/coding_pad.png" /></p>
 <p>The button size can be increased or decreased.</p>
 <p>The button color can be set for every behavior, for every behavioral category or to no color.</p>
 <p>See the drop-down list in the upper-left corner of the Coding pad window.</p>
-<h2 id="subjects-pad">Subjects pad</h2>
+<h2 id="subjects-pad">Subjects pad<a class="headerlink" href="#subjects-pad" title="Permanent link">#</a></h2>
 <p>A pad with all defined subjects (or filtered subjects) can be displayed
 during the observation (<strong>Tools</strong> &gt; <strong>Subjects pad</strong>). This <strong>Subjects
 pad</strong> allows the user to select the focal subject using a touch-screen
@@ -931,7 +968,7 @@ or by clicking on the buttons. When the <strong>Subjects pad</strong> is display
 you can continue to select the focal subject using the keyboard or the
 subjects list.</p>
 <p><img alt="Subjects pad" src="../images/subject_pad.png" width="50.0%" /></p>
-<h2 id="converters-for-external-data-values">Converters for external data values</h2>
+<h2 id="converters-for-external-data-values">Converters for external data values<a class="headerlink" href="#converters-for-external-data-values" title="Permanent link">#</a></h2>
 <p>Converters can be written using the Python 3 programming language.</p>
 <p>The <strong>INPUT</strong> variable will be loaded with the original value of the
 external data file (for example 01:22:32).</p>
@@ -953,11 +990,11 @@ OUTPUT = (datetime.datetime.strptime(INPUT, datetime_format) - epoch).total_seco
 </code></pre>
 <p><strong>File</strong> &gt; <strong>Edit project</strong> &gt; <strong>Converters</strong></p>
 <p><img alt="writing/modifiying a converter" src="../images/converter_writing.png" width="100.0%" /></p>
-<h2 id="transitions-flow-diagram">Transitions flow diagram</h2>
+<h2 id="transitions-flow-diagram">Transitions flow diagram<a class="headerlink" href="#transitions-flow-diagram" title="Permanent link">#</a></h2>
 <p>BORIS can generate DOT scripts and flow diagrams from the transitions
 matrices (See Observations &gt; Create transition matrix for obtaining the
 transitions matrices).</p>
-<h3 id="dot-script-graphviz-language">DOT script (Graphviz language)</h3>
+<h3 id="dot-script-graphviz-language">DOT script (Graphviz language)<a class="headerlink" href="#dot-script-graphviz-language" title="Permanent link">#</a></h3>
 <p><strong>Tools &gt; Transitions flow diagram &gt; Create transitions DOT script</strong></p>
 <p>Choose one ore more transitions matrix files and BORIS will create the relative DOT script file(s).</p>
 <p>The DOT script files can then be used with
@@ -967,7 +1004,7 @@ generate flow diagram of transitions.</p>
 <p>See <a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT (graph description
 language)</a>
 for details.</p>
-<h3 id="flow-diagram">Flow diagram</h3>
+<h3 id="flow-diagram">Flow diagram<a class="headerlink" href="#flow-diagram" title="Permanent link">#</a></h3>
 <p>If <a href="http://www.graphviz.org">Graphviz</a> (Graph Visualization Software) is
 installed on your system (and the <strong>dot</strong> program available in the path)
 BORIS can generate flow diagram (PNG format) from a transitions matrix
@@ -975,25 +1012,25 @@ file.</p>
 <p><strong>Tools &gt; Transitions flow diagram &gt; Create transitions flow diagram</strong></p>
 <p>Choose one ore more transition matrix files and BORIS will create the
 relative flow diagram.</p>
-<h3 id="flow-diagram-of-frequencies-of-transitions">Flow diagram of frequencies of transitions</h3>
+<h3 id="flow-diagram-of-frequencies-of-transitions">Flow diagram of frequencies of transitions<a class="headerlink" href="#flow-diagram-of-frequencies-of-transitions" title="Permanent link">#</a></h3>
 <figure>
 <p><img alt="Frequencies of transitions" src="../images/transitions_frequency.png" width="40.0%" />
   </p>
 <figcaption>Frequencies of total transitions (the frequencies are plotted on the edges)</figcaption>
 </figure>
-<h3 id="flow-diagram-of-frequencies-of-transitions-after-behavior">Flow diagram of frequencies of transitions after behavior</h3>
+<h3 id="flow-diagram-of-frequencies-of-transitions-after-behavior">Flow diagram of frequencies of transitions after behavior<a class="headerlink" href="#flow-diagram-of-frequencies-of-transitions-after-behavior" title="Permanent link">#</a></h3>
 <figure>
 <p><img alt="Frequencies of transitions after behavior" src="../images/transitions_frequency_after_behavior.png" width="40.0%" />
   </p>
 <figcaption>Frequencies of transitions after behavior (the frequencies are plotted on the edges)</figcaption>
 </figure>
-<h3 id="flow-diagram-of-number-of-transitions">Flow diagram of number of transitions</h3>
+<h3 id="flow-diagram-of-number-of-transitions">Flow diagram of number of transitions<a class="headerlink" href="#flow-diagram-of-number-of-transitions" title="Permanent link">#</a></h3>
 <figure>
 <p><img alt="Number of transitions" src="../images/number_of_transitions.png" width="40.0%" />
   </p>
 <figcaption>Number of transitions (the frequencies are plotted on the edges)</figcaption>
 </figure>
-<h3 id="re-encoding-and-resizing-a-video-file">Re-encoding and resizing a video file</h3>
+<h3 id="re-encoding-and-resizing-a-video-file">Re-encoding and resizing a video file<a class="headerlink" href="#re-encoding-and-resizing-a-video-file" title="Permanent link">#</a></h3>
 <p>BORIS can re-encode and resize your video files in order to reduce the
 size of the files and have a smooth coding (specially with two video
 files playing together). The re-encoding and resizing operations are
@@ -1004,7 +1041,7 @@ resolution in pixels (the default is 1024). The aspect ratio will be
 maintained.</p>
 <p>You can continue to use BORIS during the re-encoding/resizing operation.</p>
 <p>The re-encoded/resized video files are renamed by adding the re-encoded.avi extension to the original files.</p>
-<h3 id="rotating-a-video-file">Rotating a video file</h3>
+<h3 id="rotating-a-video-file">Rotating a video file<a class="headerlink" href="#rotating-a-video-file" title="Permanent link">#</a></h3>
 <p>BORIS can rotate your video files in order to code them using the right
 view. The rotating operation is done with the embedded ffmpeg program
 using the same quality parameters then the original video.</p>
