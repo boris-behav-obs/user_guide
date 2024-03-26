@@ -1,2 +1,1 @@
-# user_guide
-BORIS user guide
+# BORIS user guide
