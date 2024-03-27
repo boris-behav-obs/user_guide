@@ -11,5 +11,7 @@ push version:
     git add docs src
     git commit -am "new documentation {{version}}"
     git push
+    git status -s
+
 
 
