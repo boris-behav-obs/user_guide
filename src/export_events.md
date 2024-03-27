@@ -166,7 +166,7 @@ Example of SQL export of aggregated events:
 **Observations** \> **Export events** **as behavioral sequences**
 
 Behavioral strings can be used with the **Behatrix** program:
-[Behatrix](http://www.boris.unito.it/pages/behatrix)
+[Behatrix](https://www.boris.unito.it/behatrix)
 
 Example:
 

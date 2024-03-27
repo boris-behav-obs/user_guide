@@ -4,7 +4,7 @@
 
 
 
-BORIS can be installed following the instructions on the [download section](http://www.boris.unito.it/pages/download.html) of the BORIS web site
+BORIS can be installed following the instructions on the [download section](http://www.boris.unito.it/download) of the BORIS web site
 
 All previous versions of BORIS are available in the [Releases section of the GitHub repository](https://github.com/olivierfriard/BORIS/releases).
 

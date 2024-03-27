@@ -1,9 +1,10 @@
 
-# build the web site
-#build version date:
-#    sed '/    version: /c\INSERT_VERSION' mkdocs.yml | sed 's#INSERT_VERSION#    version: {{version}}#g' > /tmp/mkdocs.yml_
-#    sed '/    release_date: /c\INSERT_VERSION' /tmp/mkdocs.yml_ | sed 's#INSERT_VERSION#    release_date: {{date}}#g' > mkdocs.yml
-#    rye run mkdocs build
+# build documentation
+build version:
+    cp mkdocs.yml mkdocs.yml.backup
+    sed -i '/    version: /c\INSERT_VERSION' mkdocs.yml
+    sed -i 's#INSERT_VERSION#    version: {{version}}#g' mkdocs.yml
+    rye run mkdocs build
 
 # push web site
 push version:

@@ -19,6 +19,8 @@ theme:
     - toc.follow
     - navigation.path
     - navigation.top
+  logo: images/boris_logo-3.400px.png
+
 
 nav:
   - Welcome: index.md
@@ -38,6 +40,7 @@ nav:
       - Preferences: preferences.md
       - Various: various.md
   - Community: community.md
+  - BORIS web site: https://www.boris.unito.it
 
 copyright: Copyright &copy; 2012 - 2024 Olivier Friard
 
@@ -70,4 +73,4 @@ plugins:
 
 extra:
   boris:
-    version: 8.23
+    version: 8.24.1

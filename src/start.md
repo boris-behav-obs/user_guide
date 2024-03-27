@@ -6,7 +6,7 @@
 Once BORIS is installed, it can be launched by clicking on its icon.
 
 
-If you want to launch BORIS from the source code, refer to the [Run BORIS from source code](https://www.boris.unito.it/pages/run_from_source_code.html) section.
+If you want to launch BORIS from the source code, refer to the [Run BORIS from source code](https://www.boris.unito.it/run_from_source_code) section.
 
 
 !!! note "First launch"
