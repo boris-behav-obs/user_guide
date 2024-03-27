@@ -1,0 +1,19 @@
+[project]
+name = "user-guide"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Olivier Friard", email = "olivier.friard@unito.it" }
+]
+dependencies = [
+    "mkdocs-material>=9.5.15",
+    "mkdocs-macros-plugin>=1.0.5",
+    "mkdocs-glightbox>=0.3.7",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []
