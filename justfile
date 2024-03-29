@@ -16,5 +16,7 @@ push version:
 # build and push on github repo
 all version: (build version) (push version)
 
+serve:
+    rye run mkdocs serve
 
 

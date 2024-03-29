@@ -191,13 +191,19 @@ Check/Uncheck the subjects to show/hide them on the subjects' table.
 </figure>
 
 
-## The **media player** widgets
+## The **media player** 
+
+
+<figure markdown>
+  ![The media player](images/media_player.png){width="100.0%"}
+  <figcaption>Media player</figcaption>
+</figure>
 
 
 
 <figure markdown>
   ![3 media players](images/observation_3video_2.png){width="100.0%"}
-  <figcaption>3 media players</figcaption>
+  <figcaption>3 media players playing 3 videos</figcaption>
 </figure>
 
 
