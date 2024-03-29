@@ -76,7 +76,7 @@ in the queue) will be loaded in the media player and paused.
 
 
 
-
+The toolbar can be resized using the **Preferences** > **Interface** option.
 
 
 
