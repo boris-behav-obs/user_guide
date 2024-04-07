@@ -6,7 +6,10 @@
 Once BORIS is installed, it can be launched by clicking on its icon.
 
 
-If you want to launch BORIS from the source code, refer to the [Run BORIS from source code](https://www.boris.unito.it/run_from_source_code) section.
+
+!!! warning "Warning for Windows users"
+
+    BORIS does not yet use signed binaries which means that you will need to allow the execution of the downloaded executable. If there is no obvious way to do so, click on "More info" on the error message that shows up and then on "Run anyway".
 
 
 !!! note "First launch"
@@ -23,5 +26,7 @@ The main window of BORIS will appear. Currently, all commands on the toolbar are
 </figure>
 
 
+
+If you want to launch BORIS from the source code, refer to the [Run BORIS from source code](https://www.boris.unito.it/run_from_source_code) section.
 
 
