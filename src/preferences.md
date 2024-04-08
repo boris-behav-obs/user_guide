@@ -176,7 +176,7 @@ The **reset colors to default** button will reload the default colors.
 
 
 <figure markdown="span">
-![Interface](images/preferences_interface.png){width="925"}
+![Interface](images/preferences_interface.png){: style="width:925px"}
 <figcaption>BORIS interface preferences</figcaption>
 </figure>
 
