@@ -160,7 +160,7 @@ The color of behaviors in the plot events functions can be customized.
 The first color will be associated to the first behavior in your
 ethogram, the second color to the second behavior and so on. Various
 color formats can be used to specify a color: **named color** or **hex
-RGB** (like \#0F0F0F). See <https://matplotlib.org/api/colors_api.html>
+RGB** (like #0F0F0F). See <https://matplotlib.org/api/colors_api.html>
 and <https://matplotlib.org/examples/color/named_colors.html> for
 details
 
@@ -178,7 +178,7 @@ The **reset colors to default** button will reload the default colors.
 
 ### Toolbar icon size
 
-Set the size of the icons in the toolbar (in pixels)
+Set the size of the icons in the toolbar (in pixels){width="100%"}
 
 ### Dark mode
 
