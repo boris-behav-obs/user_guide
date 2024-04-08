@@ -173,7 +173,7 @@ The **reset colors to default** button will reload the default colors.
 
 ## Interface
 
-![Interface](images/preferences_interface.png){width="100%"}
+![Interface](images/preferences_interface.png){width="925px"}
 
 
 ### Toolbar icon size
