@@ -178,5 +178,11 @@ The **reset colors to default** button will reload the default colors.
 
 ### Toolbar icon size
 
-Set the height of the toolbar
+Set the size of the icons in the toolbar (in pixels)
+
+### Dark mode
+
+Switch to dark mode
+
+
 
