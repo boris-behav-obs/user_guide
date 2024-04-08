@@ -173,7 +173,12 @@ The **reset colors to default** button will reload the default colors.
 
 ## Interface
 
-![Interface](images/preferences_interface.png){width="925px"}
+
+
+<figure markdown="span">
+![Interface](images/preferences_interface.png){width="925"}
+<figcaption>BORIS interface preferences</figcaption>
+</figure>
 
 
 ### Toolbar icon size
