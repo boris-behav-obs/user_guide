@@ -10,7 +10,7 @@ glightbox: false
 ---
 
 
-![BORIS logo](images/boris_logo-3.400px.png){width=200px}
+![BORIS logo](images/logo_boris.svg){width=200px}
 
 
 # User guide of **BORIS** the Behavioral Observation Research Interactive Software
