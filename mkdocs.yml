@@ -58,10 +58,15 @@ markdown_extensions:
 
 
 plugins:
-  - macros
-  - search
-  - minify:
-      minify_html: true
+    - macros
+    - search
+    - minify:
+        minify_html: true
+    - with-pdf:
+        author: "Olivier Friard"
+        cover_title: "BORIS user guide"
+        cover_subtitle: v. 8.25.4
+        output_path: pdf/boris_user_guide.pdf
 
 extra:
   generator: true
@@ -71,4 +76,4 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://fediscience.org/web/@boris
   boris:
-    version: 8.25
+    version: 8.25.4

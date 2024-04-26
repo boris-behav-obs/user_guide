@@ -138,7 +138,7 @@ The FFmpeg framework is required to run BORIS.
 
 ## Spectrogram / wave form
 
-![Preferences Spectrogram / Wave form](images/preferences_spectro.png)
+![Preferences Spectrogram / Wave form](images/preferences_spectro.png){: style="width:666px"}
 
 
 ### Spectrogram height
@@ -174,11 +174,7 @@ The **reset colors to default** button will reload the default colors.
 ## Interface
 
 
-
-<figure markdown="span">
-![Interface](images/preferences_interface.png){: style="width:925px"}
-<figcaption>BORIS interface preferences</figcaption>
-</figure>
+![Interface](images/preferences_interface.png){: style="width:666px"}
 
 
 ### Toolbar icon size
