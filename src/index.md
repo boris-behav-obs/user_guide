@@ -13,7 +13,7 @@ glightbox: false
 ![BORIS logo](images/logo_boris.svg){width=200px}
 
 
-# User guide of **BORIS** the Behavioral Observation Research Interactive Software
+# User guide of **BORIS** the **B**ehavioral **O**bservation **R**esearch **I**nteractive **S**oftware
 
 BORIS is a user-friendly software designed for event logging during video/audio coding and live observations.
 It is a free and open-source application that can be used on GNU/Linux and Windows operating systems.
