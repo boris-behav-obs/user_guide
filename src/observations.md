@@ -52,11 +52,9 @@ You must then indicate if you want to make an observation based on
 ## Live observation
 
 
-During the live observation BORIS will show you a timer that will be
-used for recording time for coded events.
+During the live observation BORIS will show you a timer that will be used for recording time for coded events.
 
-Click on the **Live observation** radio button to create a live
-observation.
+Click on the **Live observation** radio button to create a live observation.
 
 
 <figure markdown>
@@ -96,6 +94,10 @@ time](https://en.wikipedia.org/wiki/Unix_time) for details. This option
 is usefull for long observations (few days) or observations that start
 before midnight and end after.
 
+
+
+
+
 ### Start the observation
 
 Click the **Start** button to begin the live observation or **Save** to
@@ -125,28 +127,29 @@ an observation based on one or more media files.
 
 
 <figure markdown>
-  ![Image title](images/media_files_tab_empty.png){width="80.0%"}
-  <figcaption>Media files tab</figcaption>
+  ![Observation from media files](images/media_files_tab_empty.png){width="80.0%"}
+  <figcaption>Observation from media files</figcaption>
 </figure>
 
 
 
-The **Observation from media file(s)** tab contains 2 tabs: **Media
-files** and **Data files**.
+The **Observation from media file(s)** tab contains 2 tabs: **Media files** and **Data files**.
 
-Click the **Media files** tab and add one or more media files using the
-**Add media** button. You have 3 options:
+Click the **Media files** tab and add one or more media files using the **Add media** button. You have 3 options:
 
 -   **with absolute path**: the whole media file path will be recorded
     in the project
+
 -   **with relative path**: the media file path will be recorded
     relatively to the position of the BORIS project file (the directory
     of the BORIS project file must be included). This option is useful
     if you have to have to move your BORIS project file on another
     computer.
+
 -   **from directory with absolute path**: all the media file found in
     the directory will be added to the playlist (the whole media file
     path will be recorded in the project)
+
 -   **from directory with relative path**: all the media file found in
     the directory will be added to the playlist (the relative media file
     path will be recorded in the project)
@@ -154,17 +157,18 @@ Click the **Media files** tab and add one or more media files using the
 Information about the selected media file will be extracted and
 displayed in the media list: media file path, media duration, number of
 frames by second (FPS), the presence of a video stream, the presence of
-an audio stream .
+an audio stream.
+
 
 
 
 
 <figure markdown>
-  ![Image title](images/media_files_tab_1.png){width="80.0%"}
-  <figcaption>Media files tab</figcaption>
+  ![Media files](images/media_files_tab_1.png){width="80.0%"}
+  <figcaption>Media files</figcaption>
 </figure>
 
-
+You can choose to use the media file name as **Observation id** by clicking the **Use media file name as observation id** button.
 
 
 The dropdown list in the first column allow you to choose a player (for
@@ -205,15 +209,15 @@ media file name as **observation id**
 
 ### Spectrogram visualization
 
-BORIS allow you to visualize the sound spectrogram during the media
-observation. Activate the **Visualize spectrogram** check box. BORIS
-will ask you to generate the spectrograms for all media files loaded in
-the first player.
+BORIS allow you to visualize the sound spectrogram during the media observation.
+Activate the **Visualize spectrogram** check box.
+BORIS will ask you to generate the spectrograms for all media files loaded in the first player.
 
+Please note that the generation of the spectrogram can be long for long duration media files.
 
 
 <figure markdown>
-  ![Image title](images/spectro1.png){width="80.0%"}
+  ![Spectrogram generation](images/spectro1.png){width="80.0%"}
   <figcaption>Spectrogram generation</figcaption>
 </figure>
 
@@ -224,14 +228,26 @@ during the observation.
 
 
 <figure markdown>
-  ![Image title](images/spectrogram.jpg){width="80.0%"}
+  ![Spectrogram visualization](images/spectrogram.jpg){width="80.0%"}
   <figcaption>Spectrogram visualization</figcaption>
 </figure>
 
 
-### Close current behavior between videos
+### Stop all state events between media files
 
-This option is disabled for now.
+
+If your media files are not contiguous, you can enable the **Stop ongoing events between successive media files** option to automatically stop state events between media files.
+This option may be usefull in case of video coding from camera-trap systems, for instance. 
+
+
+<figure markdown>
+  ![Stop state events between media files](images/stop_ongoing_events_between_media_files.png)
+  <figcaption>Stop state events between media files</figcaption>
+</figure>
+
+
+
+
 
 ### External data files
 

@@ -22,4 +22,4 @@ The official BORIS web site is [**https://www.boris.unito.it**](https://www.bori
 
 This user guide is applicable to the version **{{ boris.version }}** of BORIS.
 
-A [PDF version](pdf/boris_user_guide.pdf) of ths user guide is available.
+A [PDF version](pdf/boris_user_guide.pdf) of this user guide is available.
