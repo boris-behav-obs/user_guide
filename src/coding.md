@@ -115,10 +115,7 @@ widget.
 
 
 
-<figure markdown>
-  ![Image title](images/live_observation.png)
-  <figcaption>Live observation</figcaption>
-</figure>
+![Image title](images/live_observation.png)
 
 
 
@@ -126,35 +123,25 @@ widget.
 
 
 
-
-<figure markdown>
-  ![Image title](images/main_window_ethogram.png)
-  <figcaption>Ethogram table in main window</figcaption>
-</figure>
+![Image title](images/main_window_ethogram.png)
 
 
 
-
-The **Ethogram** widget provide the user with the list of behaviors
+The **Ethogram** table provide the user with the list of behaviors
 defined in the **Ethogram**. It can be used to record an event by double
 clicking on the corresponding row. The **Key** column indicates the
 keyboard key assigned to each behavior (if any). Pressing a key will
-record the corresponding behavior (that will appear in the *Events*
-widget).
+record the corresponding behavior (that will appear in the **Events** table).
 
 The behaviors shown in the ethogram widget can be filtered:
 
-**Right-click** on ethogram widget \> **Filter behaviors**
+**Right-click** on ethogram widget > **Filter behaviors**
 
-Check/Uncheck single behaviors or double-click on the behavioral
-category
-
+Check/Uncheck single behaviors or double-click on the behavioral category.
 
 
-<figure markdown>
-  ![Image title](images/filter_behaviors.png)
-  <figcaption>Filter behaviors in ethogram table</figcaption>
-</figure>
+
+![Image title](images/filter_behaviors.png)
 
 
 
@@ -194,32 +181,20 @@ Check/Uncheck the subjects to show/hide them on the subjects' table.
 ## The **media player** 
 
 
-<figure markdown>
-  ![The media player](images/media_player.png){width="100.0%"}
-  <figcaption>Media player</figcaption>
-</figure>
+![The media player](images/media_player.png){width="100.0%"}
+
+
+![3 media players](images/observation_3video_2.png){width="100.0%"}
+
+
+You can adjust the media position with the horizontal slider. Each media player is equipped with its own audio volume control, which can be adjusted using the vertical slider located on the right side of the player and a mute/unmute button for easy sound management.
+
+
+The arrangement of different widgets can be personalized to suit your preferences. In the screenshot provided, all widgets are detached from the main program window. This feature is particularly useful when using a multi-monitor setup.
 
 
 
-<figure markdown>
-  ![3 media players](images/observation_3video_2.png){width="100.0%"}
-  <figcaption>3 media players playing 3 videos</figcaption>
-</figure>
-
-
-
-The media position can be set using the horizontal slide bar. Each media
-player has its own audio volume control (the vertical slide bar on the
-right side of the player).
-
-The organization of the various widget can be customized:
-
-
-
-<figure markdown>
-  ![The widgets are undocked from the main window](images/undocked_widgets.png)
-  <figcaption>The widgets are undocked from the main window</figcaption>
-</figure>
+![The widgets are undocked from the main window](images/undocked_widgets.png)
 
 
 
