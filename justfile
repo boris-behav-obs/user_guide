@@ -23,6 +23,6 @@ push version:
 all version: (build version) (push version)
 
 serve:
-    rye run mkdocs serve
+    uv run mkdocs serve
 
 
