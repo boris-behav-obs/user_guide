@@ -260,3 +260,10 @@ The results can be saved in a Tab Separted Values (TSV) file using the
 ## Latency
 
 The latency will analyze the time between one or more markers (arbitrary behaviors(s)) and other behaviors.
+
+
+
+## Plugins
+
+
+From version 9 you have the possibility to write plugins to analyze the coded data.
