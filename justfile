@@ -10,7 +10,7 @@ build version:
     sed -i '/        cover_subtitle: /c\INSERT_PDF_VERSION' mkdocs.yml
     sed -i 's#INSERT_PDF_VERSION#        cover_subtitle: v. {{version}}#g' mkdocs.yml
 
-    rye run mkdocs build
+    uv run mkdocs build
 
 # push web site on github repo
 push version:

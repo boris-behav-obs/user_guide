@@ -65,11 +65,6 @@ Click on the **Live observation** radio button to create a live observation.
 
 
 
-### Scan sampling
-
-In the above tab you can select a time for **Scan sampling**
-observation. In this case the timer will stop at every time offset you
-indicated and all the coded events will have the same time value.
 
 ### Start from current time
 
@@ -464,7 +459,13 @@ See the [media coding]() section to start coding.
 ## Various options
 
 
-### Limit observation to a time interval
+### Scan sampling (Live and media observation)
+
+You can select a time for **Scan sampling** observation.
+In this case the timer will stop at every time offset you indicated and all the coded events will have the same time value.
+
+
+### Limit observation to a time interval (Live and media observation)
 
 This option can be used to limit the observation to a time interval for
 live or media based observations.
