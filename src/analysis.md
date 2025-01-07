@@ -268,6 +268,15 @@ The latency will analyze the time between one or more markers (arbitrary behavio
 
 From version 9 you have the possibility to write plugins to analyze the coded data.
 
+
+!!! warning "Important"
+
+    Use this function for testing purposes, as it is currently experimental and may be subject to changes in the future.
+
+
+
+
+
 Some plugins are built into BORIS (see the **BORIS plugins** list), and you can also create your own custom plugin using Python and [Pandas](https://pandas.pydata.org/).
 
 
@@ -283,6 +292,25 @@ You can view more information by clicking on the plugin name.
 You can find the plugin code in the boris/analysis_plugins directory.
 
 
+### How to use an Analysis plugin
+
+Go to **Analysis** > **Plugins**
+
+All plugins are listed (the BORIS plugins and your personal plugins)
+
+Select the plugin you want to use
+
+Select the observations to analyze
+
+Select the subjects and the behaviors
+
+You should obtain a window with the results of the plugin analysis
+
+
+![Plugin results](images/plugins03.png)
+
+
+The results can be saved in various formats (TSV, CSV, ODS, XLSX, Pandas dataframe, R dataframe and HTML)
 
 
 
