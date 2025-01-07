@@ -267,3 +267,105 @@ The latency will analyze the time between one or more markers (arbitrary behavio
 
 
 From version 9 you have the possibility to write plugins to analyze the coded data.
+
+Some plugins are built into BORIS (see the **BORIS plugins** list), and you can also create your own custom plugin using Python and [Pandas](https://pandas.pydata.org/).
+
+
+Go to **Preferences** > **Analysis plugins**, then choose the plugins you'd like to enable.
+
+![Analysis plugins preferences](images/plugins01.png)
+
+You can view more information by clicking on the plugin name.
+
+
+![Plugin information](images/plugins02.png)
+
+You can find the plugin code in the boris/analysis_plugins directory.
+
+
+
+
+
+
+### Anatomy of an Analysis plugin
+
+A plugin is a Python script consisting of two functions: **main** and **run**. The **main** function must remain unchanged, while the **run** function contains your custom code.
+
+The plugin code must define the following global variables:
+
+    __version__ = "x.y.z"
+    __version_date__ = "YYYY-MM-DD"
+    __plugin_name__ = "PLUGIN NAME"
+    __author__ = "AUTHOR - INSTITUTION"
+
+
+The **run** function takes a Pandas DataFrame as its sole argument and must return a Pandas DataFrame.
+
+The DataFrame passed to the **run** function  includes the following columns:
+
+    Column                                              Dtype  
+     ------                                              -----  
+    Observation id                                      object 
+    independent variables                               object 
+    ...
+    Subject                                             object 
+    Observation duration by subject by observation      int64  
+    Behavior                                            object 
+    Behavioral category                                 object 
+    Behavior modifiers                                  object
+    ...
+    Behavior type                                       object 
+    Start (s)                                           object 
+    Stop (s)                                            object 
+    Duration (s)                                        object 
+    Comment start                                       object 
+    Comment stop                                        object 
+
+
+The DataFrame will include a column for each independent variable defined in your project.
+
+
+The DataFrame will include a column for each behavior modifier set defined in your project.
+
+
+Here is an example of the DataFrame structure, including 4 independent variables and various behavior modifiers:
+
+
+
+    Data columns (total 27 columns):
+    #   Column                                              Dtype  
+    ---  ------                                              -----  
+    0   Observation id                                      object 
+    1   independent variable 'Location'                     object 
+    2   independent variable 'Weather'                      object 
+    3   independent variable 'Temperature'                  object 
+    4   independent variable 'Number of visitors'           object 
+    5   Subject                                             object 
+    6   Observation duration by subject by observation      int64  
+    7   Behavior                                            object 
+    8   Behavioral category                                 object 
+    9   (Carry objects, set #1)                             object 
+    10  (Chase, set #1)                                     float64
+    11  (Eat, set #1)                                       float64
+    12  (Eat, set #2)                                       float64
+    13  (Interact with enrichment, set #1)                  float64
+    14  (Locomotion, set #1)                                object 
+    15  (Play in the water, interaction)                    object 
+    16  (Play on the ground, set #1)                        object 
+    17  (Rub, set #1)                                       object 
+    18  (Sniff, set #1)                                     object 
+    19  (Spot keeper, set #1)                               float64
+    20  (Tear, set #1)                                      object 
+    21  Behavior type                                       object 
+    22  Start (s)                                           object 
+    23  Stop (s)                                            object 
+    24  Duration (s)                                        object 
+    25  Comment start                                       object 
+    26  Comment stop                                        object 
+
+
+
+You can find the code for a simple plugin that counts the number of occurrences of behaviors for each subject at the following link:
+[number_of_occurences.py](https://github.com/olivierfriard/BORIS/blob/pyside6/boris/analysis_plugins/number_of_occurences.py)
+
+You can modify the **run** function to implement your custom logic, but the **main** function must remain unchanged.
