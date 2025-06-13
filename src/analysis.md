@@ -266,7 +266,8 @@ The latency will analyze the time between one or more markers (arbitrary behavio
 ## Plugins
 
 
-From version 9 you have the possibility to write plugins to analyze the coded data.
+Starting from version 9, you can create plugins to analyze coded data.
+BORIS supports two programming languages for writing plugins: **Python** and **R**.
 
 
 !!! warning "Important"
@@ -277,7 +278,7 @@ From version 9 you have the possibility to write plugins to analyze the coded da
 
 
 
-Some plugins are built into BORIS (see the **BORIS plugins** list), and you can also create your own custom plugin using Python and [Pandas](https://pandas.pydata.org/).
+Some plugins are built into BORIS (see the **BORIS plugins** list), and you can also create your own custom plugin using Python and [Pandas](https://pandas.pydata.org/) or R.
 
 
 Go to **Preferences** > **Analysis plugins**, then choose the plugins you'd like to enable.
@@ -296,6 +297,10 @@ You can find the plugin code in the boris/analysis_plugins directory.
 
 Go to **Analysis** > **Plugins**
 
+
+![Plugin menu](images/plugins02-2.png)
+
+
 All plugins are listed (the BORIS plugins and your personal plugins)
 
 Select the plugin you want to use
@@ -313,23 +318,10 @@ You should obtain a window with the results of the plugin analysis
 The results can be saved in various formats (TSV, CSV, ODS, XLSX, Pandas dataframe, R dataframe and HTML)
 
 
-
-
 ### Anatomy of an Analysis plugin
 
-A plugin is a Python script consisting of two functions: **main** and **run**. The **main** function must remain unchanged, while the **run** function contains your custom code.
 
-The plugin code must define the following global variables:
-
-    __version__ = "x.y.z"
-    __version_date__ = "YYYY-MM-DD"
-    __plugin_name__ = "PLUGIN NAME"
-    __author__ = "AUTHOR - INSTITUTION"
-
-
-The **run** function takes a Pandas DataFrame as its sole argument and must return a Pandas DataFrame.
-
-The DataFrame passed to the **run** function  includes the following columns:
+The DataFrame passed to the plugin includes the following columns:
 
     Column                                              Dtype  
      ------                                              -----  
@@ -393,7 +385,165 @@ Here is an example of the DataFrame structure, including 4 independent variables
 
 
 
-You can find the code for a simple plugin that counts the number of occurrences of behaviors for each subject at the following link:
-[number_of_occurences.py](https://github.com/olivierfriard/BORIS/blob/pyside6/boris/analysis_plugins/number_of_occurences.py)
+#### Python plugin
 
-You can modify the **run** function to implement your custom logic, but the **main** function must remain unchanged.
+A BORIS Python plugin is a Python script consisting of one function **run**.
+
+The **run** function takes a Pandas DataFrame as its sole argument and must return:
+
+* a **Pandas DataFrame**.
+* a **string** (str)
+* a **Pandas DataFrame** and a **string** (str) as a tuple.
+
+For example:
+
+    def run(df: pd.DataFrame) -> pd.DataFrame:
+       ...
+       ...
+       return elaborated_df
+
+or:
+
+    def run(df: pd.DataFrame) -> str:
+       ...
+       ...
+       return results
+
+or:
+
+    def run(df: pd.DataFrame) -> tuple[pd.DataFrame, str]:
+       ...
+       ...
+       return (elaborated_df, results)
+
+
+
+
+
+
+The plugin code must define the following global variables:
+
+    __plugin_name__ = "PLUGIN NAME"
+    __version__ = "x.y.z"
+    __version_date__ = "YYYY-MM-DD"
+    __author__ = "AUTHOR - INSTITUTION"
+
+
+
+Example of Python plugin for determining the number of occurences of the selected behaviors for each selected subjects:
+
+
+    """
+    BORIS plugin
+
+    number of occurences of behaviors
+    """
+
+    import pandas as pd
+
+    __version__ = "0.3.0"
+    __version_date__ = "2025-03-17"
+    __plugin_name__ = "Number of occurences of behaviors"
+    __author__ = "Olivier Friard - University of Torino - Italy"
+
+
+    def run(df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Calculate the number of occurrences of behaviors by subject.
+        """
+
+        df_results: pd.DataFrame = df.groupby(["Subject", "Behavior"])["Behavior"].count().reset_index(name="number of occurences")
+
+        return df_results
+
+
+
+Visualize the plugin code on GitHub: [number_of_occurences.py](https://github.com/olivierfriard/BORIS/blob/pyside6/boris/analysis_plugins/number_of_occurences.py)
+
+You can modify the **run** function to implement your custom logic.
+
+
+
+
+
+#### R plugin
+
+The plugin written with R must contain a **run** function. 
+The **run** function takes a dataframe as its sole argument and must return a dataframe:
+
+    run <- function(df) {...
+       ...
+       ...
+       return(elaborated_df)
+    }
+
+The plugin code must define the following global variables:
+
+    plugin_name <- 'PLUGIN NAME'
+    version <- 'x.y.z'
+    version_date <- 'YYYY-MM-DD'
+    author  <- 'AUTHOR - INSTITUTION'
+    description <- "..."
+
+
+Example of a R plugin for determining the number of co-occurences of behaviors:
+
+
+    # plugin.R
+    # converted from the co-occurences.py BORIS plugin by ChatGPT
+
+
+    plugin_name <- 'Co-occurence of behaviors (R)'
+    version <- '0.0.1'
+    version_date <- '2025-06-12'
+    author  <- 'Olivier Friard - University of Torino - Italy'
+    description <- "Co-occurence of behaviors (R)"
+
+
+    run <- function(df) {
+    # Number of combinations
+    total_combinations <- choose(nrow(df), 2)
+    cat("total_combinations =", total_combinations, "\n")
+    
+    cooccurrences <- list()
+    
+    # All combinations
+    comb_indices <- combn(nrow(df), 2)
+    
+    for (k in 1:ncol(comb_indices)) {
+        i <- comb_indices[1, k]
+        j <- comb_indices[2, k]
+        
+        row1 <- df[i, ]
+        row2 <- df[j, ]
+        
+        # skip if behaviors are the same
+        if (row1$Behavior == row2$Behavior) next
+        
+        # Check overlap
+        if (!(row1[["Stop (s)"]] <= row2[["Start (s)"]] || row2[["Stop (s)"]] <= row1[["Start (s)"]])) {
+        pair <- sort(c(as.character(row1$Behavior), as.character(row2$Behavior)))
+        key <- paste(pair, collapse = " | ")
+        
+        if (key %in% names(cooccurrences)) {
+            cooccurrences[[key]] <- cooccurrences[[key]] + 1
+        } else {
+            cooccurrences[[key]] <- 1
+        }
+        }
+    }
+    
+    # Convert list to dataframe
+    if (length(cooccurrences) > 0) {
+        cooc_df <- data.frame(
+        Pair = names(cooccurrences),
+        Count = unlist(cooccurrences),
+        row.names = NULL
+        )
+    } else {
+        cooc_df <- data.frame()
+    }
+    
+    return(cooc_df)
+    }
+
