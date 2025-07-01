@@ -42,7 +42,7 @@ nav:
   - Community: community.md
   - BORIS web site: https://www.boris.unito.it
 
-copyright: Copyright &copy; 2012 - 2024 Olivier Friard
+copyright: Copyright &copy; 2012 - 2025 Olivier Friard
 
 markdown_extensions:
   - admonition
