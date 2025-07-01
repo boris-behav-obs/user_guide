@@ -1,7 +1,6 @@
 
 # build documentation
 build version:
-
     uv version {{version}}
 
     cp mkdocs.yml mkdocs.yml.backup
