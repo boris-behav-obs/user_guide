@@ -62,12 +62,13 @@ plugins:
     - search
     - minify:
         minify_html: true
-    - with-pdf:
+    - to-pdf:
         author: "Olivier Friard and Marco Gamba"
         cover_title: "BORIS user guide"
         cover_subtitle: v. 9.5
         cover_logo: src/images/logo_boris.svg
         output_path: pdf/boris_user_guide.pdf
+        verbose: true
 
 extra:
   generator: true
