@@ -4,6 +4,8 @@ When looking at the BORIS main window, the window title bar shows the
 **Observation id** - **Project name** - **BORIS**. The media (the first
 in the queue) will be loaded in the media player and paused.
 
+On macOS, the video is not embedded into the main window of BORIS so it is **VERY IMPORTANT to click on the BORIS main window** to score as usual.
+
 
 ## Media based coding
 
@@ -31,19 +33,19 @@ in the queue) will be loaded in the media player and paused.
 :fontawesome-solid-backward-step:  **Rewind** reset your media at the beginning
 
 
-:fontawesome-solid-backward:   **Fast backward** jumps for n seconds backward in your media (See [preferences](preferences.md)) 
+:fontawesome-solid-backward:   **Fast backward** jumps for n seconds backward in your media (See [preferences](preferences.md))
 
 
-:fontawesome-solid-forward:   **Fast forward** jumps for n seconds forward in your media (See [preferences](preferences.md)) 
+:fontawesome-solid-forward:   **Fast forward** jumps for n seconds forward in your media (See [preferences](preferences.md))
 
 
 
 
 <i class="fa-solid fa-circle-pause fa-rotate-90"></i>   **Set the playback speed to 1x**
 
-:fontawesome-solid-circle-plus:   **Increase the playback speed** (See [preferences](preferences.md)) 
+:fontawesome-solid-circle-plus:   **Increase the playback speed** (See [preferences](preferences.md))
 
-:fontawesome-solid-circle-minus:    **Decrease the playback speed** (See [preferences](preferences.md)) 
+:fontawesome-solid-circle-minus:    **Decrease the playback speed** (See [preferences](preferences.md))
 
 :fontawesome-solid-backward-fast:   **Jump to the previous media file**
 
@@ -178,7 +180,7 @@ Check/Uncheck the subjects to show/hide them on the subjects' table.
 </figure>
 
 
-## The **media player** 
+## The **media player**
 
 
 ![The media player](images/media_player.png){width="100.0%"}
@@ -385,7 +387,7 @@ The same functions and others are available in the **Observations** menu.
 
 ### Undo an even recording
 
-A wrong event can be removed from the events list using the **Undo** function (++ctrl+z++). You can go back till 25 events recorded events. 
+A wrong event can be removed from the events list using the **Undo** function (++ctrl+z++). You can go back till 25 events recorded events.
 
 
 
@@ -597,7 +599,7 @@ In frame-by-frame mode the video will stop playing and the user will
 visualize the video frame by frame.
 
 
-!!! note 
+!!! note
     Some video files should be re-encoded to be used in frame-by-frame mode. Otherwise the extracted frames are not reliable or it will not be possible to move backward.
 
 
@@ -623,5 +625,3 @@ If you have a numeric keypad you can use the following keys in alternative:
 
 To return in the media player mode press the **Play** :fontawesome-solid-play: button in the
 toolbar.
-
-

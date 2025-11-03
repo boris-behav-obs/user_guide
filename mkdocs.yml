@@ -65,7 +65,7 @@ plugins:
     - to-pdf:
         author: "Olivier Friard and Marco Gamba"
         cover_title: "BORIS user guide"
-        cover_subtitle: v. 9.5
+        cover_subtitle: v. 9.7.1
         cover_logo: src/images/logo_boris.svg
         output_path: pdf/boris_user_guide.pdf
         verbose: true
@@ -78,4 +78,4 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://fediscience.org/web/@boris
   boris:
-    version: 9.5
+    version: 9.7.1
