@@ -13,34 +13,47 @@ You can customize BORIS using the Preferences window (**File** \>
 
 
 
-### **Refresh** button
 
-:   Option to reinitialize the configuration to default. BORIS will be
-    closed.
-
-### **Default project time format**
+**Default project time format**
 
 :   This option allows the user to choose the format for displaying time
     in the project. Please note that time is internally always saved in
     seconds with a precision of 3 decimal digits
 
 
-### **Auto-save project every (minutes)**
+**Auto-save project every (minutes)**
 
 :   if set BORIS will save your project automatically every n minutes. 0
     indicate no automatic backup. The project will be saved if the
     project is already saved and an observation is open.
 
-### **Separator for behavioural strings**
+**Separator for behavioural strings**
 
 :   Character (or string) used to separate behaviors when exporting
     events as behavioural strings. See also Behatrix
 
 
-### **Check for new version**
+**Check for new version**
 
 :   Check for new version on BORIS web site every 15 days (internet
     access required)
+
+**MPV hardware video decoding**
+: if you experiment some problems with the mpv embedded player try to change this value
+
+**Project file indentation type**
+: The BORIS project file is encoded in JSON format. Choose the indentation style for the project file between:
+  
+  * None
+  * Newline
+  * Tab
+  * 2 spaces
+  * 4 spaces
+
+**Refresh** button
+
+:   Option to reinitialize the configuration to default. BORIS will be
+    closed.
 
 
 
@@ -50,69 +63,72 @@ You can customize BORIS using the Preferences window (**File** \>
 ![Preferences for the observations](images/preferences_observations.png)
 
 
-### **Fast forward/backward value (seconds)**
-
+**Fast forward/backward value (seconds)**
 :   This option allows the user to customize the amount of time for "jumping" forward or backward in media.
 
 
-### **Adapt the fast for/backward jump to playback speed**
-
+**Adapt the fast for/backward jump to playback speed**
 :   The jump value will be adapted to the playback speed.
 
-### **Playback speed step value**
+**Playback speed step value**
 
 :   This value indicate how much the speed will be increased or
     decreased after pressing the *change playback speed* buttons.
 
 
 
-### **Time offset for media reposition (seconds)**
+**Time offset for media reposition (seconds)**
 
 :   This value indicates the time offset for repositioning the media
     after double-click on a row event of the *Events* table. 'for
     example -4 seconds indicates that after a double-click the media
     will be repositioned 4 seconds before the recorded event.'
 
-### **Play sound when a key is pressed**
+**Play sound when a key is pressed**
 
 :   Activate a sound signal after every keypress event
 
 
 
-### **Close the same current event independently of modifiers**
+**Close the same current event independently of modifiers**
 
 :   Option used to STOP the current behavior without regarding the
     modifiers
 
 
 
-### **Display subtitles**
+**Display subtitles**
 
 :   Option to display or hide the visualization of subtitles. In case of
     separate file, the file containing subtitles must have the same base
     name than the video files with a .srt extension.
 
 
-
-
-### **Tracking cursor above current event**
+**Tracking cursor above current event**
 
 :   Check this box to position the tracking cursor above the current
     event in events list table.
 
 
-### **Alert if focal subject is not set**
+**Alert if focal subject is not set**
 
 :   If this option is activated BORIS will show an alert box if no focal
     subject is selected
 
 
-### **Pause media before "Add event" command**
+**Pause media before "Add event" command**
 
 :   Option to pause the media before manually adding an event.
 
 
 
+## Analysis plugins
+
+![Analysis plugins preferences](images/plugins01.png)
+
+**Personal plugins directory**
+
+: Select the directory that contains the plugins to be loaded.
 
 
 ## FFmpeg framework
@@ -125,9 +141,8 @@ The FFmpeg framework is required to run BORIS.
 
 
 
-### **FFmpeg cache directory**
-
-:   This indicates the directory that will be used as image cache for
+**FFmpeg cache directory**
+: This indicates the directory that will be used as image cache for
     frame-by-frame mode and spectrogram visualization. If you do not
     specify a path, BORIS will use the default temporary directory of
     your system.
@@ -141,21 +156,27 @@ The FFmpeg framework is required to run BORIS.
 ![Preferences Spectrogram / Wave form](images/preferences_spectro.png){: style="width:666px"}
 
 
-### Spectrogram height
+**Color map**
+: Select the color map for displaying the generated spectrogram.
+  See [Matplotlib colormaps](http://matplotlib.org/users/colormaps.html) for details.
 
-Select the height of generated spectrogram (in pixels). You will need to
-restart the current observation to apply changes.
+**Default time interval**
+: Select the time interval (in seconds) for displaying the spectrogram and waveform
 
+**Window type**
+: Select the window tyope between Hanning, Hamming and Blackmanharris
 
-### Color map
+**NFFT size**
 
-Select the color map for displaying the generated spectrogram. See
-[Matplotlib colormaps](http://matplotlib.org/users/colormaps.html) for
-details.
+**noverlap**
+
+**Use vmin/vmax**
+
 
 
 
 ## Plot colors 
+
 The color of behaviors in the plot events functions can be customized.
 The first color will be associated to the first behavior in your
 ethogram, the second color to the second behavior and so on. Various
@@ -177,13 +198,5 @@ The **reset colors to default** button will reload the default colors.
 ![Interface](images/preferences_interface.png){: style="width:666px"}
 
 
-### Toolbar icon size
-
-Set the size of the icons in the toolbar (in pixels)
-
-### Dark mode
-
-Switch to dark mode
-
-
-
+**Toolbar icons size**
+: Set the size of the icons in the toolbar (in pixels)

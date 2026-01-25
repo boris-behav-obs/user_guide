@@ -1,3 +1,9 @@
+# justfile for the management of the BORIS user guide web site
+
+# list of recipes
+default:
+	just --list
+
 
 # build documentation
 build version:
@@ -26,5 +32,3 @@ all version: (build version) (push version)
 
 serve:
     uv run mkdocs serve
-
-
