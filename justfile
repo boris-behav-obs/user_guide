@@ -1,3 +1,9 @@
+# justfile for the management of the BORIS user guide web site
+
+# list of recipes
+default:
+	just --list
+
 
 # build documentation
 build version:
@@ -9,8 +15,8 @@ build version:
     sed -i '/    version: /c\INSERT_VERSION' mkdocs.yml
     sed -i 's#INSERT_VERSION#    version: {{version}}#g' mkdocs.yml
 
-    sed -i '/        cover_subtitle: /c\INSERT_PDF_VERSION' mkdocs.yml
-    sed -i 's#INSERT_PDF_VERSION#        cover_subtitle: v. {{version}}#g' mkdocs.yml
+    sed -i '/      cover_subtitle: /c\INSERT_PDF_VERSION' mkdocs.yml
+    sed -i 's#INSERT_PDF_VERSION#      cover_subtitle: v. {{version}}#g' mkdocs.yml
 
     uv run mkdocs build
 
@@ -26,5 +32,3 @@ all version: (build version) (push version)
 
 serve:
     uv run mkdocs serve
-
-

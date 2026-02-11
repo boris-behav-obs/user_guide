@@ -21,7 +21,6 @@ theme:
     - navigation.top
   logo: images/logo_boris.svg
 
-
 nav:
   - Welcome: index.md
   - User guide:
@@ -29,7 +28,7 @@ nav:
       - Starting: start.md
       - Create a project: create_project.md
       - Create an observation: observations.md
-      - Observations list: observations_list.md
+      - Managing observations: managing_observations.md
       - Coding: coding.md
       - Export events: export_events.md
       - Playback menu: playback_menu.md
@@ -42,7 +41,7 @@ nav:
   - Community: community.md
   - BORIS web site: https://www.boris.unito.it
 
-copyright: Copyright &copy; 2012 - 2025 Olivier Friard
+copyright: Copyright &copy; 2012 - 2026 Olivier Friard
 
 markdown_extensions:
   - admonition
@@ -51,24 +50,23 @@ markdown_extensions:
   - def_list
   - pymdownx.keys
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: "#"
 
-
 plugins:
-    - macros
-    - search
-    - minify:
-        minify_html: true
-    - to-pdf:
-        author: "Olivier Friard and Marco Gamba"
-        cover_title: "BORIS user guide"
-        cover_subtitle: v. 9.7.1
-        cover_logo: src/images/logo_boris.svg
-        output_path: pdf/boris_user_guide.pdf
-        verbose: true
+  - macros
+  - search
+  - minify:
+      minify_html: true
+  - to-pdf:
+      author: "Olivier Friard and Marco Gamba"
+      cover_title: "BORIS user guide"
+      cover_subtitle: v. 9.8.1
+      cover_logo: src/images/logo_boris.svg
+      output_path: pdf/boris_user_guide.pdf
+      verbose: true
 
 extra:
   generator: true
@@ -78,4 +76,4 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://fediscience.org/web/@boris
   boris:
-    version: 9.7.1
+    version: 9.8.1

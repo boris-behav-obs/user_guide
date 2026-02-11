@@ -314,30 +314,41 @@ Example for a time interval of 1 second:
 
 
 
-## Extract sub-sequences from media files corresponding to coded events
+## Extract clips from media files corresponding to coded events
 
 
 Sequences of media file corresponding to coded events can be extracted
 from media files:
 
-1.  Click on **Observations** \> **Extract events from media files**  option.
+1.  Click on **Observations** \> **Extract clips from media files**  option.
 
 2.  Choose the observation(s).
 
-3.  Select the events to be extracted.
+3.  Select the subjects and events to be extracted.
+Modifiers con be included 
 
-4.  Select a destination directory that will contain the extracted
-    sequences.
+4.  Select the time interval around the events (in seconds, the default value is 0).
 
-5.  Select a time offset (in seconds, the default value is 0).
+5. Select the tracks to include in clips:
+    * Video and audio
+    * Only video
+    * Only audio
+
+6.  Select a destination directory that will contain the extracted
+    clips.
+
 
 The time offset will be substracted from the starting time of event and
-added to the stopping time. All the extracted sequences will be saved in
+added to the stopping time. All the extracted clips will be saved in
 the selected directory followind the file name format:
 
 {observation id}\_{player}\_{subject}\_{behavior}\_{start time}-{stop
 time}
 
+If modifiers are included:
+
+{observation id}\_{player}\_{subject}\_{behavior}\_{start time}-{stop
+time}_{modifiers concatenated with +}
 
 
 
@@ -352,12 +363,18 @@ images.
 
 2.  Choose the observation(s).
 
-3.  Select the events to be extracted.
+3.  Select the subjects and events to be extracted.
+Modifiers con be included
 
-4.  Select a destination directory that will contain the extracted
-    sequences.
+4.  Select the time interval around the events (in seconds, the default value is 0).
 
-5.  Select a time offset (in seconds, the default value is 0).
+5. Select the image format:
+    * JPG - small size / low quality
+    * PNG - big size / high quality
+
+6.  Select a destination directory that will contain the extracted
+    frames.
+
 
 
 
