@@ -32,7 +32,7 @@ The observations can be sorted by clicking in the desired column header
 
 
 The status of observation is displayed in the first column (**id**).
-If the background of this column is **red** the observations has one or more UNPAIRED state events.
+If the background of this column is **red** the observations have one or more UNPAIRED state events.
 These UNPAIRED observations will not be analyzed. See [Fix unpaired state events](coding.md#fix-unpaired-state) for details.
 
 ![Observations list with warning](images/observations_list_warning.png){width="100.0%"}
@@ -100,7 +100,7 @@ Select all the observations you want to remove.
 Click the **Remove selected observations** button and confirm the
 deletion.
 
-Please note that the deletion is irreversible, the deleted observations can not be restored.
+Please note that the deletion is irreversible, the deleted observations cannot be restored.
 
 
 

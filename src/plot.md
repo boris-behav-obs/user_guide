@@ -40,7 +40,7 @@ edited with the [Inkscape vector graphics editor](https://inkscape.org).
 
 This function creates one plot by subject on one figure.
 
-The color of behaviors can be customized. See [plot colors]()
+The color of behaviors can be customized. See [Plot colors](preferences.md#plot-colors).
 
 ![plot events](images/plot_events.png)
 
@@ -52,7 +52,7 @@ The color of behaviors can be customized. See [plot colors]()
 
 ## Plot time budget
 
-The duration and number of occurences can be plotted for each subject
+The duration and number of occurrences can be plotted for each subject
 and behavior.
 
 **Analysis** \> **Plot** \> **Plot time budget**
@@ -63,7 +63,7 @@ The subjects and behaviors you want to include in the plot can be selected in th
 
 ![Time budget](images/time_budget_parameters2.png){width="60.0%"}
 
-The behavior modifiers can not be included in the plot for now.
+The behavior modifiers cannot be included in the plot for now.
 
 The time interval can be selected (See time budget)
 
@@ -82,14 +82,13 @@ This function creates 2 plots with all subjects for each observation:
 
 -   a plot of the behavior durations for the behaviors defined as STATE
     event.
--   a plot of the number of occurences for all the behaviors.
+-   a plot of the number of occurrences for all the behaviors.
 
-The color of behaviors can be customized. See [plot colors]()
+The color of behaviors can be customized. See [Plot colors](preferences.md#plot-colors).
 
 ![plot time budget (durations)](images/plot_time_budget_durations.png){width="70.0%"}
 
 ![plot time budget (durations)](images/plot_time_budget_number_of_occurences.png){width="70.0%"}
-
 
 
 

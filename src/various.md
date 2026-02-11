@@ -9,22 +9,22 @@ files into the file project (for example:
 `c:\Users\user\Documents\video1.avi`).
 
 If you want to move your project on a different computer or if you want
-to move your media/data files you may want to do not store the full
+to move your media/data files you may choose not to store the full
 path. For this you can choose to add media/data files with relative path
 (See **Add media files** section). You can also remove the full path of
 your media/data files from all observations of the current project
 (**File** \> **Remove path from media files**. Please note that this
-operation is irreversible. After remotion the full path of your media
+operation is irreversible. After removal the full path of your media
 will be lost and will not be recoverable.
 
-**If you choose to do not store the full path of media/data files the
+**If you choose not to store the full path of media/data files the
 path of the media/data files must contain the path of your BORIS project
 file.**
 
-Example: if you BORIS project file is saved in
+Example: if your BORIS project file is saved in
 `/home/user/projects/test.project` your media/data files can be saved in
 the `/home/user/projects/videos` directory but **NOT** in the
-[/home/user/videos]{.title-ref}\` directory.
+`/home/user/videos` directory.
 
 
 
@@ -40,7 +40,7 @@ main window and positioned where you prefer (e.g. they can be on the
 same desktop over one or many screens).
 
 The position of the various widgets is saved in the [configuration
-file](#configuration file) at the end of the work session.
+file](#configuration-files) at the end of the work session.
 
 ![Undocked widgets](images/undocked_widgets.png){width="1800px"}
 
@@ -62,7 +62,7 @@ For MacOS:
 
 ![dock/undock](images/dock_undock1_mac.png){width="100.0%"}
 
-If you fill uncomfortable with the dockwidgets you can block them on the
+If you feel uncomfortable with the dockwidgets you can block them on the
 main window by checking the **Lock dockwidgets** option (see **Tools**
 \> **Lock dockwidgets**). All the dockwidgets will be docked on the main
 window and locked on it except the player dockwidgets.
@@ -120,4 +120,3 @@ BORIS makes difference between lower case and upper case characters
 * function keys from F1 to F12
 * à é è ù ì ç
 * ! " £ $ % & / ( ) = ? ^ [ ] { } @ | § ° #
-

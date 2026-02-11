@@ -27,7 +27,7 @@ On macOS, the video is not embedded into the main window of BORIS so it is **VER
 :fontawesome-solid-list: **List of observations**
 
 
-:fontawesome-solid-play:   **Play** (become :fontawesome-solid-pause: **Pause** when media is played)
+:fontawesome-solid-play:   **Play** (becomes :fontawesome-solid-pause: **Pause** when media is playing)
 
 
 :fontawesome-solid-backward-step:  **Rewind** reset your media at the beginning
@@ -53,7 +53,7 @@ On macOS, the video is not embedded into the main window of BORIS so it is **VER
 
 :fontawesome-solid-camera:   **Take a snapshot** of current video or frame
 
-:fontawesome-solid-arrow-left:  **Move on frame back**
+:fontawesome-solid-arrow-left:  **Move one frame back**
 
 :fontawesome-solid-arrow-right:    **Move one frame forward**
 
@@ -92,9 +92,9 @@ The media can also be controlled by special keyboard keys:
 
 ++arrow-down++ Jump backward in the current media
 
-++home++ Increase the playback speed (See [general preferences]() to set the step value)
+++home++ Increase the playback speed (See [Observations preferences](preferences.md#observations) to set the step value)
 
-++end++ Decrease the playback speed (See [general preferences]() to set the step value)
+++end++ Decrease the playback speed (See [Observations preferences](preferences.md#observations) to set the step value)
 
 ++backspace++  Set the playback speed to 1x
 
@@ -215,7 +215,7 @@ The displayed parameters (organized in columns) depend of the type of the observ
 ![Events table for a media observation](images/events_table_media.png)
 
 
-The following paramters are displayed:
+The following parameters are displayed:
 
 -   **Time**, the time at which the event occurred;
 
@@ -227,7 +227,7 @@ The following paramters are displayed:
 
 -   **Type**, in case of a **state event** indicates whether the time  corresponds to the start or to the stop. Empty for a **point event**;
 
--   **Modifier**, indicates the modifier(s) that was(ere) selected (if any);
+-   **Modifier**, indicates the modifier(s) that was/were selected (if any);
 
 -   **Comment**, is an open field where the user can add notes.
 
@@ -242,7 +242,7 @@ of the corresponding event. See [Time offset for media reposition](preferences.m
 
 ![Events table for a live observation](images/events_table_live.png)
 
-The following paramters are displayed:
+The following parameters are displayed:
 
 -   **Time**, the time at which the event occurred;
 
@@ -252,7 +252,7 @@ The following paramters are displayed:
 
 -   **Type**, in case of a **state event** indicates whether the time  corresponds to the start or to the stop. Empty for a **point event**;
 
--   **Modifier**, indicates the modifier(s) that was(ere) selected (if any);
+-   **Modifier**, indicates the modifier(s) that was/were selected (if any);
 
 -   **Comment**, is an open field where the user can add notes.
 
@@ -263,7 +263,7 @@ The following paramters are displayed:
 ![Events table for a live observation](images/events_table_pictures.png)
 
 
-The following paramters are displayed:
+The following parameters are displayed:
 
 -   **Time**, the time at which the event occurred;
 
@@ -273,7 +273,7 @@ The following paramters are displayed:
 
 -   **Type**, in case of a **state event** indicates whether the time  corresponds to the start or to the stop. Empty for a **point event**;
 
--   **Modifier**, indicates the modifier(s) that was(ere) selected (if any);
+-   **Modifier**, indicates the modifier(s) that was/were selected (if any);
 
 -   **Comment**, is an open field where the user can add notes;
 
@@ -310,7 +310,7 @@ The **focal subject** can be selected by:
 
 -  pressing the predefined **key** of the keyboard corresponding to the subject to select.
 
-- double-clicking to the corresponding row in the **Subects** table.
+- double-clicking to the corresponding row in the **Subjects** table.
 
 - using the **Subject pad** (See [subject pad](tools.md#subject-pad)).
 
@@ -377,7 +377,7 @@ event by specifying its time and the other parameters.
 
 
 Some functions are available in the Events table context menu.
-Righ-click on the Events table and the menu will pop-up.
+Right-click on the Events table and the menu will pop-up.
 
 ![Events table menu](images/events_table_menu.png)
 
@@ -401,7 +401,7 @@ This option allows adding a new event by specifying its time and the other param
   <figcaption>Add a new event</figcaption>
 </figure>
 
-Select a time format and imput the time value.
+Select a time format and input the time value.
 
 Select the **subject** from the drop-down menu or leave empty for **No focal subject**.
 
@@ -524,7 +524,7 @@ This option reverts the previous one and allows to visualize all coded events.
 ### Check state events
 
 This option allows to check if the **state events** are **PAIRED**, if
-they have a **START** and a **STOP** occurences.
+they have a **START** and a **STOP** occurrence.
 
 
 
@@ -539,7 +539,7 @@ This option allows to delete the selected events. This operation is irreversible
 
 This option is not present in the context menu but only in the main menu (**Observations** \> **Delete all events**).
 
-This option allows to delete all then events in the current observation.
+This option allows to delete all the events in the current observation.
 This operation is irreversible!
 
 

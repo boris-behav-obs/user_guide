@@ -43,7 +43,7 @@ Prior to report a bug please:
 -   Check the Frequent Asked Question (FAQ) section
 -   Check if the issue was not already reported (GitHub repository)
 -   Delete the configuration file and try again (see [configuration
-    file](#configuration file)).
+    file](various.md#configuration-files)).
 
 Remember to indicate:
 
@@ -69,6 +69,5 @@ your home directory just after the crash (before relaunching BORIS):
 !!! note
 
     If the bug you have reported is fixed remember to close the issue.
-
 
 

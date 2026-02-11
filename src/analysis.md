@@ -44,7 +44,7 @@ you if you have defined a "out-of-sight" code in your ethogram for example:
 ![subtract behavior from the total duration](images/subtract_behavior.png)
 
 
-The results contain for each subject and behavior the **total nuber of
+The results contain for each subject and behavior the **total number of
 occurrences**, the **total duration** (for the behaviors defined as
 state events), The **duration mean** (for the behaviors defined as state
 events), the **standard deviation of duration**, the **inter-events
@@ -135,7 +135,7 @@ The time budget results can be saved in various formats for further analysis:
 
 
 
-The **synthetic time budget with time bin** is similar to the **Synthetic time budget** but the results are divised in time bin.
+The **synthetic time budget with time bin** is similar to the **Synthetic time budget**, but the results are divided into time bins.
 
 **Analysis** > **Synthetic time budget with time bin** 
 
@@ -194,7 +194,7 @@ to the last event of the 2 observations . In case of a point event the
 presence of a corresponding event in the other observation will be
 verified using a time window of n seconds centered on the point event.
 
-A IRR Cohen's Kappa analysis is available in the GSEQ program
+An IRR Cohen's Kappa analysis is available in the GSEQ program
 (<http://www2.gsu.edu/~psyrab/gseq>). For this the coded events can be
 exported as aggregated events in SDIS format.
 See [export aggregated events](export_events.md#export-aggregated-events).
@@ -208,9 +208,9 @@ Needleman-Wunsch similarity
 
 
 
-## Co-occurence
+## Co-occurrence
 
-This function allow to determine the co-occurence of 2 behaviors.
+This function allows you to determine the co-occurrence of 2 behaviors.
 
 
 
@@ -219,7 +219,7 @@ This function allow to determine the co-occurence of 2 behaviors.
 ## Advanced event filtering
 
 
-This function allows to filter events from one or more observations by
+This function allows filtering events from one or more observations by
 selecting subjects, behaviors and logical operators.
 
 To use the filter, select a subject, select a behavior and click on the
@@ -229,7 +229,7 @@ filter query can be constructed by adding parenthesis and logical
 operator **&** (AND) or **|** (OR) for combining various subjects and behaviors.
 
 
-Example of a summarized output showing the occurences of Himal resting
+Example of a summarized output showing the occurrences of Himal resting
 while Nautilus in alert:
 
 ![Advanced event filter summary](images/advanced_filter_summary.png)
@@ -251,7 +251,7 @@ Parenthesis can be used to group logical conditions into block(s):
 
 ![Advanced event filter with parenthesis](images/advanced_filter_example2.png)
 
-The results can be saved in a Tab Separted Values (TSV) file using the
+The results can be saved in a Tab Separated Values (TSV) file using the
 **Save results** button. Other formats will be added in future.
 
 
@@ -430,7 +430,7 @@ The plugin code must define the following global variables:
 
 
 
-Example of Python plugin for determining the number of occurences of the selected behaviors for each selected subjects:
+Example of a Python plugin for determining the number of occurrences of the selected behaviors for each selected subject:
 
 
     """
@@ -486,7 +486,7 @@ The plugin code must define the following global variables:
     description <- "..."
 
 
-Example of a R plugin for determining the number of co-occurences of behaviors:
+Example of an R plugin for determining the number of co-occurrences of behaviors:
 
 
     # plugin.R
@@ -546,4 +546,3 @@ Example of a R plugin for determining the number of co-occurences of behaviors:
     
     return(cooc_df)
     }
-

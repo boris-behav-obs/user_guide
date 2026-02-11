@@ -114,7 +114,7 @@ The following fields are available in the output:
 -   Observation duration by subject
 -   Behavior
 -   Behavioral category (if any)
--   Modifier(s) of behavior (one column by madifier)
+-   Modifier(s) of behavior (one column by modifier)
 -   Behavior type (STATE / POINT)
 -   Start (seconds)
 -   Stop (seconds)

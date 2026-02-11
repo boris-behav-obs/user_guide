@@ -27,7 +27,7 @@ Click on **Tools** \> **Geometric measurements** to activate the measurements.
 ### Mark color
 
 Use the **Choose color of marks** button to select a color. All marks will be drawn with the selected color.
-The color transparency can be set using the **Alpha channel** vale (0 for 100% transparent, 255 for a solid color).
+The color transparency can be set using the **Alpha channel** value (0 for 100% transparent, 255 for a solid color).
 
 <figure markdown>
   ![Image title](images/select_color.png){width="80.0%"}
@@ -158,7 +158,7 @@ Converters can be written using the Python 3 programming language.
 The **INPUT** variable will be loaded with the original value of the
 external data file (for example 01:22:32).
 
-The **OUPUT** variable must contain the converted value in seconds (the
+The **OUTPUT** variable must contain the converted value in seconds (the
 dot must be used for decimal separator).
 
 
@@ -188,7 +188,7 @@ Example of a code to a date in ISO8601 format in seconds using the strptime() fu
 
 **File** \> **Edit project** \> **Converters**
 
-![writing/modifiying a converter](images/converter_writing.png){width="100.0%"}
+![writing/modifying a converter](images/converter_writing.png){width="100.0%"}
 
 
 
@@ -206,7 +206,7 @@ transitions matrices).
 
 **Tools \> Transitions flow diagram \> Create transitions DOT script**
 
-Choose one ore more transitions matrix files and BORIS will create the relative DOT script file(s).
+Choose one or more transitions matrix files and BORIS will create the relative DOT script file(s).
 
 The DOT script files can then be used with
 [Graphviz](http://www.graphviz.org) (Graph Visualization Software) or
@@ -228,7 +228,7 @@ file.
 
 **Tools \> Transitions flow diagram \> Create transitions flow diagram**
 
-Choose one ore more transition matrix files and BORIS will create the
+Choose one or more transition matrix files and BORIS will create the
 relative flow diagram.
 
 
@@ -299,9 +299,9 @@ The re-encoded/resized video files are renamed by adding the re-encoded.avi exte
 
 BORIS can rotate your video files in order to code them using the right
 view. The rotating operation is done with the embedded ffmpeg program
-using the same quality parameters then the original video.
+using the same quality parameters as the original video.
 
-Select the files you want rotate and select the rotation angle between: **Rotate 90 clockwise**, **Rotate 90 counter clockwise** and **Rotate 180**.
+Select the files you want to rotate and select the rotation angle: **Rotate 90 clockwise**, **Rotate 90 counter clockwise**, or **Rotate 180**.
 
 The aspect ratio will be maintained.
 

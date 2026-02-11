@@ -5,7 +5,7 @@
 
 A video tutorial about making an observation is available at [this link](<https://www.youtube.com/watch?v=CKeBITCICXc>).
 
-To create a new observation you must first [Create a new project with BORIS](create_project.md#create-a-project) or [Open an existing project with BORIS]().
+To create a new observation you must first [create a new BORIS project](create_project.md#create-a-project) or open an existing BORIS project.
 
 Clicking on **Observations** > **New observation** will show the **New
 observation** window.
@@ -31,7 +31,7 @@ This window allow adding various observation data:
 
 -   **Independent variables** (e.g. to specify factors that may
     influence the behaviors but will not change during the observation
-    within a project).See the [independent variables]() section for
+    within a project). See the [independent variables](create_project.md#define-the-independent-variables) section for
     details.
 
 -   **Time offset**. BORIS allow specifying a time offset that can be
@@ -86,7 +86,7 @@ computer current time when you will press the **Start** button.
 If the **Epoch time** is checked the start time will be the number of
 seconds since the Jan 1st, 1970 (1970-01-01). See [Unix
 time](https://en.wikipedia.org/wiki/Unix_time) for details. This option
-is usefull for long observations (few days) or observations that start
+is useful for long observations (few days) or observations that start
 before midnight and end after.
 
 
@@ -106,7 +106,7 @@ The main window during a live observation will look like this:
   <figcaption>The main window during a live observation</figcaption>
 </figure>
 
-See the [Live observations]() section to start coding.
+See the [Live observations](coding.md#live-observations) section to start coding.
 
 
 
@@ -138,7 +138,7 @@ Click the **Media files** tab and add one or more media files using the **Add me
 -   **with relative path**: the media file path will be recorded
     relatively to the position of the BORIS project file (the directory
     of the BORIS project file must be included). This option is useful
-    if you have to have to move your BORIS project file on another
+    if you have to move your BORIS project file to another
     computer.
 
 -   **from directory with absolute path**: all the media file found in
@@ -218,7 +218,7 @@ Please note that the generation of the spectrogram can be long for long duration
 
 
 
-The spectrogram visualization will be synchonized to the media position
+The spectrogram visualization will be synchronized to the media position
 during the observation.
 
 
@@ -232,7 +232,7 @@ during the observation.
 
 
 If your media files are not contiguous, you can enable the **Stop ongoing events between successive media files** option to automatically stop state events between media files.
-This option may be usefull in case of video coding from camera-trap systems, for instance. 
+This option may be useful in case of video coding from camera-trap systems, for instance. 
 
 
 <figure markdown>
@@ -343,7 +343,7 @@ files will be plotted synchronously with your media file.
 
 #### Converters
 
-If the values in the timestamp column are not expessed in seconds (like
+If the values in the timestamp column are not expressed in seconds (like
 12.45) but in another format (HH:MM:SS, MM:SS, ISO8601
 2018-01-18T12:31:40Z ...) you must use a converter that will convert
 the current format in seconds.
@@ -402,7 +402,7 @@ like this:
 </figure>
 
 
-See the [media coding]() section to start coding.
+See the [Media based coding](coding.md#media-based-coding) section to start coding.
 
 ## Observation from pictures
 
@@ -452,7 +452,7 @@ list](#observations-list).
 
 
 
-See the [media coding]() section to start coding.
+See the [Media based coding](coding.md#media-based-coding) section to start coding.
 
 
 
@@ -471,6 +471,5 @@ This option can be used to limit the observation to a time interval for
 live or media based observations.
 
 ![image](images/limit_obs_time_interval.png){width="80.0%"}
-
 
 

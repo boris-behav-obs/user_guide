@@ -84,7 +84,7 @@ By clicking on the **Behavior > Add behavior** button, you can add a new row in 
 and the behavior type will be automatically set to **Point event**.
 
 
-The cells with gray background can not be directly edited.
+The cells with gray background cannot be directly edited.
 You must double-click on them and then select a value.
 
 
@@ -186,7 +186,7 @@ Double-click on the cell and select the color you want to associate to the behav
 
 #### Categories of behaviors
 
-Defining categories of behaviors can be usefull for the analysis of
+Defining categories of behaviors can be useful for the analysis of
 coded events (for example the [time budget analysis](analysis.md#time-budget-by-behavioral-category)).
 
 The **Category** column allow you to include the behavior to a predefined behavioral category.
@@ -307,7 +307,7 @@ modifiers** and **Remove set of modifiers**.
 The position of a modifiers\' set can be customized (using the **Move
 set left** and **Move set right** buttons)
 
-Modifiers can not contain the following characters: **(\|),\`\~!**
+Modifiers cannot contain the following characters: **(\|),\`\~!**
 
 Example of a **multiple selection** modifiers set:
 
@@ -349,7 +349,7 @@ You have to define the variable name in the **Variable name** edit box.
 This is mandatory and the name of the variable **must** be the same than
 the variable defined in the observation.
 
-See [External data files]()
+See [External data files](observations.md#external-data-files)
 
 
 <figure markdown>
@@ -399,13 +399,13 @@ the following behaviors: **Allogroom**, **Breed**, **Carry objects**,
 **Chase** \...
 
 During the observation, the excluding event will stop all the current
-excluded state events one millisecond before the occurence of the event.
+excluded state events one millisecond before the occurrence of the event.
 
 
 
 ### Set the **Modifiers coding map**
 
-If the behavior is defined as a **Point event with coding map** or a **State event with codinf map** you can associate a
+If the behavior is defined as a **Point event with coding map** or a **State event with coding map** you can associate a
 **Modifiers coding map** to select the modifiers from a map.
 
 
@@ -453,7 +453,7 @@ have to be redefined.
 
 Behaviors can be imported from a plain text file using the **Import
 ethogram > from text file** button. The fields must be separated by
-TAB, comma (,) or semicolomn (;). All rows must contain the same number
+TAB, comma (,) or semicolon (;). All rows must contain the same number
 of fields.
 
 The first row of your plain text file must contain the following labels.
@@ -685,9 +685,9 @@ converters to be added to your project.
 ### Writing a converter
 
 
-See "[Converters for external data values]()"
+See [Converters for external data values](tools.md#converters-for-external-data-values)
 
-The converters loaded in your project can be then selected for
-converting timestamp (or other values) in external data file
+The converters loaded in your project can then be selected for
+converting timestamps (or other values) in external data files.
 
-See [Converters]()
+See [Converters](observations.md#converters)
