@@ -202,30 +202,33 @@ media file name as **observation id**
 
 
 
-### Spectrogram visualization
+### Spectrogram and waveform visualization
 
-BORIS allow you to visualize the sound spectrogram during the media observation.
-Activate the **Visualize spectrogram** check box.
-BORIS will ask you to generate the spectrograms for all media files loaded in the first player.
-
-Please note that the generation of the spectrogram can be long for long duration media files.
-
+BORIS can display audio information — such as the sound spectrogram and/or waveform — during media coding.
+In the **Display** column, choose the type of plot you want to visualize.
 
 <figure markdown>
-  ![Spectrogram generation](images/spectro1.png){width="80.0%"}
-  <figcaption>Spectrogram generation</figcaption>
+  ![Image title](images/media_files_tab_3.png){width="80.0%"}
+  <figcaption>Select display</figcaption>
 </figure>
 
 
 
-The spectrogram visualization will be synchronized to the media position
-during the observation.
+
+The spectrogram visualization will be synchronized to the media position during the observation.
 
 
 <figure markdown>
-  ![Spectrogram visualization](images/spectrogram.jpg){width="80.0%"}
+  ![Spectrogram visualization](images/spectrogram.png){width="80.0%"}
   <figcaption>Spectrogram visualization</figcaption>
 </figure>
+
+
+<figure markdown>
+  ![Spectrogram visualization](images/spectrogram_waveform.png){width="80.0%"}
+  <figcaption>Spectrogram and waveform visualization</figcaption>
+</figure>
+
 
 
 ### Stop all state events between media files
@@ -298,7 +301,7 @@ A new row will be added in the data files table.
 
 
 <figure markdown>
-  ![Data file table](images/external_data_file_1.png){width="80.0%"}
+  ![Data file table](images/external_data_file_2.png){width="80.0%"}
   <figcaption>Data file table</figcaption>
 </figure>
 
@@ -471,5 +474,3 @@ This option can be used to limit the observation to a time interval for
 live or media based observations.
 
 ![image](images/limit_obs_time_interval.png){width="80.0%"}
-
-
