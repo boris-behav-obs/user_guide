@@ -334,9 +334,7 @@ otherwise you will obtain a message with an explanation.
 For now only 2 values can be plotted synchronously with your media file.
 The values can come from the same file or from two different files.
 
-During the observation tha values you have selected in external data
-files will be plotted synchronously with your media file.
-
+During the observation, the values you selected in the external data files will be plotted synchronously with the media file.
 
 <figure markdown>
   ![Observation with 2 values plotted](images/observation_with_external_data.png){width="100.0%"}
@@ -346,10 +344,7 @@ files will be plotted synchronously with your media file.
 
 #### Converters
 
-If the values in the timestamp column are not expressed in seconds (like
-12.45) but in another format (HH:MM:SS, MM:SS, ISO8601
-2018-01-18T12:31:40Z ...) you must use a converter that will convert
-the current format in seconds.
+If the values in the timestamp column are not expressed in seconds (e.g., 12.45) but in another format (such as HH:MM:SS, MM:SS, or ISO 8601 like 2018-01-18T12:31:40Z), you must use a converter to transform the current format into seconds.
 
 See the [Converters' table](create_project.md#converters-table) in the project configuration.
 
@@ -470,7 +465,6 @@ In this case the timer will stop at every time offset you indicated and all the 
 
 ### Limit observation to a time interval (Live and media observation)
 
-This option can be used to limit the observation to a time interval for
-live or media based observations.
+This option can be used to limit the observation to a time interval for live or media based observations.
 
 ![image](images/limit_obs_time_interval.png){width="80.0%"}
