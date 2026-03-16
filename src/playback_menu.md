@@ -37,25 +37,39 @@ The time selection widget will pop-up:
 
 ## Zoom level
 
-Click the media player you want to set the zoom level.
+The zoom level can also be set using the menu **Playback** > **Zoom level**
+
+![Set the zoom level](images/zoom_level.png)
 
 ### Using the keyboard
 
+Click the media player you want to set the zoom level.
 
-**Zoom in**  ++ctrl+plus++ or ++ctrl++ + Mouse wheel up 
+**Zoom in**  ++ctrl+plus++
 
-**Zoom out**  ++ctrl+minus++ or ++ctrl++ + Mouse wheel down
+**Zoom out**  ++ctrl+minus++
 
-**Reset zoom level** ++ctrl+0++ or by clicking the mouse right button on the video.
+**Reset zoom level** ++ctrl+0++ or by clicking the right mouse button on the video.
 
+
+!!! warning "Important"
+
+    On Microsoft Windows, only the ++plus++ and ++minus++ keys on the numeric keypad can be used.
 
 
 ### Using the mouse
 
+Click the media player you want to set the zoom level.
 
-**Zoom in**  Double click on left mouse button
+**Zoom in**  ++ctrl++ + Mouse wheel up  or Double click on left mouse button
 
-**Zoom out**  Double click on right mouse button
+**Zoom out**  ++ctrl++ + Mouse wheel down or Double click on right mouse button
+
+
+!!! warning "Important"
+
+    On Microsoft Windows, the mouse cannot be used to zoom the video
+
 
 
 ## Pan video
@@ -64,13 +78,15 @@ Click the media player you want to pan.
 
 ### Using the keyboard
 
+**Pan Up** ++ctrl+arrow-down++ 
+
+**Pan Down** ++ctrl+arrow-up++ 
+
 **Pan Left** ++ctrl+arrow-left++ 
 
 **Pan Right** ++ctrl+arrow-right++ 
 
-**Pan Down** ++ctrl+arrow-up++ 
 
-**Pan Up** ++ctrl+arrow-down++ 
 
 
 ### Using the mouse
@@ -86,7 +102,13 @@ Click the media player you want to pan.
 **Reset Pan and zoom**: ++shift++ + **Left mouse button**
 
 
-The zoom level can also be set using the menu **Playback** > **Zoom level**
+!!! warning "Important"
+
+    On Microsoft Windows, the mouse cannot be used to pan the video
+
+
+
+
 
 
 
