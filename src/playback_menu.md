@@ -49,7 +49,7 @@ Click the media player you want to set the zoom level.
 
 **Zoom out**  ++ctrl+minus++
 
-**Reset zoom level** ++ctrl+0++ or by clicking the right mouse button on the video.
+**Reset zoom level** ++ctrl+0++
 
 
 !!! warning "Important"
@@ -61,10 +61,11 @@ Click the media player you want to set the zoom level.
 
 Click the media player you want to set the zoom level.
 
-**Zoom in**  ++ctrl++ + Mouse wheel up  or Double click on left mouse button
+**Zoom in**  ++ctrl++ + **Mouse Wheel Up**  or Double click on left mouse button
 
-**Zoom out**  ++ctrl++ + Mouse wheel down or Double click on right mouse button
+**Zoom out**  ++ctrl++ + **Mouse Wheel Down** or Double click on right mouse button
 
+**Reset zoom level**  Click the **right mouse button** on the video.
 
 !!! warning "Important"
 
@@ -91,9 +92,9 @@ Click the media player you want to pan.
 
 ### Using the mouse
 
-**Pan Up**: **Mouse Wheel up** (the video moves down)
+**Pan Up**: **Mouse Wheel Up** (the video moves down)
 
-**Pan Down**: **Mouse Wheel down** (the video moves up)
+**Pan Down**: **Mouse Wheel Down** (the video moves up)
 
 **Pan Left**: ++shift++ + **Mouse Wheel Up** (the video moves to the right)
 
