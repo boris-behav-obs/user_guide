@@ -37,8 +37,7 @@ field in the **Information** tab. Once the project will be saved, the
 can alternatively set this info on your media date and time, or whatever
 you prefer.
 
-**Description** can host all the relevant information about your
-project, can be also left empty.
+**Description** can host all the relevant information about your project, can be also left empty.
 
 **Time format** can be alternatively set to **seconds** or to **hh:mm:ss.mss**.
 This choice can be changed at anytime under **File** > **Preferences**.
@@ -67,11 +66,11 @@ Switching to the **Ethogram tab**, you can alternatively:
 
 
 <figure markdown>
-  ![Image title](images/ethogram1.png)
+  ![ethogram part 1](images/ethogram1.png)
 </figure>
 
 <figure markdown>
-  ![Image title](images/ethogram2.png)
+  ![ethogram part 2](images/ethogram2.png)
 </figure>
 
 
@@ -79,6 +78,8 @@ Switching to the **Ethogram tab**, you can alternatively:
 
 ### Set your ethogram from scratch
 
+
+#### Add a behavior
 
 By clicking on the **Behavior > Add behavior** button, you can add a new row in the **Ethogram** table,
 and the behavior type will be automatically set to **Point event**.
@@ -88,13 +89,14 @@ The cells with gray background cannot be directly edited.
 You must double-click on them and then select a value.
 
 
-
-
-
-
-### Behavior types
+#### Set the type of behavior
 
 **2 types** of behaviors can be defined. Double-click on the cell and select the type of behavior:
+
+
+<figure markdown>
+  ![Select the type of behavior](images/select_behavior_type.png)
+</figure>
 
 
 - **Point event** behavior when the behavior has **no duration**.
@@ -135,34 +137,65 @@ The behavior can be sorted by clicking on the Ethogram table header.
 They cannot be sorted manually.
 
 
+#### Set a key for the behavior (optional)
 
 
-### Set keys and codes
 
-For each behavior you have to set a keyboard key (**Key** column) that
-will be then used to code the behavioral events. You can choose whether
-you want to set a unique key for each behavior or use the same key for
-more than one behavior. In the case you set the same key for more than a
-behavior, BORIS will pause your coding and ask which of the behavior you
-want to record. The keys are **case-sensitive**.
+For each behavior, you can assign a keyboard key in the **Key** column; this key will be used to code the related behavioral events.
+You can choose whether you want to set a unique key for each behavior or use the same key for more than one behavior.
+In the case you set the same key for more than a behavior, BORIS will pause your coding and ask which of the behavior you want to record.
+The keys are **case-sensitive**.
 
-If your project was created with an old version of BORIS (< v.7)
-you can use the **Convert keys to lower case** to convert all keys to
-lower case otherwise you will have to code your observation using upper
-case key.
 
-> If you open a project file created with a version older than v.7 BORIS will ask you to convert the upper case behavior and subject keys to lower case.
+!!! note 
+
+    If your project was created with an old version of BORIS (< v.7)
+    you can use the **Convert keys to lower case** to convert all keys to
+    lower case otherwise you will have to code your observation using upper
+    case key.
+
+    If you open a project file created with a version older than v.7 BORIS will ask you to convert the upper case behavior and subject keys to lower case.
 
 !!! warning "Important"
 
     **Do not use the / and \* keys! They are reserved for the frame-by-frame mode.**
 
 
-In the **Code** column, you have to add a unique code for each behavior.
-Duplicated codes are not accepted and BORIS will warn in red about
-duplicates on the bottom left of the **Ethogram** tab. The code can be an
-alphanumeric string (which must not include the pipe character **\|** ).
 
+From **version 9.9** onward, it is possible to assign a combination of keyboard keys to trigger a behavior.
+In this case, double-click the **Key** cell and select the key combination you want to assign.
+
+<figure markdown>
+  ![select a shortcut](images/select_shortcut.png)
+</figure>
+
+
+You can also use the shortcut tool to select a single key, but the tool does not support lowercase letters.
+If you want to add a lowercase key write it directly on the **Key** cell.
+
+
+Examples of combinations:
+
+++ctrl+k++ 
+
+++meta+k++
+
+++alt+k++
+
+++f1++
+
+
+
+
+
+#### Set a code for the behavior (mandatory)
+
+In the **Code** column, you have to add a unique code for each behavior.
+Duplicated codes are not accepted and BORIS will warn in red about duplicates on the bottom left of the **Ethogram** tab.
+The code can be an alphanumeric string (which must not include the pipe character **\|** ).
+
+
+#### Give a description for the behavior (optional)
 
 The **Description** of your behavior is optional. The **Description**
 column can be useful to add information about a specific behavior, its
@@ -174,6 +207,9 @@ ethogram).
 
 The columns with a grey background (**Behavior type**, **Color**, **Category**, **Modifiers**, **Exclusion**,
 **Modifiers coding map**) cannot be edited directly. 
+
+
+#### Select a color for the behavior (optional)
 
 The **Color** column allow to select a color for the behavior. This color will be used for plotting events.
 Double-click on the cell and select the color you want to associate to the behavior.
@@ -210,7 +246,7 @@ A color can also be associated to a behavioral category.
 
 
 
-### Set the modifiers
+#### Set the modifiers
 
 Modifiers can be used to add attributes to a behavior. A single behavior
 can have two or more modifiers attached (e.g. the behavior **play** may have
@@ -258,7 +294,7 @@ to choose between **Single selection**, **Multiple selection**
 **Numeric** and **Value from external data file**.
 
 
-#### **Single selection** and **Multiple selection** modifiers
+##### **Single selection** and **Multiple selection** modifiers
 
 Set a name for the new modifiers set by typing it in the **Set name**
 edit box. Setting a modifiers\' set name is not mandatory.
@@ -307,7 +343,7 @@ modifiers** and **Remove set of modifiers**.
 The position of a modifiers\' set can be customized (using the **Move
 set left** and **Move set right** buttons)
 
-Modifiers cannot contain the following characters: **(\|),\`\~!**
+Modifiers cannot contain the following characters: **(** **\|** **)** **,** **\`** **~** **!**
 
 Example of a **multiple selection** modifiers set:
 
@@ -332,7 +368,7 @@ Example of 2 sets of modifiers:
 </figure>
 
 
-#### **Numeric** modifier
+##### **Numeric** modifier
 
 Set a name for the new set by typing it in the **Set name** edit box.
 Setting a modifiers' set name is not mandatory.
@@ -340,7 +376,7 @@ Setting a modifiers' set name is not mandatory.
 When a **Numeric** modifier will trigger, BORIS will ask the observer
 for a numeric value.
 
-#### **Value from external data file** modifier
+##### **Value from external data file** modifier
 
 This modifier can be used to record the value of a variable coming from
 an external data file (defined during the creation of the observation).
@@ -353,7 +389,7 @@ See [External data files](observations.md#external-data-files)
 
 
 <figure markdown>
-  ![Image title](images/modifiers_value_from_external_data.png){width="80.0%"}
+  ![modifiers value from external data](images/modifiers_value_from_external_data.png){width="80.0%"}
   <figcaption>modifier value from external data file</figcaption>
 </figure>
 
