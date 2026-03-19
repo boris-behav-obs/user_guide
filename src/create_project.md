@@ -162,16 +162,27 @@ The keys are **case-sensitive**.
 
 
 
-From **version 9.9** onward, it is possible to assign a combination of keyboard keys to trigger a behavior.
-In this case, double-click the **Key** cell and select the key combination you want to assign.
+From **version 9.9** onward, it is possible to assign a combination of keyboard keys to trigger a behavior, allowing the use of **Ctrl**, **Alt** and **Meta** (also known as "Windows key") keys in combination with a single key.
+
+<figure markdown>
+![select a shortcut](images/ISO_keyboard_105_QWERTY_UK.svg)
+</figure>
+
+For the **Meta** key you can refer to [https://en.wikipedia.org/wiki/Windows_key](https://en.wikipedia.org/wiki/Windows_key).
+
+To set a combination of keys, double-click the **Key** cell and select the key combination you want to assign.
 
 <figure markdown>
   ![select a shortcut](images/select_shortcut.png)
+  ![select a shortcut](images/select_shortcut_alt.png)
+  ![select a shortcut](images/select_shortcut_meta.png)
 </figure>
 
 
 You can also use the shortcut tool to select a single key, but the tool does not support lowercase letters.
 If you want to add a lowercase key write it directly on the **Key** cell.
+
+
 
 
 Examples of combinations:
@@ -185,6 +196,21 @@ Examples of combinations:
 ++f1++
 
 
+!!! warning "Important"
+
+    Please note that on MacOS:
+    
+    - The **control** key will be indicated as **Meta**
+    
+    - The **option** key will be indicated as **Alt**
+    
+    - The **command** key will be indicated as **Ctrl**
+
+
+    <figure markdown>
+    ![select a shortcut](images/macos_keyboard.png){width="80.0%"}
+    </figure>
+    
 
 
 
