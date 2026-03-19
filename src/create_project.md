@@ -198,7 +198,7 @@ Examples of combinations:
 
 !!! warning "Important"
 
-    Please note that on MacOS:
+    On MacOS:
     
     - The **control** key will be indicated as **Meta**
     
