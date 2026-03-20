@@ -40,7 +40,7 @@ you prefer.
 **Description** can host all the relevant information about your project, can be also left empty.
 
 **Time format** can be alternatively set to **seconds** or to **hh:mm:ss.mss**.
-This choice can be changed at anytime under **File** > **Preferences**.
+This choice can be changed at anytime under **File** > **Preferences** or using the **Preference button** in the toolbar.
 
 <figure markdown>
   ![BORIS main window](images/new_project.png)
@@ -162,7 +162,8 @@ The keys are **case-sensitive**.
 
 
 
-From **version 9.9** onward, it is possible to assign a combination of keyboard keys to trigger a behavior, allowing the use of **Ctrl**, **Alt** and **Meta** (also known as "Windows key") keys in combination with a single key.
+From **version 9.9** onward, it is possible to assign a combination of keyboard keys to trigger a behavior,
+allowing the use of **Ctrl**, **Alt** and **Meta** (also known as "Windows key") keys in combination with a single key.
 
 <figure markdown>
 ![select a shortcut](images/ISO_keyboard_105_QWERTY_UK.svg)
@@ -194,6 +195,13 @@ Examples of combinations:
 ++alt+k++
 
 ++f1++
+
+
+!!! warning "Important"
+
+    Consider that assigning a key combination to a behavior makes the project unusable in BORIS versions earlier than 9.9.
+    
+
 
 
 !!! warning "Important"
