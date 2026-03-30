@@ -170,30 +170,73 @@ From **version 9.9** onward, it is possible to assign a combination of keyboard 
 
 For the **Meta** key you can refer to [https://en.wikipedia.org/wiki/Windows_key](https://en.wikipedia.org/wiki/Windows_key).
 
-To set a combination of keys, double-click the **Key** cell and select the key combination you want to assign.
+To set a key combination, double-click the **Key** cell. The following window will appear:
 
 <figure markdown>
-  ![select a shortcut](images/select_shortcut.png)
-  ![select a shortcut](images/select_shortcut_alt.png)
-  ![select a shortcut](images/select_shortcut_meta.png)
+  ![select a shortcut](images/select_shortcut0.png){width=80%}
 </figure>
 
 
-You can also use the shortcut tool to select a single key, but the tool does not support lowercase letters.
-If you want to add a lowercase key write it directly on the **Key** cell.
+Press the key combination you want to assign. A single modifier key, such as ++ctrl++, ++shift++, ++meta++, or ++alt++, is not a valid key combination.
+
+<figure markdown>
+  ![select a shortcut](images/select_shortcut_ctrl.png){width=80%}
+  ![select a shortcut](images/select_shortcut_alt.png){width=80%}
+  ![select a shortcut](images/select_shortcut_meta.png){width=80%}
+  ![select a shortcut](images/select_shortcut_ctrl_shift.png){width=80%}
+  ![select a shortcut](images/select_shortcut_ctrl_shift_meta.png){width=80%}
+</figure>
+
+<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+
+  <figure style="margin: 0; width: 30%;">
+    <img src="/images/select_shortcut_ctrl.png" alt="ctrl">
+  </figure>
+
+  <figure style="margin: 0; width: 30%;">
+    <img src="/images/select_shortcut_alt.png" alt="alt">
+  </figure>
+
+  <figure style="margin: 0; width: 30%;">
+    <img src="/images/select_shortcut_meta.png" alt="Meta">
+  </figure>
+
+</div>
+
+<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+
+  <figure style="margin: 0; width: 30%;">
+    <img src="/images/select_shortcut_ctrl_shift.png" alt="ctrl shift">
+  </figure>
+
+  <figure style="margin: 0; width: 30%;">
+    <img src="/images/select_shortcut_ctrl_shift_meta.png" alt="ctrl shift meta">
+  </figure>
+
+  <figure style="margin: 0; width: 30%;">
+    <img src="/images/select_shortcut_meta_shift.png" alt="shift meta">
+  </figure>
+
+</div>
 
 
+
+You can also use the shortcut tool to select a single key.
 
 
 Examples of combinations:
 
-++ctrl+k++ 
+++ctrl+k++
 
 ++meta+k++
 
 ++alt+k++
 
-++f1++
+++ctrl+1++
+
+++shift+f1++
+
+++ctrl+shift+f12++
 
 
 !!! warning "Important"
