@@ -45,9 +45,9 @@ The zoom level can also be set using the menu **Playback** > **Zoom level**
 
 Click the media player you want to set the zoom level.
 
-**Zoom in**  ++ctrl+plus++
+**Zoom in**  ++ctrl+plus++ or ++ctrl+page-up++
 
-**Zoom out**  ++ctrl+minus++
+**Zoom out**  ++ctrl+minus++ or ++ctrl+page-down++
 
 **Reset zoom level** ++ctrl+0++
 

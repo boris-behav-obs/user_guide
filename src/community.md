@@ -7,7 +7,7 @@
 
 ## Acknowledgement
 
-The authors would like to acknowledge all the users that report bugs and/or request features for their precious help.
+The authors would like to thank all users who report bugs and request new features for their valuable help.
 
 
 
@@ -15,7 +15,7 @@ The authors would like to acknowledge all the users that report bugs and/or requ
 
 ## Citing BORIS
 
-If you have used BORIS for publications, please cite:
+If you use BORIS in a publication, please cite:
 
 
 {% include 'citation.md' %}
@@ -24,7 +24,7 @@ If you have used BORIS for publications, please cite:
 You can also send us a [nice postcard](https://www.boris.unito.it/postcards/).
 
 
-Please consider to give a star to the [BORIS GitHub repository](https://github.com/olivierfriard/BORIS).
+Please consider giving a star to the [BORIS GitHub repository](https://github.com/olivierfriard/BORIS).
 
 
 
@@ -34,30 +34,27 @@ Please consider to give a star to the [BORIS GitHub repository](https://github.c
 
 
 
-## Bug reports and features request
+## Bug Reports and Feature Requests
 
-Please report any bug you will find in the latest BORIS version using the GitHub repository.
+Please report any bugs you find in the latest BORIS version through the GitHub repository.
 
-Prior to report a bug please:
+Before reporting a bug, please:
 
--   Check the Frequent Asked Question (FAQ) section
--   Check if the issue was not already reported (GitHub repository)
--   Delete the configuration file and try again (see [configuration
-    file](various.md#configuration-files)).
+-   Check the Frequently Asked Questions (FAQ) section.
+-   Check whether the issue has already been reported on GitHub.
+-   Delete the configuration file and try again (see [configuration file](various.md#configuration-files)).
 
 Remember to indicate:
 
 -   your operating system
--   the version of your operating system
--   the computer you are using (model, RAM ...)
--   the version of BORIS you are using
--   Information on the mediafile you are coding (if any) See Tools > Media file information
+-   your operating system version
+-   the computer you are using (model, RAM, etc.)
+-   the BORIS version you are using
+-   information about the media file you are coding, if any. See `Tools > Media file information`
 
-Give all the information that will allow to reproduce the bug: a
-detailed procedure, a screen recording, etc.
+Provide all the information needed to reproduce the bug, such as a detailed procedure or a screen recording.
 
-In case of crash please send me the file boris_error.log generated in
-your home directory just after the crash (before relaunching BORIS):
+In case of a crash, please send the `boris_error.log` file generated in your home directory immediately after the crash and before restarting BORIS:
 
     Linux:
     /home/YOUR_PROFILE_NAME/boris_error.log
@@ -68,6 +65,5 @@ your home directory just after the crash (before relaunching BORIS):
 
 !!! note
 
-    If the bug you have reported is fixed remember to close the issue.
-
+    If the bug you reported is fixed, please remember to close the issue.
 

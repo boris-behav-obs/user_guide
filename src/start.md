@@ -9,15 +9,15 @@ Once BORIS is installed, it can be launched by clicking on its icon.
 
 !!! warning "Warning for Windows users"
 
-    BORIS does not yet use signed binaries which means that you will need to allow the execution of the downloaded executable. If there is no obvious way to do so, click on "More info" on the error message that shows up and then on "Run anyway".
+    BORIS does not yet use signed binaries, so you will need to allow the downloaded executable to run. If the option is not immediately visible, click "More info" in the warning dialog and then click "Run anyway".
 
 
 !!! note "First launch"
 
-    The initial launch of BORIS may take some time to display. Please be patient!
+    BORIS may take a little time to open the first time. Please be patient.
 
 
-The main window of BORIS will appear. Currently, all commands on the toolbar are disabled, except for the Preferences button.
+The BORIS main window will appear. At this stage, all toolbar commands are disabled except the Preferences button.
 
 
 <figure markdown>
@@ -27,6 +27,5 @@ The main window of BORIS will appear. Currently, all commands on the toolbar are
 
 
 
-If you want to launch BORIS from the source code, refer to the [Run BORIS from source code](https://www.boris.unito.it/run_from_source_code) section.
-
+To launch BORIS from source code, refer to the [Run BORIS from source code](https://www.boris.unito.it/run_from_source_code) section.
 
