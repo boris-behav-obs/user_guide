@@ -1,14 +1,14 @@
 ## Observations list
 
 
-The **Observations** > **Observations list** will show you all the
+**Observations** > **Observations list** shows all the
 observations contained in the current BORIS project.
 
 The following values are displayed:
 
 - the observation id (**id**)
 
-- the **description** of observation
+- the **description** of the observation
 
 - the coded subjects (**subjects**)
 
@@ -16,21 +16,21 @@ The following values are displayed:
 
 - the percent of **exhaustivity** of the coding (as the sum of the length of the coded events divided by the observation duration)
 
-- the **media** file path, **LIVE** in case of live observation, the pictures directory path in case of observation from pictures
+- the **media** file path, **LIVE** for a live observation, or the pictures directory path for an observation based on pictures
 
 - the values of the independent variables (if defined)
 
 ![Observations list](images/observations_list.png)
 
-The observations can be sorted by clicking in the desired column header
+The observations can be sorted by clicking the desired column header
 (alphabetic order ascending or descending).
 
 
 ### Checking the observations
 
 
-The status of observation is displayed in the first column (**id**).
-If the background of this column is **red** the observations have one or more UNPAIRED state events.
+The observation status is displayed in the first column (**id**).
+If the background of this column is **red**, the observation has one or more UNPAIRED state events.
 These UNPAIRED observations will not be analyzed. See [Fix unpaired state events](coding.md#fix-unpaired-state) for details.
 
 ![Observations list with warning](images/observations_list_warning.png){width="100.0%"}
@@ -40,7 +40,7 @@ These UNPAIRED observations will not be analyzed. See [Fix unpaired state events
 ### Filtering the observations
 
 
-The observations list can be filtered selecting a field and a condition in the drop-list boxes.
+The observations list can be filtered by selecting a field and a condition from the drop-down lists.
 
 In the following example observations are filtered: only observations
 with **description** containing the **In the pool** subject are shown:
@@ -90,7 +90,7 @@ Observations with a value of **Visitors** independent variable greater than 1000
 ## Delete observations from project
 
 
-The observations can be deleted from the project using the following
+Observations can be deleted from the project using the following
 procedure:
 
 **Observations** > **Remove observations**
@@ -99,20 +99,20 @@ Select the observations you want to delete.
 
 Click the **OK** button and confirm the deletion.
 
-Please note that the deletion is irreversible, the deleted observations cannot be restored.
+Deletion is irreversible, and deleted observations cannot be restored.
 
 It's a good idea to back up your project before proceeding with removing observations.
 
 
 ## Create observations in bulk
 
-Observations from media file can be created from a directory of media file:
+Observations from media files can be created from a directory of media files:
 
 **Observations** > **Create observations**
 
-Choose the directory
+Choose the directory.
 
-Select the parameters
+Select the parameters.
 
 <figure markdown>
   ![Image title](images/create_observations_parameters.png)
@@ -125,14 +125,14 @@ The ID of each created observation will be the path to the media file.
 
 ## Import observations
 
-The **Observations** > **Import observations** option allows to import observations.
+The **Observations** > **Import observations** option allows you to import observations.
 Two formats are available for importing observations:
 
 
 ### From a BORIS project file
 
 Choose the BORIS project file and then the observations to import. BORIS will check
-if observations with same id are already existing in the current
+whether observations with the same ID already exist in the current
 project. BORIS will also check if behaviors and/or subjects used in the
 imported observations are not defined in the current project.
 
@@ -153,15 +153,15 @@ Choose the spreadsheet file
 
 ## Export a list of observations
 
-This option allow to export the selected observation as a list in various formats  (CSV, TSV, ODS, XLSX, HTML):
+This option allows you to export the selected observations as a list in various formats (CSV, TSV, ODS, XLSX, HTML):
 
 **Observations** > **Export observations list**
 
-The dataframe will contains the following columns:
+The data frame will contain the following columns:
 
 * Observation id
 * Date
 * Description
 * Subjects
 * Media files/Live observation
-* independents variables
+* independent variables

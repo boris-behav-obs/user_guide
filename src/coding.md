@@ -4,7 +4,7 @@ When looking at the BORIS main window, the window title bar shows the
 **Observation id** - **Project name** - **BORIS**. The media (the first
 in the queue) will be loaded in the media player and paused.
 
-On macOS, the video is not embedded into the main window of BORIS so it is **VERY IMPORTANT to click on the BORIS main window** to score as usual.
+On macOS, the video is not embedded in the BORIS main window, so it is **VERY IMPORTANT to click on the BORIS main window** before coding as usual.
 
 
 ## Media based coding
@@ -30,13 +30,13 @@ On macOS, the video is not embedded into the main window of BORIS so it is **VER
 :fontawesome-solid-play:   **Play** (becomes :fontawesome-solid-pause: **Pause** when media is playing)
 
 
-:fontawesome-solid-backward-step:  **Rewind** reset your media at the beginning
+:fontawesome-solid-backward-step:  **Rewind** resets the media to the beginning
 
 
-:fontawesome-solid-backward:   **Fast backward** jumps for n seconds backward in your media (See [preferences](preferences.md))
+:fontawesome-solid-backward:   **Fast backward** jumps back by *n* seconds in the media (see [preferences](preferences.md))
 
 
-:fontawesome-solid-forward:   **Fast forward** jumps for n seconds forward in your media (See [preferences](preferences.md))
+:fontawesome-solid-forward:   **Fast forward** jumps forward by *n* seconds in the media (see [preferences](preferences.md))
 
 
 
@@ -80,15 +80,15 @@ On macOS, the video is not embedded into the main window of BORIS so it is **VER
 
 
 
-The toolbar can be resized using the **Preferences** > **Interface** option.
+The toolbar can be resized in **Preferences** > **Interface**.
 
 
 
-The media can also be controlled by special keyboard keys:
+Media can also be controlled with dedicated keyboard shortcuts:
 
-++page-up++   Switch to the next media
+++page-up++   Switch to the next media file
 
-++page-down++ switch to the previous media
+++page-down++ Switch to the previous media file
 
 ++arrow-up++  Jump forward in the current media
 
@@ -109,12 +109,12 @@ The media can also be controlled by special keyboard keys:
 
 ## Live observations
 
-During a live observation the media control toolbar is disabled.
+During a live observation, the media control toolbar is disabled.
 
 Press the **Start live observation** button to start your observation.
-If some events are already coded BORIS will ask you for deleting them.
+If some events have already been coded, BORIS will ask whether they should be deleted.
 
-A timer will be displayed. The events will be recorded in the events
+A timer will be displayed. Events will be recorded in the events
 widget.
 
 
@@ -131,17 +131,16 @@ widget.
 
 
 
-The **Ethogram** table provide the user with the list of behaviors
-defined in the **Ethogram**. It can be used to record an event by double
-clicking on the corresponding row. The **Key** column indicates the
-keyboard key assigned to each behavior (if any). Pressing a key will
-record the corresponding behavior (that will appear in the **Events** table).
+The **Ethogram** table provides the list of behaviors
+defined in the **Ethogram**. It can be used to record an event by double-clicking the corresponding row.
+The **Key** column indicates the keyboard shortcut assigned to each behavior, if any.
+Pressing a key records the corresponding behavior, which then appears in the **Events** table.
 
-The behaviors shown in the ethogram widget can be filtered:
+The behaviors shown in the Ethogram widget can be filtered:
 
 **Right-click** on ethogram widget > **Filter behaviors**
 
-Check/Uncheck single behaviors or double-click on the behavioral category.
+Check or uncheck individual behaviors, or double-click a behavioral category.
 
 
 
@@ -161,18 +160,17 @@ Check/Uncheck single behaviors or double-click on the behavioral category.
 
 
 
-The **Subjects** widget provide the user with the list of subjects
-defined in the **Subject** tab in the **Project** window. It can be used
-to add information about the focal subject on the recorded behaviors by
-double clicking on the corresponding row. When a subject is selected
-his/her name appears above the media player. The **Key** column
-indicates the keyboard key assigned to each subject (if any).
+The **Subjects** widget provides the list of subjects
+defined in the **Subject** tab of the **Project** window. It can be used
+to assign a focal subject to recorded behaviors by double-clicking the corresponding row.
+When a subject is selected, the name appears above the media player. The **Key** column
+indicates the keyboard shortcut assigned to each subject, if any.
 
-The subjects shown in the subjects widget can be filtered:
+The subjects shown in the Subjects widget can be filtered:
 
 **Right-click** on subjects widget \> **Filter subjects**
 
-Check/Uncheck the subjects to show/hide them on the subjects' table.
+Check or uncheck subjects to show or hide them in the Subjects table.
 
 
 
@@ -209,7 +207,7 @@ The arrangement of different widgets can be personalized to suit your preference
 
 The **events table** shows all the recorded behaviors (events).
 
-The displayed parameters (organized in columns) depend of the type of the observation:
+The displayed parameters, organized in columns, depend on the observation type:
 
 
 ### Observation from media file
@@ -227,13 +225,13 @@ The following parameters are displayed:
 
 -   **Code**, the behavior code;
 
--   **Type**, in case of a **state event** indicates whether the time  corresponds to the start or to the stop. Empty for a **point event**;
+-   **Type**, for a **state event**, indicates whether the time corresponds to the start or the stop. It is empty for a **point event**;
 
 -   **Modifier**, indicates the modifier(s) that was/were selected (if any);
 
 -   **Comment**, is an open field where the user can add notes.
 
-A tracking cursor (red triangle) will visualize the current event. This cursor can be positioned above the current event, see [tracking cursor position](preferences.md#tracking-cursor-above-current-event) option in **Preferences** window.
+A tracking cursor (red triangle) marks the current event. This cursor can be positioned above the current event; see [tracking cursor position](preferences.md#tracking-cursor-above-current-event) in the **Preferences** window.
 
 A double-click on a row will reposition the media player to the moment
 of the corresponding event. See [Time offset for media reposition](preferences.md#time-offset-for-media-reposition-seconds) in **Preferences** window to customize the time offset for media repositioning.

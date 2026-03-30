@@ -5,10 +5,9 @@
 
 A video tutorial about making an observation is available at [this link](<https://www.youtube.com/watch?v=CKeBITCICXc>).
 
-To create a new observation you must first [create a new BORIS project](create_project.md#create-a-project) or open an existing BORIS project.
+To create a new observation, you must first [create a new BORIS project](create_project.md#create-a-project) or open an existing one.
 
-Clicking on **Observations** > **New observation** will show the **New
-observation** window.
+Click **Observations** > **New observation** to open the **New observation** window.
 
 <figure markdown>
   ![Image title](images/new_observation_empty.png){width="80.0%"}
@@ -17,31 +16,31 @@ observation** window.
 
 
 
-This window allow adding various observation data:
+This window lets you enter several observation details:
 
 -   a mandatory **Observation id** (must be unique across all
     observations in the open project);
 
--   **Date**, which will be automatically set on the current date and
-    time, but you can alternatively set this info on your media date and
-    time, or whatever you prefer.
+-   **Date**, which is automatically set to the current date and
+    time, but can be changed to match your media date and time or any
+    other value you prefer.
 
--   **Description**, which can host all the relevant information about
-    your observation, but can be also left empty.
+-   **Description**, which can contain any relevant information about
+    your observation, or it can be left empty.
 
 -   **Independent variables** (e.g. to specify factors that may
     influence the behaviors but will not change during the observation
     within a project). See the [independent variables](create_project.md#define-the-independent-variables) section for
     details.
 
--   **Time offset**. BORIS allow specifying a time offset that can be
-    added or subtracted from the media timecode.
+-   **Time offset**. BORIS allows you to specify a time offset that can be
+    added to or subtracted from the media timecode.
 
 -   The **Limit observation to a time interval** option can be used to
     limit the observation to an arbitrary time interval.
 
 
-You must then indicate if you want to make an observation based on
+You must then indicate whether you want to create an observation based on
 **pre-recorded media (audio / video)** or a **live observation**.
 
 
@@ -52,7 +51,7 @@ You must then indicate if you want to make an observation based on
 ## Live observation
 
 
-During the live observation BORIS will show you a timer that will be used for recording time for coded events.
+During a live observation, BORIS shows a timer that is used to record event times.
 
 Click on the **Live observation** radio button to create a live observation.
 
@@ -68,7 +67,7 @@ Click on the **Live observation** radio button to create a live observation.
 
 ### Start from current time
 
-If you want that the time starts from the current time you can check the
+If you want the timer to start from the current time, select the
 **Start from current time** checkbox.
 
 
@@ -80,14 +79,14 @@ If you want that the time starts from the current time you can check the
 
 
 
-If the **Day time** option is checked the start time will be the
-computer current time when you will press the **Start** button.
+If the **Day time** option is checked, the start time will be the
+computer's current time when you press the **Start** button.
 
-If the **Epoch time** is checked the start time will be the number of
-seconds since the Jan 1st, 1970 (1970-01-01). See [Unix
+If the **Epoch time** option is checked, the start time will be the number of
+seconds since January 1, 1970 (`1970-01-01`). See [Unix
 time](https://en.wikipedia.org/wiki/Unix_time) for details. This option
-is useful for long observations (few days) or observations that start
-before midnight and end after.
+is useful for long observations lasting several days or for observations that start
+before midnight and end after it.
 
 
 
@@ -115,7 +114,7 @@ See the [Live observations](coding.md#live-observations) section to start coding
 ## Observation from media file(s)
 
 
-Click on the **Observation from media file(s)** radio button to create
+Select **Observation from media file(s)** to create
 an observation based on one or more media files.
 
 
@@ -128,30 +127,29 @@ an observation based on one or more media files.
 
 
 
-The **Observation from media file(s)** tab contains 2 tabs: **Media files** and **Data files**.
+The **Observation from media file(s)** section contains 2 tabs: **Media files** and **Data files**.
 
-Click the **Media files** tab and add one or more media files using the **Add media** button. You have 3 options:
+Click the **Media files** tab and add one or more media files using the **Add media** button. You have 4 options:
 
--   **with absolute path**: the whole media file path will be recorded
+-   **with absolute path**: the full media file path will be recorded
     in the project
 
 -   **with relative path**: the media file path will be recorded
-    relatively to the position of the BORIS project file (the directory
-    of the BORIS project file must be included). This option is useful
-    if you have to move your BORIS project file to another
+    relative to the BORIS project file location. This option is useful
+    if you need to move your BORIS project file to another
     computer.
 
--   **from directory with absolute path**: all the media file found in
-    the directory will be added to the playlist (the whole media file
+-   **from directory with absolute path**: all media files found in
+    the directory will be added to the playlist (the full media file
     path will be recorded in the project)
 
--   **from directory with relative path**: all the media file found in
+-   **from directory with relative path**: all media files found in
     the directory will be added to the playlist (the relative media file
     path will be recorded in the project)
 
 Information about the selected media file will be extracted and
 displayed in the media list: media file path, media duration, number of
-frames by second (FPS), the presence of a video stream, the presence of
+frames per second (FPS), the presence of a video stream, and the presence of
 an audio stream.
 
 
@@ -166,9 +164,9 @@ an audio stream.
 You can choose to use the media file name as **Observation id** by clicking the **Use media file name as observation id** button.
 
 
-The dropdown list in the first column allow you to choose a player (for
-a maximum of 8). If you want to observer more media files simultaneously
-you must use consecutive players (starting from 1). See example below:
+The drop-down list in the first column lets you choose a player (up to
+a maximum of 8). If you want to observe more media files simultaneously,
+you must use consecutive players starting from 1. See the example below:
 
 
 
@@ -178,27 +176,27 @@ you must use consecutive players (starting from 1). See example below:
 </figure>
 
 
-If you have to synchronize 2 (or more) videos you can use the **Offset
-column** to indicate when the 2nd player should start. For example if
+If you need to synchronize 2 or more videos, you can use the **Offset**
+column to indicate when the second player should start. For example, if
 the video loaded in the second player starts 15 seconds after the first
-video you have to input **15** in the **Offset** cell. If the second
-video starts before the first player you can set a negative value in the
-**Offset** cell
+video, enter **15** in the **Offset** cell. If the second
+video starts before the first player, you can enter a negative value in the
+**Offset** cell.
 
-If you have to play sequentially many videos you have to select the same
-player (#1) for all video you have loaded. This means that an event
+If you want to play several videos sequentially, select the same
+player (#1) for all loaded videos. This means that an event
 occurring at time t~x~ in the media file queued as second (e.g.
-second\_video.mp4) in the playlist will be scored as happening at time
+second\_video.mp4) in the playlist will be recorded at time
 t~1~ + t~x~ (where t~1~ is the duration of the first media file, e.g.
 first_video.mp4).
 
 The **Remove selected media** button can be used to remove all the
 selected media files.
 
-All the media types that can be played by the MPV player can be played in BORIS.
+BORIS can play all media types supported by the MPV player.
 
-The **Use media file name as observation id** button will set the first
-media file name as **observation id**
+The **Use media file name as observation id** button sets the first
+media file name as the **observation id**.
 
 
 
@@ -235,7 +233,7 @@ The spectrogram visualization will be synchronized to the media position during 
 
 
 If your media files are not contiguous, you can enable the **Stop ongoing events between successive media files** option to automatically stop state events between media files.
-This option may be useful in case of video coding from camera-trap systems, for instance. 
+This option can be useful, for example, when coding videos from camera-trap systems.
 
 
 <figure markdown>
@@ -251,7 +249,7 @@ This option may be useful in case of video coding from camera-trap systems, for 
 
 !!! note
 
-    **At this time only 2 external data can be plotted with your media file**
+    **At this time, only 2 external data series can be plotted with your media file**
 
 
 You can select one or more external data files to be plotted

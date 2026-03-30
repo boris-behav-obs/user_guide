@@ -3,21 +3,21 @@
 
 ## Removing path of media files
 
-Using BORIS you can choose to store the full path of the media/data
-files into the file project (for example:
+With BORIS, you can choose to store the full path of media/data
+files in the project file (for example:
 `/home/user/Video/video_n1.mp4` or
 `c:\Users\user\Documents\video1.avi`).
 
-If you want to move your project on a different computer or if you want
-to move your media/data files you may choose not to store the full
-path. For this you can choose to add media/data files with relative path
-(See **Add media files** section). You can also remove the full path of
-your media/data files from all observations of the current project
-(**File** \> **Remove path from media files**. Please note that this
-operation is irreversible. After removal the full path of your media
-will be lost and will not be recoverable.
+If you want to move your project to a different computer, or if you want
+to move your media/data files, you may choose not to store the full
+path. To do this, you can add media/data files using relative paths
+(see the **Add media files** section). You can also remove the full path of
+your media/data files from all observations in the current project
+(**File** \> **Remove path from media files**). Please note that this
+operation is irreversible. After removal, the full path of your media
+will be lost and cannot be recovered.
 
-**If you choose not to store the full path of media/data files the
+**If you choose not to store the full path of media/data files, the
 path of the media/data files must contain the path of your BORIS project
 file.**
 
@@ -35,8 +35,8 @@ the `/home/user/projects/videos` directory but **NOT** in the
 ## Docking / undocking graphical elements
 
 
-All elements, including all the media players can be undocked from the
-main window and positioned where you prefer (e.g. they can be on the
+All elements, including all media players, can be undocked from the
+main window and positioned wherever you prefer (e.g. they can be on the
 same desktop over one or many screens).
 
 The position of the various widgets is saved in the [configuration
@@ -44,11 +44,11 @@ file](#configuration-files) at the end of the work session.
 
 ![Undocked widgets](images/undocked_widgets.png){width="1800px"}
 
-Click the icon present at the top-right corner of the widget (for MacOS
-the icon is located at the left-top corner) will undock the widgets that
-can be repositioned on another docking area or moved out of the main
-window. A double-click on the top bar of the widget will reposition it
-on the main window.
+Clicking the icon in the top-right corner of the widget (on macOS,
+the icon is located in the top-left corner) undocks the widget so that it
+can be repositioned in another docking area or moved outside the main
+window. Double-clicking the top bar of the widget docks it back into
+the main window.
 
 For Linux:
 
@@ -62,9 +62,9 @@ For MacOS:
 
 ![dock/undock](images/dock_undock1_mac.png){width="100.0%"}
 
-If you feel uncomfortable with the dockwidgets you can block them on the
-main window by checking the **Lock dockwidgets** option (see **Tools**
-\> **Lock dockwidgets**). All the dockwidgets will be docked on the main
+If you prefer not to move dock widgets, you can lock them in the
+main window by enabling **Lock dockwidgets** (see **Tools**
+\> **Lock dockwidgets**). All dock widgets will be docked in the main
 window and locked on it except the player dockwidgets.
 
 
@@ -74,9 +74,9 @@ window and locked on it except the player dockwidgets.
 
 ## Configuration files
 
-BORIS saves the configuration (user preferences, windows position,
-widgets position) in a configuration file. This file is named **.boris**
-and it is saved on the home directory of the current user:
+BORIS saves the configuration (user preferences, window positions,
+widget positions) in a configuration file named **.boris**,
+stored in the home directory of the current user:
 
     for Linux:
     /home/USERNAME/.boris
@@ -87,10 +87,10 @@ and it is saved on the home directory of the current user:
     for MacOS:
     /Users/USERNAME/.boris
 
-If you have some trouble using BORIS try to close the program, delete
+If you have trouble using BORIS, try closing the program, deleting
 this file and relaunch BORIS.
 
-The **recent projects list** is saved on the
+The **recent projects list** is saved in the
 **.boris\_recent\_projects** file in the home directory of the current
 user.
 
@@ -111,7 +111,7 @@ main window (See **Tools** \> **Lock dockwidgets**).
 ## Valid keys for triggering behavior
 
 
-BORIS makes difference between lower case and upper case characters
+BORIS distinguishes between lowercase and uppercase characters.
 
 
 * keys from a to z

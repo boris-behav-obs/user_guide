@@ -4,18 +4,18 @@
 
 ## Time budget analysis
 
-The **Time budget analysis** can be done by behavior (including or not
-the modifiers) or by category of behaviors. Choose the option from the
+The **Time budget analysis** can be performed by behavior (including or excluding
+modifiers) or by behavioral category. Choose the option from the
 **Analysis** menu.
 
-The **Time budget analysis** can be done on one or more observations. If
-you select more than one observation you must then choose for a global
-time budget analysis that will contain all selected observations or a
-time budget analysis for every single observation.
+The **Time budget analysis** can be performed on one or more observations. If
+you select more than one observation, you can choose either a global
+time budget analysis that includes all selected observations or a
+separate time budget analysis for each observation.
 
 ![Group observations](images/time_budget_group_observations.png)
 
-Choose **Yes** to group all observations in one time budget analysis
+Choose **Yes** to group all observations into a single time budget analysis.
 
 The **Analysis** \> **Time budget** menu option shows the time budget
 for the events of the selected observations. Select the subjects and
@@ -23,12 +23,12 @@ behaviors you want to include in the time budget analysis:
 
 ![Select subject and behaviors for time budget analysis](images/time_budget_parameters2.png)
 
-All behaviors can be selected or unselected by clicking on the Category (bold).
+All behaviors can be selected or deselected by clicking the Category name (in bold).
 
-You can choose to include or not the behavior modifiers in the Time
+You can choose whether to include behavior modifiers in the time
 budget analysis and to exclude behaviors without coded events.
 
-The Time budget analysis can be restricted to a part of the observation:
+The time budget analysis can be restricted to part of the observation:
 
 -   Full observation(s): the analysis will be made on the full
     observation length.
@@ -37,20 +37,20 @@ The Time budget analysis can be restricted to a part of the observation:
 -   Limit to observed events: the analysis will be made from the first
     observed event to the last observed event.
 
-The last dialog window will allow you to subtract the duration of one or
-more behaviors from the total duration of the observation. This can help
-you if you have defined a "out-of-sight" code in your ethogram for example:
+The last dialog window allows you to subtract the duration of one or
+more behaviors from the total duration of the observation. This can be useful,
+for example, if you have defined an "out-of-sight" code in your ethogram:
 
 ![subtract behavior from the total duration](images/subtract_behavior.png)
 
 
-The results contain for each subject and behavior the **total number of
-occurrences**, the **total duration** (for the behaviors defined as
-state events), The **duration mean** (for the behaviors defined as state
-events), the **standard deviation of duration**, the **inter-events
-intervals duration mean**, th **standard deviation of the inter-events
-intervals duration** and the **percent of total duration of
-observation(s)**. All duration times are expressed in seconds (s).
+For each subject and behavior, the results include the **total number of
+occurrences**, the **total duration** (for behaviors defined as
+state events), the **mean duration** (for behaviors defined as state
+events), the **standard deviation of duration**, the **mean inter-event
+interval**, the **standard deviation of the inter-event
+interval**, and the **percentage of the total observation
+duration**. All durations are expressed in seconds (s).
 
 
 <figure markdown>
@@ -108,11 +108,11 @@ except that the behaviors are grouped into **behavioral categories**.
 
 ## Synthetic time budget
 
-The synthetic time budget is similar to time budget but with fewer
-parameters and a different organization of results. Results of all
+The synthetic time budget is similar to the time budget analysis, but with fewer
+parameters and a different organization of results. Results from all
 selected observations are organized in columns on a single page. Two
-parameters are provided for now: **number of occurrences** and **total
-duration** (for the behaviors defined as state events)
+parameters are currently provided: **number of occurrences** and **total
+duration** (for behaviors defined as state events).
 
 ![Results of the time budget analysis](images/synthetic_time_budget.png)
 
@@ -178,7 +178,7 @@ The Cohen's kappa coefficient can be calculated (**Analysis** > **Inter-rater re
 [Cohen's kappa on Wikipedia](https://en.wikipedia.org/wiki/Cohen%27s_kappa)
 
 After selecting 2 observations and a time window (in seconds) for the
-analysis (the default value is 10 seconds) the Cohen's kappa will be
+analysis (the default value is 10 seconds), Cohen's kappa will be
 displayed in the results window.
 
 ![IRR](images/irr1.png)
@@ -188,9 +188,9 @@ displayed in the results window.
 
 ### Implementation of IRR Cohen's Kappa in BORIS
 
-If a time window of n seconds is set the 2 selected observations will be
-checked every n seconds for agreement/disagreement from the first event
-to the last event of the 2 observations . In case of a point event the
+If a time window of n seconds is set, the 2 selected observations will be
+checked every n seconds for agreement or disagreement, from the first event
+to the last event of the 2 observations. In the case of a point event, the
 presence of a corresponding event in the other observation will be
 verified using a time window of n seconds centered on the point event.
 
@@ -234,12 +234,12 @@ while Nautilus in alert:
 
 ![Advanced event filter summary](images/advanced_filter_summary.png)
 
-Example of a detailed output showing the overlaping intervals while
+Example of a detailed output showing the overlapping intervals while
 Himal rests and Nautilus is in alert:
 
 ![Advanced event filter details](images/advanced_filter_details.png)
 
-The same subject can be used many times in the query with OR or AND (in case of non exclusive behaviors):
+The same subject can be used multiple times in the query with OR or AND (in the case of non-exclusive behaviors):
 
 ![Advanced event filter with 4 conditions](images/advanced_filter_example0.png)
 
@@ -247,12 +247,12 @@ An unlimited number of conditions can be used:
 
 ![Advanced event filter with 4 conditions](images/advanced_filter_example1.png)
 
-Parenthesis can be used to group logical conditions into block(s):
+Parentheses can be used to group logical conditions into blocks:
 
 ![Advanced event filter with parenthesis](images/advanced_filter_example2.png)
 
 The results can be saved in a Tab Separated Values (TSV) file using the
-**Save results** button. Other formats will be added in future.
+**Save results** button. Other formats may be added in the future.
 
 
 

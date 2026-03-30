@@ -1,7 +1,7 @@
 
 # Export events
 
-The coded events can be exported in various formats.
+Coded events can be exported in various formats.
 
 ## Export events in tabular format
 
@@ -11,7 +11,7 @@ The coded events can be exported in various formats.
 
 **Observations** > **Export events** > **Tabular events**
 
-This function exports the events of selected observations in one or many files.
+This function exports the events from selected observations to one or more files.
 Various formats are available:
 
 - Plain text in tabular format
@@ -31,14 +31,14 @@ Various formats are available:
     function](https://rdrr.io/r/base/readRDS.html))
 
 
-If many observations are selected BORIS will ask for a directory to save
-the various files. For the spreadsheet format (XLSX and ODS) the events can be
-exported on various worksheet in a single workbook. All these formats are
+If many observations are selected, BORIS will ask you to choose a directory in which to save
+the files. For spreadsheet formats (XLSX and ODS), the events can be
+exported to multiple worksheets within a single workbook. All these formats are
 suitable for further analysis.
 
 Select the subjects, the behaviors and the time interval.
 
-Set the time interval to the **Observed events**
+Set the time interval to **Observed events**.
 
 ![Limit export to the observed events](images/select_subjects_behaviors_time_interval_1.png)
 
@@ -46,7 +46,7 @@ Select a **User defined** time interval.
 
 ![Time interval is defined by the user](images/select_subjects_behaviors_time_interval_2.png)
 
-Example of output of tabular events
+Example output of tabular events:
 
 ![example of exported events in TSV format (1/2)](images/export_tabular_events_1.png)
 
@@ -61,8 +61,8 @@ Example of output of tabular events
 
 **Observations** > **Export events** **Aggregated events**
 
-This function will export the events corresponding to the selected
-subjects and the selected behaviors of the selected observations.
+This function exports the events corresponding to the selected
+subjects and behaviors from the selected observations.
 
 Various formats are available:
 
@@ -86,17 +86,17 @@ Various formats are available:
 -   **R dataframe** (to be loaded in R with [readRDS
     function](https://rdrr.io/r/base/readRDS.html))
 
-If two or more observations are selected you can choose to group all
-results in one file. If you do not want to group results BORIS will ask
-for a directory to save the various files (the observation id will be
-used as file name).
+If two or more observations are selected, you can choose to group all
+results into one file. If you do not want to group the results, BORIS will ask
+you to choose a directory in which to save the files (the observation ID will be
+used as the file name).
 
 The **State events** are paired and in this case the event duration is
 available.
 
-An arbitrary time interval can be selected (check the **Limit to time
-interval** option). In this case the ongoing events will be started at
-start time and stopped at end time in the export file.
+An arbitrary time interval can be selected by checking the **Limit to time
+interval** option. In this case, ongoing events will be started at the
+start time and stopped at the end time in the export file.
 
 The following fields are available in the output:
 
@@ -105,16 +105,16 @@ The following fields are available in the output:
 -   Observation description
 -   Observation type (Media file / Live / Pictures)
 -   Source (for media file and pictures)
--   Total duration (in seconds, the duration of observation in base of
+-   Total duration (in seconds, the duration of the observation based on
     the selected time interval)
 -   Media duration(s) (in seconds, for media file observation)
 -   FPS (frame/s, for video file, number of images per second)
--   Independent variables (one column by variable9)
+-   Independent variables (one column per variable)
 -   Subject name
 -   Observation duration by subject
 -   Behavior
 -   Behavioral category (if any)
--   Modifier(s) of behavior (one column by modifier)
+-   Behavior modifier(s) (one column per modifier)
 -   Behavior type (STATE / POINT)
 -   Start (seconds)
 -   Stop (seconds)
@@ -132,7 +132,7 @@ The following fields are available in the output:
 -   Comment start
 -   Comment stop
 
-Example of table export of aggregated events (TSV, CSV, XLSX, ODS, HTML)
+Example of aggregated event export (TSV, CSV, XLSX, ODS, HTML):
 
 ![example of aggregated and exported events (1/2)](images/export_aggregated_events_1.png){width="100.0%"}
 
@@ -230,14 +230,14 @@ Example:
 [JWatcher](http://www.jwatcher.ucla.edu) is a powerful tool for the
 quantitative analysis of behavior.
 
-The events coded with BORIS can be exported to be analyzed with
+Events coded with BORIS can be exported for analysis with
 JWatcher.
 
 Click **Observations** \> **Export events** \> **for analysis with
 JWatcher** to export the coded events.
 
-BORIS will ask for selecting a directory. After this, for each
-combination of selected observation and selected subject the following
+BORIS will ask you to select a directory. After that, for each
+combination of selected observation and selected subject, the following
 files will be created:
 
 -   the Focal Data File (.dat)
@@ -252,10 +252,10 @@ These files can be used to analyze your observations with JWatcher.
 
 **Observations** \> **Export events** **as Behaviors Binary Table**
 
-A time interval will be asked to the user (in seconds). The observation
+A time interval will be requested (in seconds). The observation
 will be checked every n seconds and the presence (1, absence: 0) of the
 selected behaviors will be exported in a table for each selected
-subjects.
+subject.
 
 Example for a time interval of 1 second:
 

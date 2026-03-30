@@ -3,8 +3,8 @@
 
 
 The BORIS project file serves as a container for all project-related information, excluding media files.
-It encompasses the **ethogram**, **independent variables**, **subjects' definition**, **behavioral coding maps**, **converters**, and **observation** data.
-To save the project on your local file system, use the "**File**" > **Save Project** or **Save Project As \...** options.
+It includes the **ethogram**, **independent variables**, **subject definitions**, **behavioral coding maps**, **converters**, and **observation** data.
+To save the project to your local file system, use **File** > **Save Project** or **Save Project As \...**.
 
 Additionally, you can activate the automatic backup feature in the [Preferences](./preferences.md) section.
 
@@ -19,28 +19,27 @@ Additionally, you can activate the automatic backup feature in the [Preferences]
 
 
 
-BORIS allows the creation of an unlimited number of projects, but only one project can be opened at a time.
+BORIS lets you create an unlimited number of projects, but only one project can be open at a time.
 
 
 
 A video tutorial about creating a project is available at [this link](https://www.youtube.com/watch?v=I97Dny5hFOE).
 
 
-To create a new project, under the menu **File** , select **New project**.
+To create a new project, select **File** > **New project**.
 
 
-You can determine your project name by writing in the **Project name**
-field in the **Information** tab. Once the project will be saved, the
-**Project file path** will show the full path to your project file.
+Enter the project name in the **Project name** field in the **Information** tab.
+Once the project has been saved, **Project file path** will show the full path to the project file.
 
-**Date** will automatically set on the current date and time, but you
-can alternatively set this info on your media date and time, or whatever
+**Date** is automatically set to the current date and time, but you
+can change it to match your media date and time, or any other value
 you prefer.
 
-**Description** can host all the relevant information about your project, can be also left empty.
+**Description** can contain any relevant information about your project, or it can be left empty.
 
-**Time format** can be alternatively set to **seconds** or to **hh:mm:ss.mss**.
-This choice can be changed at anytime under **File** > **Preferences** or using the **Preference button** in the toolbar.
+**Time format** can be set to either **seconds** or **hh:mm:ss.mss**.
+This setting can be changed at any time under **File** > **Preferences** or by using the **Preferences** button in the toolbar.
 
 <figure markdown>
   ![BORIS main window](images/new_project.png)
@@ -54,15 +53,12 @@ This choice can be changed at anytime under **File** > **Preferences** or using 
 
 See the [Wikipedia ethogram definition](https://en.wikipedia.org/wiki/Ethogram).
 
-Switching to the **Ethogram tab**, you can alternatively:
+In the **Ethogram** tab, you can:
 
-- set your ethogram from scratch;
-
+- create an ethogram from scratch;
 - import an existing ethogram from another BORIS project;
-
-- import an ethogram from a JWatcher global definition file (.gdf).
-
-- import an ethogram from a plain text file or a spreadsheet file (XLSX or ODS)
+- import an ethogram from a JWatcher global definition file (`.gdf`);
+- import an ethogram from a plain text file or a spreadsheet file (`.xlsx` or `.ods`).
 
 
 <figure markdown>
@@ -81,17 +77,17 @@ Switching to the **Ethogram tab**, you can alternatively:
 
 #### Add a behavior
 
-By clicking on the **Behavior > Add behavior** button, you can add a new row in the **Ethogram** table,
-and the behavior type will be automatically set to **Point event**.
+Click **Behavior > Add behavior** to add a new row to the **Ethogram** table.
+The behavior type is automatically set to **Point event**.
 
 
-The cells with gray background cannot be directly edited.
+Cells with a gray background cannot be edited directly.
 You must double-click on them and then select a value.
 
 
 #### Set the type of behavior
 
-**2 types** of behaviors can be defined. Double-click on the cell and select the type of behavior:
+You can define **2 types** of behavior. Double-click the cell and select the behavior type:
 
 
 <figure markdown>
@@ -101,39 +97,38 @@ You must double-click on them and then select a value.
 
 - **Point event** behavior when the behavior has **no duration**.
 
-    :   The behavior will be coded by pressing the defined keyboard key
-        (see below) or by double-clicking to the corresponding row in
+    :   The behavior is coded by pressing the assigned keyboard key
+        (see below) or by double-clicking the corresponding row in
         the Ethogram table.
 
 - **State event** behavior when the behavior has a **duration**.
 
-    :   The behavior start and stop will be coded by pressing the
-        defined keyboard key (see below) or by double-clicking to the
+    :   The start and stop of the behavior are coded by pressing the
+        assigned keyboard key (see below) or by double-clicking the
         corresponding row in the Ethogram table. These behaviors
-        **must** have a start event and a stop event otherwise an
-        **UNPAIRED events** warning will be reported when you will close
-        the observation or during an analysis.
+        **must** have both a start event and a stop event; otherwise,
+        an **UNPAIRED events** warning will appear when you close
+        the observation or run an analysis.
 
 - **Point event with a coding map**
 
-    : a **Point event** that can be coded uusing a **coding map**.
+    : a **Point event** that can be coded using a **coding map**.
 
 - **State event with a coding map**
 
     : a **State event** that can be coded using a **coding map**.
 
 
-You can switch between the types of behavior at your convenience with a double-click on the **Behavior type** cell.
+You can switch between behavior types at any time by double-clicking the **Behavior type** cell.
 You can also add a **Coding map** to either a **State event** (**State event with coding map**) or a **Point event** (**Point event with coding map**).
 See the **Coding map** section for details.
 
 An existing behavior can be duplicated using the **Clone behavior**
-button. Its code have then to be changed. On a selected behavior, click
-on the **Remove behavior** button to remove. The **Remove all
-behaviors** button will clear the **Ethogram** table. Both the
-above-mentioned operations must be confirmed when prompted.
+button. Its code must then be changed. To remove a selected behavior,
+click **Remove behavior**. The **Remove all behaviors** button clears
+the **Ethogram** table. Both operations must be confirmed.
 
-The behavior can be sorted by clicking on the Ethogram table header.
+Behaviors can be sorted by clicking the Ethogram table headers.
 They cannot be sorted manually.
 
 
@@ -141,20 +136,20 @@ They cannot be sorted manually.
 
 
 
-For each behavior, you can assign a keyboard key in the **Key** column; this key will be used to code the related behavioral events.
+For each behavior, you can assign a keyboard key in the **Key** column; this key will be used to code the corresponding events.
 You can choose whether you want to set a unique key for each behavior or use the same key for more than one behavior.
-In the case you set the same key for more than a behavior, BORIS will pause your coding and ask which of the behavior you want to record.
+If you assign the same key to more than one behavior, BORIS will pause coding and ask which behavior you want to record.
 The keys are **case-sensitive**.
 
 
 !!! note 
 
-    If your project was created with an old version of BORIS (< v.7)
-    you can use the **Convert keys to lower case** to convert all keys to
-    lower case otherwise you will have to code your observation using upper
-    case key.
+    If your project was created with an older version of BORIS (< v.7),
+    you can use **Convert keys to lower case** to convert all keys to
+    lowercase. Otherwise, you will need to code the observation using uppercase
+    keys.
 
-    If you open a project file created with a version older than v.7 BORIS will ask you to convert the upper case behavior and subject keys to lower case.
+    If you open a project file created with a version earlier than v.7, BORIS will ask you to convert uppercase behavior and subject keys to lowercase.
 
 !!! warning "Important"
 
@@ -162,15 +157,15 @@ The keys are **case-sensitive**.
 
 
 
-From **version 9.9** onward, it is possible to assign a combination of keyboard keys to trigger a behavior,
-allowing the use of **Ctrl**, **Alt** and **Meta** (also known as "Windows key") keys in combination with a single key.
+From **version 9.9** onward, you can assign key combinations to trigger a behavior,
+including **Ctrl**, **Alt**, and **Meta** (also known as the "Windows key") in combination with a single key.
 
 <figure markdown>
 ![select a shortcut](images/ISO_keyboard_105_QWERTY_UK.svg){width="900px"}
 <figcaption>ISO keyboard with 105 keys</figcaption>
 </figure>
 
-For the **Meta** key (orange on the keyboard schema) you can refer to [https://en.wikipedia.org/wiki/Windows_key](https://en.wikipedia.org/wiki/Windows_key).
+For the **Meta** key (orange in the keyboard diagram), see [https://en.wikipedia.org/wiki/Windows_key](https://en.wikipedia.org/wiki/Windows_key).
 
 To set a key combination, double-click the **Key** cell. The following window will appear:
 
@@ -227,8 +222,8 @@ Examples of combinations:
 
 
 
-**Function keys** (pink on the previous keyboard schema) can also be assigned to a behavior 
-from ++f1++ to ++f12++
+**Function keys** (pink in the keyboard diagram above) can also be assigned to a behavior
+from ++f1++ to ++f12++.
 
 Examples of combinations including function keys:
 

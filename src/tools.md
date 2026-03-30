@@ -13,9 +13,9 @@ This function can be activated with **Tools** \> **Plot event in real time**.
 
 ## :fontawesome-solid-compass-drafting: Geometric measurements
 
-Some geometric measurements can be done: **distances**, **areas** and **angles** can be measured and **point positions** recorded.
+Several geometric measurements are available: **distances**, **areas**, and **angles** can be measured, and **point positions** can be recorded.
 
-Click on **Tools** \> **Geometric measurements** to activate the measurements. 
+Click **Tools** \> **Geometric measurements** to activate the measurement tools.
 
 
 <figure markdown>
@@ -37,8 +37,8 @@ The color transparency can be set using the **Alpha channel** value (0 for 100% 
 
 ### Setting the scale
 
-For distance and area measurements you can set a scale in order to have
-results of measurements in a real unit (like centimeters, meters etc).
+For distance and area measurements, you can set a scale so that the
+results are expressed in real units such as centimeters or meters.
 
 <figure markdown>
   ![Image title](images/geometric_measurements_scale.png){width="80.0%"}
@@ -47,8 +47,8 @@ results of measurements in a real unit (like centimeters, meters etc).
 
 
 
-1.  measure a reference object (that have a known size) on the frame
-    (with the distance tool. See next chapter for details) and set the
+1.  Measure a reference object with a known size on the frame
+    (with the distance tool; see the next section for details) and enter the
     pixel distance in the **Pixel** text box.
 
 2.  Set the real size of the reference object in the **Reference** text
@@ -105,9 +105,9 @@ will be available in the text area of the **Measurements window**.
 
 ### Persistent measurements
 
-If the **Measurements are persistent** checkbox is checked the
-measurement schemes will be available on all frames otherwise they will
-be deleted between frames.
+If the **Measurements are persistent** checkbox is selected, the
+measurement overlays will remain available on all frames; otherwise, they will
+be cleared between frames.
 
 The marks selected on other frames will be drawn in red.
 
@@ -116,10 +116,10 @@ The marks selected on other frames will be drawn in red.
 
 ## Coding pad
 
-During observation a coding pad with the available behaviors can be
-displayed (**Tools** \> **Coding pad**). This **Coding pad** allows the
-user to code using a touch-screen or by clicking on the buttons. When
-the **Coding pad** is displayed you can continue to code using the
+During an observation, a coding pad with the available behaviors can be
+displayed (**Tools** \> **Coding pad**). This **Coding pad** allows you
+to code using a touch screen or by clicking the buttons. When
+the **Coding pad** is displayed, you can still code using the
 keyboard or the ethogram.
 
 ![Coding pad](images/coding_pad.png)
@@ -127,7 +127,7 @@ keyboard or the ethogram.
 
 The button size can be increased or decreased.
 
-The button color can be set for every behavior, for every behavioral category or to no color.
+Button colors can be set per behavior, per behavioral category, or disabled entirely.
 
 See the drop-down list in the upper-left corner of the Coding pad window.
 
@@ -137,10 +137,10 @@ See the drop-down list in the upper-left corner of the Coding pad window.
 
 ## Subjects pad
 
-A pad with all defined subjects (or filtered subjects) can be displayed
+A pad with all defined subjects, or only filtered subjects, can be displayed
 during the observation (**Tools** \> **Subjects pad**). This **Subjects
-pad** allows the user to select the focal subject using a touch-screen
-or by clicking on the buttons. When the **Subjects pad** is displayed
+pad** allows you to select the focal subject using a touch screen
+or by clicking the buttons. When the **Subjects pad** is displayed,
 you can continue to select the focal subject using the keyboard or the
 subjects list.
 
@@ -164,7 +164,7 @@ dot must be used for decimal separator).
 
 
 
-Example of a code to convert HH.MM:SS format in seconds:
+Example code to convert `HH:MM:SS` format to seconds:
 
     h, m, s = INPUT.split(':')
     OUTPUT = int(h) * 3600 + int(m) * 60 + int(s)
@@ -177,7 +177,7 @@ useful for converting time values:
 
 
 
-Example of a code to a date in ISO8601 format in seconds using the strptime() function:
+Example code to convert a date in ISO 8601 format to seconds using the `strptime()` function:
 
     import datetime
     epoch = datetime.datetime.utcfromtimestamp(0)
@@ -206,12 +206,12 @@ transitions matrices).
 
 **Tools \> Transitions flow diagram \> Create transitions DOT script**
 
-Choose one or more transitions matrix files and BORIS will create the relative DOT script file(s).
+Choose one or more transition matrix files and BORIS will create the corresponding DOT script file(s).
 
 The DOT script files can then be used with
 [Graphviz](http://www.graphviz.org) (Graph Visualization Software) or
 [WebGraphviz](http://www.webgraphviz.com) (Graphviz in the Browser) to
-generate flow diagram of transitions.
+generate transition flow diagrams.
 
 See [DOT (graph description
 language)](https://en.wikipedia.org/wiki/DOT_(graph_description_language))
@@ -222,14 +222,14 @@ for details.
 ### Flow diagram
 
 If [Graphviz](http://www.graphviz.org) (Graph Visualization Software) is
-installed on your system (and the **dot** program available in the path)
-BORIS can generate flow diagram (PNG format) from a transitions matrix
+installed on your system (and the **dot** program available in the path),
+BORIS can generate a flow diagram (PNG format) from a transition matrix
 file.
 
 **Tools \> Transitions flow diagram \> Create transitions flow diagram**
 
 Choose one or more transition matrix files and BORIS will create the
-relative flow diagram.
+corresponding flow diagrams.
 
 
 
