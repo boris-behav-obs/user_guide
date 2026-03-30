@@ -1,8 +1,8 @@
 
 # Preferences
 
-You can customize BORIS using the Preferences window (**File** \>
-**Preferences**)
+You can customize BORIS using the Preferences window.
+(**File** > **Preferences** or **Preference button** in the toolbar.)
 
 
 

@@ -57,8 +57,6 @@ On macOS, the video is not embedded into the main window of BORIS so it is **VER
 
 :fontawesome-solid-arrow-right:    **Move one frame forward**
 
-:fontawesome-solid-xmark:   **Close current observation**
-
 <i class="fa-solid  fa-2x"></i>   **Real time plot of events**
 
 :fontawesome-solid-table-list:   **Time budget of the current observation**
@@ -75,6 +73,10 @@ On macOS, the video is not embedded into the main window of BORIS so it is **VER
 :fontawesome-solid-binoculars:   **Explore project**
 
 :fontawesome-solid-gears:   **Preferences**
+
+:fontawesome-solid-pen-to-square:   **Edit current observation**
+
+:fontawesome-solid-xmark:   **Close current observation**
 
 
 

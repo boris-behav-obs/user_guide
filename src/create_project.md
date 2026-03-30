@@ -40,7 +40,7 @@ you prefer.
 **Description** can host all the relevant information about your project, can be also left empty.
 
 **Time format** can be alternatively set to **seconds** or to **hh:mm:ss.mss**.
-This choice can be changed at anytime under **File** > **Preferences**.
+This choice can be changed at anytime under **File** > **Preferences** or using the **Preference button** in the toolbar.
 
 <figure markdown>
   ![BORIS main window](images/new_project.png)
@@ -162,13 +162,15 @@ The keys are **case-sensitive**.
 
 
 
-From **version 9.9** onward, it is possible to assign a combination of keyboard keys to trigger a behavior, allowing the use of **Ctrl**, **Alt** and **Meta** (also known as "Windows key") keys in combination with a single key.
+From **version 9.9** onward, it is possible to assign a combination of keyboard keys to trigger a behavior,
+allowing the use of **Ctrl**, **Alt** and **Meta** (also known as "Windows key") keys in combination with a single key.
 
 <figure markdown>
-![select a shortcut](images/ISO_keyboard_105_QWERTY_UK.svg)
+![select a shortcut](images/ISO_keyboard_105_QWERTY_UK.svg){width="900px"}
+<figcaption>ISO keyboard with 105 keys</figcaption>
 </figure>
 
-For the **Meta** key you can refer to [https://en.wikipedia.org/wiki/Windows_key](https://en.wikipedia.org/wiki/Windows_key).
+For the **Meta** key (orange on the keyboard schema) you can refer to [https://en.wikipedia.org/wiki/Windows_key](https://en.wikipedia.org/wiki/Windows_key).
 
 To set a key combination, double-click the **Key** cell. The following window will appear:
 
@@ -179,13 +181,6 @@ To set a key combination, double-click the **Key** cell. The following window wi
 
 Press the key combination you want to assign. A single modifier key, such as ++ctrl++, ++shift++, ++meta++, or ++alt++, is not a valid key combination.
 
-<figure markdown>
-  ![select a shortcut](images/select_shortcut_ctrl.png){width=80%}
-  ![select a shortcut](images/select_shortcut_alt.png){width=80%}
-  ![select a shortcut](images/select_shortcut_meta.png){width=80%}
-  ![select a shortcut](images/select_shortcut_ctrl_shift.png){width=80%}
-  ![select a shortcut](images/select_shortcut_ctrl_shift_meta.png){width=80%}
-</figure>
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
 
@@ -226,22 +221,50 @@ You can also use the shortcut tool to select a single key.
 
 Examples of combinations:
 
-++ctrl+k++
-
-++meta+k++
-
-++alt+k++
+++ctrl+k++,  ++meta+k++,  ++alt+k++,  ++ctrl+alt+k++, ++ctrl+meta+k++ 
 
 ++ctrl+1++
 
-++shift+f1++
 
-++ctrl+shift+f12++
+
+**Function keys** (pink on the previous keyboard schema) can also be assigned to a behavior 
+from ++f1++ to ++f12++
+
+Examples of combinations including function keys:
+
+++shift+f1++, ++ctrl+shift+f12++, ++meta+f3++
+
+
+
+!!! note
+   
+    BORIS uses keyboard shortcuts for several functions, such as:
+
+    - saving a project (++ctrl+s++)
+    - creating a new observation (++ctrl+n++)
+    - starting an observation (++ctrl+o++)
+    - close the current observation (++ctrl+q+)
+    - editing an observation (++ctrl+e++)
+    - opening the list of observations (++ctrl+l++), 
+    - Add an event (++ctrl+a++)
+    - jumping playback (++ctrl+f++)
+    - jumping backward (++ctrl+b++)
+    - jumping to a specific time (++ctrl+t++)
+    - ...
+
+    None of these shortcuts can be used to code behaviors.
+
 
 
 !!! warning "Important"
 
-    On MacOS:
+    Consider that assigning a key combination to a behavior makes the project unusable in BORIS versions earlier than **9.9**.
+    
+
+
+!!! note
+
+    On MacOS on the ethogram table:
     
     - The **control** key will be indicated as **Meta**
     
@@ -252,6 +275,7 @@ Examples of combinations:
 
     <figure markdown>
     ![select a shortcut](images/macos_keyboard.png){width="80.0%"}
+    <figcaption>ISO keyboard with 105 keys</figcaption>
     </figure>
     
 
@@ -394,20 +418,16 @@ After adding all modifiers the window will appear like this:
 
 
 
-All defined subjects can be added as modifiers using the **Add subjects
-as modifiers** button. This can help in case of coding the interactions
-between subjects for example.
+All defined subjects can be added as modifiers using the **Add subjects as modifiers** button.
+This can help in case of coding the interactions between subjects for example.
 
-The modifiers can be loaded from a plain text file Use the **Load
-modifiers from file** button.
+The modifiers can be loaded from a plain text file Use the **Load modifiers from file** button.
 
 The modifier position into the modifiers\' set can be manually set using
-the **Move modifier up** and **Move modifier down** buttons. The
-modifiers can be sorted alphabetically (use the **Sort modifiers**
-button).
+the **Move modifier up** and **Move modifier down** buttons.
+The modifiers can be sorted alphabetically (use the **Sort modifiers** button).
 
-You can add and/or remove sets using the buttons **Add set of
-modifiers** and **Remove set of modifiers**.
+You can add and/or remove sets using the buttons **Add set of modifiers** and **Remove set of modifiers**.
 
 The position of a modifiers\' set can be customized (using the **Move
 set left** and **Move set right** buttons)
@@ -635,21 +655,23 @@ ODS, HTML). See **File** \> **Edit project** \> **Ethogram tab** \>
 ## Define the subjects
 
 <figure markdown>
-  ![Image title](images/subjects_configuration.png){ width="80%"}
-  <figcaption>Subjects definition</figcaption>
+  ![Configuration of subjects](images/subjects_configuration.png){ width="80%"}
+  <figcaption>configuration of subjects</figcaption>
 </figure>
 
 
 
 BORIS allows coding behaviors for different subjects within a single observation.
-The **Subject** table allows the specification of subjects using a **Key** 
-(e.g., the **k** on your keyboard), **Subject name** (e.g., **Kanzi**), and
- **Description** (e.g., male, born on October 28, 1980).
+The **Subject** table allows the selection of subjects using a **Key** of the keyboard.
+, **Subject name** (e.g., **Kanzi**), and  **Description** (e.g., male, born on October 28, 1980).
 
+
+### Set a key for the subject (optional)
 
 
 With the subjects defined in the previous figure, pressing **n** will set **Nina** as the focal subject
-for behavioral coding. Pressing **n** again will deselect **Nina** and set the focal subject to **No focal subject**.
+for behavioral coding.
+Pressing **n** again will deselect **Nina** and set the focal subject to **No focal subject**.
 
 
 The key definition is not mandatory. In this case, you will have to
@@ -666,22 +688,27 @@ In this case a dialog will show up and will allow to select
 
 
 
-
 The definition of one or more subjects is not mandatory. Addition,
 removal and sorting of the subjects follows the same logic of the
 **Ethogram** table (see [Set your ethogram from scratch](#set-your-ethogram-from-scratch) for info).
 
 
+From **version 9.9** onward, it is possible to assign a combination of keyboard keys to select a subject,
+allowing the use of **Ctrl**, **Alt** and **Meta** (also known as "Windows key") keys in combination with a single key.
 
+
+Refer to [Set a key for the behavior](#set-a-key-for-the-behavior-optional) for details.
+
+!!! warning "Important"
+
+    Consider that assigning a key combination to a subject makes the project unusable in BORIS versions earlier than **9.9**.
+    
 
 
 !!! note 
 
-    If your project was created with a previous version of BORIS (< v.7)
-    you can use the **Convert keys to lower case** to convert all keys to
-    lower case otherwise you will have to code your observation using upper
-    case key.
-
+    If your project was created with a version of BORIS earlier than 7, you can use **Convert keys to lower case** to convert all keys to lowercase.
+    Otherwise, you will need to code your observations using uppercase keys.
 
 
 The subjects can also be imported from an existing BORIS project: use
