@@ -34,6 +34,13 @@ The time selection widget will pop-up:
 ![The time selection widget](images/select_time_epoch.png)
 
 
+## Change time offset of players
+
+:    Allows you to change the time offset for each player (in seconds)
+
+![Change time offset of players](images/change_time_offset_players.png)
+
+
 
 ## Zoom level
 
