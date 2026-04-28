@@ -27,5 +27,10 @@ The BORIS main window will appear. At this stage, all toolbar commands are disab
 
 
 
-To launch BORIS from source code, refer to the [Run BORIS from source code](https://www.boris.unito.it/run_from_source_code) section.
+<figure markdown>
+  ![Image title](images/main_window_no-project_dark-theme.png)
+  <figcaption>The BORIS main window - Dark theme</figcaption>
+</figure>
 
+
+To launch BORIS from source code, refer to the [Run BORIS from source code](https://www.boris.unito.it/run_from_source_code) section.

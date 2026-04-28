@@ -40,6 +40,11 @@ The time selection widget will pop-up:
 
 ![Change time offset of players](images/change_time_offset_players.png)
 
+## Deinterlace
+
+:    Check this option if your video is interlaced
+
+
 
 
 ## Zoom level
