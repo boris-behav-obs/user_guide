@@ -788,6 +788,40 @@ loaded from file or loaded from the repository of the BORIS web site
   <figcaption>Converters tab</figcaption>
 </figure>
 
+### Add new converter
+
+Converters can be written using the Python 3 programming language.
+
+The **INPUT** variable will be loaded with the original value of the
+external data file (for example 01:22:32).
+
+The **OUTPUT** variable must contain the converted value in seconds (the
+dot must be used for decimal separator).
+
+
+Example code to convert `HH:MM:SS` format to seconds:
+
+    h, m, s = INPUT.split(':')
+    OUTPUT = int(h) * 3600 + int(m) * 60 + int(s)
+
+The Python function **strptime()** from the **datetime** module can be
+useful for converting time values:
+<https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior>
+
+
+
+Example code to convert a date in ISO 8601 format to seconds using the `strptime()` function:
+
+    import datetime
+    epoch = datetime.datetime.utcfromtimestamp(0)
+    datetime_format = "%Y-%m-%dT%H:%M:%SZ"
+
+    OUTPUT = (datetime.datetime.strptime(INPUT, datetime_format) - epoch).total_seconds()
+
+
+**File** \> **Edit project** \> **Converters**
+
+![writing/modifying a converter](images/converter_writing.png){width="100.0%"}
 
 
 

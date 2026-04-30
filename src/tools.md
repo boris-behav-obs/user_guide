@@ -1,5 +1,56 @@
 # Tools
 
+## Media file
+
+#### Media file information
+
+Obtain information about your media file like duration, resolution, FPS, bitrate ...
+
+
+#### Re-encode / resize video
+
+BORIS can re-encode and resize your video files in order to reduce the
+size of the files and have a smooth coding (specially with two video
+files playing together). The re-encoding and resizing operations are
+done with the embedded ffmpeg program with high quality parameters
+(bitrate 2000k).
+
+Select the files you want re-encode and resize and select the horizontal
+resolution in pixels (the default is 1024). The aspect ratio will be
+maintained.
+
+You can continue to use BORIS during the re-encoding/resizing operation.
+
+The re-encoded/resized video files are renamed by adding the re-encoded.avi extension to the original files.
+
+
+
+#### Rotate video
+
+BORIS can rotate your video files in order to code them using the right
+view. The rotating operation is done with the embedded ffmpeg program
+using the same quality parameters as the original video.
+
+Select the files you want to rotate and select the rotation angle: **Rotate 90 clockwise**, **Rotate 90 counter clockwise**, or **Rotate 180**.
+
+The aspect ratio will be maintained.
+
+You can continue to use BORIS during the rotation operation.
+
+The rotated video files are renamed by adding the **rotated\<ANGLE\>**
+to the original file name.
+
+
+#### Merge media files
+
+Use this function to concatenate various media files together.
+
+
+#### Create video spectrogram
+
+Create a video with the spectrogram of the audio track
+
+
 ## Plot events in real-time
 
 
@@ -149,46 +200,6 @@ subjects list.
 
 
 
-## Converters for external data values
-
-
-
-Converters can be written using the Python 3 programming language.
-
-The **INPUT** variable will be loaded with the original value of the
-external data file (for example 01:22:32).
-
-The **OUTPUT** variable must contain the converted value in seconds (the
-dot must be used for decimal separator).
-
-
-
-
-Example code to convert `HH:MM:SS` format to seconds:
-
-    h, m, s = INPUT.split(':')
-    OUTPUT = int(h) * 3600 + int(m) * 60 + int(s)
-
-The Python function **strptime()** from the **datetime** module can be
-useful for converting time values:
-<https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior>
-
-
-
-
-
-Example code to convert a date in ISO 8601 format to seconds using the `strptime()` function:
-
-    import datetime
-    epoch = datetime.datetime.utcfromtimestamp(0)
-    datetime_format = "%Y-%m-%dT%H:%M:%SZ"
-
-    OUTPUT = (datetime.datetime.strptime(INPUT, datetime_format) - epoch).total_seconds()
-
-
-**File** \> **Edit project** \> **Converters**
-
-![writing/modifying a converter](images/converter_writing.png){width="100.0%"}
 
 
 
@@ -268,44 +279,3 @@ corresponding flow diagrams.
   ![Number of transitions](images/number_of_transitions.png){width="40.0%"}
   <figcaption>Number of transitions (the frequencies are plotted on the edges)</figcaption>
 </figure>
-
-
-
-
-
-
-
-### Re-encoding and resizing a video file
-
-BORIS can re-encode and resize your video files in order to reduce the
-size of the files and have a smooth coding (specially with two video
-files playing together). The re-encoding and resizing operations are
-done with the embedded ffmpeg program with high quality parameters
-(bitrate 2000k).
-
-Select the files you want re-encode and resize and select the horizontal
-resolution in pixels (the default is 1024). The aspect ratio will be
-maintained.
-
-You can continue to use BORIS during the re-encoding/resizing operation.
-
-The re-encoded/resized video files are renamed by adding the re-encoded.avi extension to the original files.
-
-
-
-
-
-### Rotating a video file
-
-BORIS can rotate your video files in order to code them using the right
-view. The rotating operation is done with the embedded ffmpeg program
-using the same quality parameters as the original video.
-
-Select the files you want to rotate and select the rotation angle: **Rotate 90 clockwise**, **Rotate 90 counter clockwise**, or **Rotate 180**.
-
-The aspect ratio will be maintained.
-
-You can continue to use BORIS during the rotation operation.
-
-The rotated video files are renamed by adding the **rotated\<ANGLE\>**
-to the original file name.
