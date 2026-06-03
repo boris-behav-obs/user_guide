@@ -124,9 +124,22 @@ You can customize BORIS in the Preferences window
 
 ![Analysis plugins preferences](images/plugins01.png)
 
+The **Analysis plugins** tab lets you configure official BORIS plugins and personal plugins.
+The plugin lists show the plugin version when available.
+
+**Official BORIS plugins**
+
+:   Select, download, update, enable, or disable official BORIS plugins.
+
 **Personal plugins directory**
 
-: Select the directory that contains the plugins to be loaded.
+:   Select the directory that contains your personal plugins.
+
+**Clear**
+
+:   Remove the saved personal plugins path without deleting the directory or any plugin file.
+
+See [Analysis plugins](plugins.md) for details about plugin loading, writing plugins, and running plugins.
 
 
 ## FFmpeg framework
