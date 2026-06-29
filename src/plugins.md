@@ -14,18 +14,13 @@ BORIS loads plugins from two sources.
 
 **Official BORIS plugins**
 
-:   Official plugins are loaded first. BORIS looks for an external BORIS plugins repository in this order:
+:   Official plugins are loaded first. BORIS looks in the directory configured in **Preferences** > **Analysis plugins** > **Official BORIS plugins**.
 
-    - the directory configured in **Preferences** > **Analysis plugins**;
-    - the path set in the `BORIS_PLUGINS_DIR` environment variable;
-    - a `BORIS_plugins` directory next to the BORIS source directory;
-    - `~/BORIS_plugins`.
 
-    If no external official plugin repository is found, BORIS falls back to the bundled plugins in the BORIS installation.
 
 **Personal plugins**
 
-:   Personal plugins are loaded from the directory selected in **Preferences** > **Analysis plugins**.
+:   Personal plugins are loaded from the directory selected in **Preferences** > **Analysis plugins** > **Personal plugins**.
     BORIS loads Python files (`.py`) and R files (`.R`) found directly in that directory.
     Files whose name starts with `_` are ignored.
 
@@ -42,7 +37,9 @@ The **Official BORIS plugins** section contains:
 
 - the directory currently used for the official plugin repository;
 - a **Browse** button to select another official plugin repository directory;
-- a **Download/Update** button to download or update the official BORIS plugins repository;
+- a **Release** drop-down list to select the release of the BORIS plugins
+- a **Load releases** button to update the available releases
+- a **Download/Update** button to download or update the official BORIS plugins directory from the BORIS plugins GitHub repository (https://github.com/olivierfriard/BORIS_plugins)[https://github.com/olivierfriard/BORIS_plugins];
 - a list of official plugins with check boxes.
 
 The **Personal plugins** section contains:
@@ -58,6 +55,15 @@ Click a plugin in the list to display its metadata and source code.
 ![Plugin information](images/plugins02.png)
 
 Changes are saved when you click **OK** in the Preferences window.
+
+
+## Downloading plugins from the official BORIS plugins GitHub repository
+
+
+To select the BORIS plugin release you want to use, click **Load releases**, choose the release number from the **Release** drop-down list, and then click **Download/Update**.
+
+To support reproducible analyses, all BORIS plugin releases will remain available.
+
 
 
 ## Running a plugin
@@ -83,7 +89,7 @@ Plugin results can be saved from the result window in the available export forma
 
 ## Data passed to plugins
 
-For Python plugins, BORIS inspects the type annotations of the plugin `run` function and passes only the requested objects.
+For Python plugins, BORIS inspects the arguments of the plugin `run` function and passes only the requested objects.
 
 The following arguments are supported:
 
@@ -124,17 +130,32 @@ def run(
 The DataFrame passed to the plugin includes columns such as:
 
 ```text
-Observation id
-Subject
-Behavior
-Behavioral category
-Behavior modifiers
-Behavior type
-Start (s)
-Stop (s)
-Duration (s)
-Comment start
-Comment stop
+Observation id                                  
+Observation date                                
+Description                                     
+Observation type                                
+Observation interval start                      
+Observation interval stop                       
+Source                                          
+Media duration (s)                              
+FPS (frame/s)                                   
+independent variable #1
+independent variable #2
+...
+Subject                                         
+Observation duration by subject by observation  
+Behavior                                        
+Behavioral category                             
+(BEHAVIOR1, Modifiers set #1)                                  
+(BEHAVIOR1, Modifiers set #2)                                  
+(BEHAVIOR2, Modifiers set #1)                                  
+...
+Behavior type                                   
+Start (s)                                       
+Stop (s)                                        
+Duration (s)                                    
+Comment start                                   
+Comment stop                                    
 ```
 
 The DataFrame also includes one column for each independent variable and one column for each behavior modifier set defined in the project.
@@ -152,6 +173,13 @@ __version__ = "x.y.z"
 __version_date__ = "YYYY-MM-DD"
 __author__ = "AUTHOR - INSTITUTION"
 __description__ = "Short plugin description"
+```
+
+You can optionally define the `__require_boris_version__` constant. This ensures that the plugin runs only with the allowed BORIS versions:
+
+
+```
+__require_boris_version__ = ">= 9.12"
 ```
 
 The `run` function can return:
