@@ -1,33 +1,21 @@
 # Create a project
 
-
-
 The BORIS project file serves as a container for all project-related information, excluding media files.
 It includes the **ethogram**, **independent variables**, **subject definitions**, **behavioral coding maps**, **converters**, and **observation** data.
 To save the project to your local file system, use **File** > **Save Project** or **Save Project As \...**.
 
 Additionally, you can activate the automatic backup feature in the [Preferences](./preferences.md) section.
 
-
-
-
-
 !!! warning "Very important"
 
     It is **EXTREMELY IMPORTANT** to perform regular backups of your project files to prevent the loss of data. While software can be reinstalled, your data might be irretrievably lost.
     Consider using an external drive and/or a cloud service for secure backup.
 
-
-
 BORIS lets you create an unlimited number of projects, but only one project can be open at a time.
-
-
 
 A video tutorial about creating a project is available at [this link](https://www.youtube.com/watch?v=I97Dny5hFOE).
 
-
 To create a new project, select **File** > **New project**.
-
 
 Enter the project name in the **Project name** field in the **Information** tab.
 Once the project has been saved, **Project file path** will show the full path to the project file.
@@ -46,9 +34,6 @@ This setting can be changed at any time under **File** > **Preferences** or by u
   <figcaption>BORIS main window</figcaption>
 </figure>
 
-
-
-
 ## Set an ethogram
 
 See the [Wikipedia ethogram definition](https://en.wikipedia.org/wiki/Ethogram).
@@ -60,7 +45,6 @@ In the **Ethogram** tab, you can:
 - import an ethogram from a JWatcher global definition file (`.gdf`);
 - import an ethogram from a plain text file or a spreadsheet file (`.xlsx` or `.ods`).
 
-
 <figure markdown>
   ![ethogram part 1](images/ethogram1.png)
 </figure>
@@ -69,55 +53,48 @@ In the **Ethogram** tab, you can:
   ![ethogram part 2](images/ethogram2.png)
 </figure>
 
-
-
-
 ### Set your ethogram from scratch
-
 
 #### Add a behavior
 
 Click **Behavior > Add behavior** to add a new row to the **Ethogram** table.
 The behavior type is automatically set to **Point event**.
 
-
 Cells with a gray background cannot be edited directly.
 You must double-click on them and then select a value.
 
+The order of behaviors in the table can be changed by right-clicking the row of the behavior you want to move up or down.
 
 #### Set the type of behavior
 
 You can define **2 types** of behavior. Double-click the cell and select the behavior type:
 
-
 <figure markdown>
   ![Select the type of behavior](images/select_behavior_type.png)
 </figure>
 
-
 - **Point event** behavior when the behavior has **no duration**.
 
-    :   The behavior is coded by pressing the assigned keyboard key
-        (see below) or by double-clicking the corresponding row in
-        the Ethogram table.
+  : The behavior is coded by pressing the assigned keyboard key
+  (see below) or by double-clicking the corresponding row in
+  the Ethogram table.
 
 - **State event** behavior when the behavior has a **duration**.
 
-    :   The start and stop of the behavior are coded by pressing the
-        assigned keyboard key (see below) or by double-clicking the
-        corresponding row in the Ethogram table. These behaviors
-        **must** have both a start event and a stop event; otherwise,
-        an **UNPAIRED events** warning will appear when you close
-        the observation or run an analysis.
+  : The start and stop of the behavior are coded by pressing the
+  assigned keyboard key (see below) or by double-clicking the
+  corresponding row in the Ethogram table. These behaviors
+  **must** have both a start event and a stop event; otherwise,
+  an **UNPAIRED events** warning will appear when you close
+  the observation or run an analysis.
 
 - **Point event with a coding map**
 
-    : a **Point event** that can be coded using a **coding map**.
+  : a **Point event** that can be coded using a **coding map**.
 
 - **State event with a coding map**
 
-    : a **State event** that can be coded using a **coding map**.
-
+  : a **State event** that can be coded using a **coding map**.
 
 You can switch between behavior types at any time by double-clicking the **Behavior type** cell.
 You can also add a **Coding map** to either a **State event** (**State event with coding map**) or a **Point event** (**Point event with coding map**).
@@ -131,18 +108,14 @@ the **Ethogram** table. Both operations must be confirmed.
 Behaviors can be sorted by clicking the Ethogram table headers.
 They cannot be sorted manually.
 
-
 #### Set a key for the behavior (optional)
-
-
 
 For each behavior, you can assign a keyboard key in the **Key** column; this key will be used to code the corresponding events.
 You can choose whether you want to set a unique key for each behavior or use the same key for more than one behavior.
 If you assign the same key to more than one behavior, BORIS will pause coding and ask which behavior you want to record.
 The keys are **case-sensitive**.
 
-
-!!! note 
+!!! note
 
     If your project was created with an older version of BORIS (< v.7),
     you can use **Convert keys to lower case** to convert all keys to
@@ -154,8 +127,6 @@ The keys are **case-sensitive**.
 !!! warning "Important"
 
     **Do not use the / and \* keys! They are reserved for the frame-by-frame mode.**
-
-
 
 From **version 9.9** onward, you can assign key combinations to trigger a behavior,
 including **Ctrl**, **Alt**, and **Meta** (also known as the "Windows key") in combination with a single key.
@@ -173,9 +144,7 @@ To set a key combination, double-click the **Key** cell. The following window wi
   ![select a shortcut](images/select_shortcut0.png){width=80%}
 </figure>
 
-
 Press the key combination you want to assign. A single modifier key, such as ++ctrl++, ++shift++, ++meta++, or ++alt++, is not a valid key combination.
-
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
 
@@ -209,18 +178,13 @@ Press the key combination you want to assign. A single modifier key, such as ++c
 
 </div>
 
-
-
 You can also use the shortcut tool to select a single key.
-
 
 Examples of combinations:
 
-++ctrl+k++,  ++meta+k++,  ++alt+k++,  ++ctrl+alt+k++, ++ctrl+meta+k++ 
+++ctrl+k++, ++meta+k++, ++alt+k++, ++ctrl+alt+k++, ++ctrl+meta+k++
 
 ++ctrl+1++
-
-
 
 **Function keys** (pink in the keyboard diagram above) can also be assigned to a behavior
 from ++f1++ to ++f12++.
@@ -229,10 +193,8 @@ Examples of combinations including function keys:
 
 ++shift+f1++, ++ctrl+shift+f12++, ++meta+f3++
 
-
-
 !!! note
-   
+
     BORIS uses keyboard shortcuts for several functions, such as:
 
     - saving a project (++ctrl+s++)
@@ -240,7 +202,7 @@ Examples of combinations including function keys:
     - starting an observation (++ctrl+o++)
     - close the current observation (++ctrl+q+)
     - editing an observation (++ctrl+e++)
-    - opening the list of observations (++ctrl+l++), 
+    - opening the list of observations (++ctrl+l++),
     - Add an event (++ctrl+a++)
     - jumping playback (++ctrl+f++)
     - jumping backward (++ctrl+b++)
@@ -249,22 +211,18 @@ Examples of combinations including function keys:
 
     None of these shortcuts can be used to code behaviors.
 
-
-
 !!! warning "Important"
 
     Consider that assigning a key combination to a behavior makes the project unusable in BORIS versions earlier than **9.9**.
-    
-
 
 !!! note
 
     On MacOS on the ethogram table:
-    
+
     - The **control** key will be indicated as **Meta**
-    
+
     - The **option** key will be indicated as **Alt**
-    
+
     - The **command** key will be indicated as **Ctrl**
 
 
@@ -272,16 +230,12 @@ Examples of combinations including function keys:
     ![select a shortcut](images/macos_keyboard.png){width="80.0%"}
     <figcaption>ISO keyboard with 105 keys</figcaption>
     </figure>
-    
-
-
 
 #### Set a code for the behavior (mandatory)
 
 In the **Code** column, you have to add a unique code for each behavior.
 Duplicated codes are not accepted and BORIS will warn in red about duplicates on the bottom left of the **Ethogram** tab.
 The code can be an alphanumeric string (which must not include the pipe character **\|** ).
-
 
 #### Give a description for the behavior (optional)
 
@@ -291,11 +245,8 @@ characteristics (e.g. to standardise observation between different
 users) or to refer to external information (e.g. reference to a previous
 ethogram).
 
-
-
 The columns with a grey background (**Behavior type**, **Color**, **Category**, **Modifiers**, **Exclusion**,
-**Modifiers coding map**) cannot be edited directly. 
-
+**Modifiers coding map**) cannot be edited directly.
 
 #### Select a color for the behavior (optional)
 
@@ -306,7 +257,6 @@ Double-click on the cell and select the color you want to associate to the behav
   ![Color selection](images/select_color.png)
   <figcaption>Select the color to associate to the behavior</figcaption>
 </figure>
-
 
 #### Categories of behaviors
 
@@ -322,8 +272,6 @@ Double-click on the cell and select the behavioral category for the behavior.
   <figcaption>Choose a behavioral category for the behavior</figcaption>
 </figure>
 
-
-
 To add, remove or rename a behavioral category, click the **Behavioral categories** button.
 A color can also be associated to a behavioral category.
 
@@ -331,8 +279,6 @@ A color can also be associated to a behavioral category.
   ![Behavioral categories](images/behavioral_categories.png)
   <figcaption>Behavioral categories manager</figcaption>
 </figure>
-
-
 
 #### Set the modifiers
 
@@ -345,14 +291,14 @@ behavioral coding.
 **4 types of modifiers** are available: **Single selection**, **Multiple
 selection**, **Numeric** and **Value from external data file**:
 
--   the **Single selection** type will allow the observer to select only
-    **one** modifier for the current behavior.
--   the **Multiple selection** type will allow the observer to select
-    one or more modifiers for the current behavior.
--   the **Numeric** type will allow the observer to input a number. For
-    example a distance of interaction.
--   the **Value from external data file** type will save the value of a
-    variable from an external data file.
+- the **Single selection** type will allow the observer to select only
+  **one** modifier for the current behavior.
+- the **Multiple selection** type will allow the observer to select
+  one or more modifiers for the current behavior.
+- the **Numeric** type will allow the observer to input a number. For
+  example a distance of interaction.
+- the **Value from external data file** type will save the value of a
+  variable from an external data file.
 
 In BORIS modifiers can also be added in different modifier sets (e.g.
 **play** **social** may have a modifier set (#1) for **brothers** and
@@ -368,7 +314,6 @@ modifiers to. The following window will show up:
   <figcaption>Modifiers configuration</figcaption>
 </figure>
 
-
 Click the **Add a set of modifiers** button:
 
 <figure markdown>
@@ -376,11 +321,9 @@ Click the **Add a set of modifiers** button:
   <figcaption>Modifiers configuration</figcaption>
 </figure>
 
-
 Select the modifier type using the **Modifier type** combo box. You have
 to choose between **Single selection**, **Multiple selection**
 **Numeric** and **Value from external data file**.
-
 
 ##### **Single selection** and **Multiple selection** modifiers
 
@@ -397,8 +340,6 @@ character - case sensitive) to this modifier (optional). Then press the
   <figcaption>Modifiers configuration</figcaption>
 </figure>
 
-
-
 To modify a modifier, select it and press the **left-arrow** button,
 edit the modifier and press the **right-arrow** button.
 
@@ -410,8 +351,6 @@ After adding all modifiers the window will appear like this:
   ![Image title](images/modifiers_single_selection.png){width="80.0%"}
   <figcaption>Modifiers configuration</figcaption>
 </figure>
-
-
 
 All defined subjects can be added as modifiers using the **Add subjects as modifiers** button.
 This can help in case of coding the interactions between subjects for example.
@@ -436,7 +375,6 @@ Example of a **multiple selection** modifiers set:
   <figcaption>Modifiers configuration</figcaption>
 </figure>
 
-
 Many values can be selected together.
 
 Example of 2 sets of modifiers:
@@ -450,7 +388,6 @@ Example of 2 sets of modifiers:
   ![Image title](images/modifiers_2sets_2.png){width="80.0%"}
   <figcaption>Modifiers configuration</figcaption>
 </figure>
-
 
 ##### **Numeric** modifier
 
@@ -471,23 +408,12 @@ the variable defined in the observation.
 
 See [External data files](observations.md#external-data-files)
 
-
 <figure markdown>
   ![modifiers value from external data](images/modifiers_value_from_external_data.png){width="80.0%"}
   <figcaption>modifier value from external data file</figcaption>
 </figure>
 
-
 Click **OK** to save modifiers in the **Ethogram** table.
-
-
-
-
-
-
-
-
-
 
 ### Set the exclusion matrix
 
@@ -506,13 +432,10 @@ corresponding entire row (click on the row header of the behavior) and
 by clicking on the **Check selected** button. You can also uncheck all
 behaviors by selecting the **Uncheck selected** button.
 
-
 <figure markdown>
   ![Image title](images/exclusion_matrix.png){width="100.0%"}
   <figcaption>Example of an exclusion matrix</figcaption>
 </figure>
-
-
 
 For example in the previous figure, the **Alert** behavior will exclude
 the following behaviors: **Allogroom**, **Breed**, **Carry objects**,
@@ -521,13 +444,10 @@ the following behaviors: **Allogroom**, **Breed**, **Carry objects**,
 During the observation, the excluding event will stop all the current
 excluded state events one millisecond before the occurrence of the event.
 
-
-
 ### Set the **Modifiers coding map**
 
 If the behavior is defined as a **Point event with coding map** or a **State event with coding map** you can associate a
 **Modifiers coding map** to select the modifiers from a map.
-
 
 ### Import an ethogram from an existing project
 
@@ -539,21 +459,20 @@ table. Imported behaviors will retain all the previously defined
 behavior parameters (namely Behavior type, Key, Code, Description,
 Modifiers and Exclusion information).
 
-
 ### Import an ethogram from a spreadsheet file
 
 Behaviors can be imported from a spreadsheet file using the **Import
-ethogram > from spreadsheet file (XLSX/ODS)** button. 
+ethogram > from spreadsheet file (XLSX/ODS)** button.
 
 The first row of your spreadsheet (header) must contain the following labels.
 The order is not mandatory:
 
--   Behavior code
--   Behavior type
--   Description
--   Key
--   Behavioral category
--   Excluded behaviors
+- Behavior code
+- Behavior type
+- Description
+- Key
+- Behavioral category
+- Excluded behaviors
 
 **Behavior code** is mandatory, the others fields can be empty.
 
@@ -562,12 +481,8 @@ Optional fields can be added:
 - Color
 - Modifiers (JSON)
 
-
 BORIS will ask to select a spreadsheet file (by default: *.xlsx or *.ods) and whether imported behaviors should replace or be appended to the **Ethogram** table. The missing information for the imported behaviours
 have to be redefined.
-
-
-
 
 ### Import an ethogram from a plain text file
 
@@ -579,12 +494,12 @@ of fields.
 The first row of your plain text file must contain the following labels.
 The order is not mandatory but respect the case:
 
--   Behavior code
--   Behavior type
--   Description
--   Key
--   Behavioral category
--   Excluded behaviors
+- Behavior code
+- Behavior type
+- Description
+- Key
+- Behavioral category
+- Excluded behaviors
 
 **Behavior code** is mandatory, the others fields can be empty.
 
@@ -599,9 +514,6 @@ BORIS will ask to select a plain text file (by default: \*.txt \*.csv
 the **Ethogram** table. The missing information for the behaviours
 imported from text file have to be redefined.
 
-
-
-
 ### Import an ethogram from a JWatcher global definition file (.gdf)
 
 Behaviors can be imported from a JWatcher global definition file (.gdf)
@@ -610,8 +522,6 @@ select a JWatcher file (.gdf) and whether imported behaviors should
 replace or be appended to the **Ethogram** table. Behavior type and
 exclusion information for the behaviours imported from JWatcher have to
 be redefined.
-
-
 
 ### Access to the BORIS ethogram repository
 
@@ -626,26 +536,11 @@ the current project.
   <figcaption>BORIS ethogram repository</figcaption>
 </figure>
 
-
-
-
-
-
-
 ### Export the ethogram
 
 The entire ethogram can be exported in various formats (TSV, CSV, XLSX,
 ODS, HTML). See **File** \> **Edit project** \> **Ethogram tab** \>
 **Export ethogram**
-
-
-
-
-
-
-
-
-
 
 ## Define the subjects
 
@@ -654,65 +549,49 @@ ODS, HTML). See **File** \> **Edit project** \> **Ethogram tab** \>
   <figcaption>configuration of subjects</figcaption>
 </figure>
 
-
-
 BORIS allows coding behaviors for different subjects within a single observation.
 The **Subject** table allows the selection of subjects using a **Key** of the keyboard.
-, **Subject name** (e.g., **Kanzi**), and  **Description** (e.g., male, born on October 28, 1980).
-
+, **Subject name** (e.g., **Kanzi**), and **Description** (e.g., male, born on October 28, 1980).
 
 ### Set a key for the subject (optional)
-
 
 With the subjects defined in the previous figure, pressing **n** will set **Nina** as the focal subject
 for behavioral coding.
 Pressing **n** again will deselect **Nina** and set the focal subject to **No focal subject**.
 
-
 The key definition is not mandatory. In this case, you will have to
 select the current subject from the subjects list with a double-click.
 
 The keys are **case-sensitive** and the same key can be used to select more than one subject.
-In this case a dialog will show up and will allow to select 
-
+In this case a dialog will show up and will allow to select
 
 <figure markdown>
   ![Choose a subject](images/choose_subject.png)
   <figcaption>Choose a subject</figcaption>
 </figure>
 
-
-
 The definition of one or more subjects is not mandatory. Addition,
 removal and sorting of the subjects follows the same logic of the
 **Ethogram** table (see [Set your ethogram from scratch](#set-your-ethogram-from-scratch) for info).
 
-
 From **version 9.9** onward, it is possible to assign a combination of keyboard keys to select a subject,
 allowing the use of **Ctrl**, **Alt** and **Meta** (also known as "Windows key") keys in combination with a single key.
-
 
 Refer to [Set a key for the behavior](#set-a-key-for-the-behavior-optional) for details.
 
 !!! warning "Important"
 
     Consider that assigning a key combination to a subject makes the project unusable in BORIS versions earlier than **9.9**.
-    
 
-
-!!! note 
+!!! note
 
     If your project was created with a version of BORIS earlier than 7, you can use **Convert keys to lower case** to convert all keys to lowercase.
     Otherwise, you will need to code your observations using uppercase keys.
 
-
 The subjects can also be imported from an existing BORIS project: use
 the **Import Subjects from a BORIS project** button.
 
-
-
 ### Import subject from a spreadsheet
-
 
 The subjects can be imported from a spreadsheet (Google spreadsheet,
 Microsoft-Excel, LibreOffice Calc).
@@ -720,20 +599,18 @@ Microsoft-Excel, LibreOffice Calc).
 The spreadsheet must contain one subject by row and have to be organized
 as above:
 
--   1st column: Subject key (One character - Case sensitive - Optional)
--   2nd column: Subject name (mandatory)
--   3rd column: Description of subject (optional)
+- 1st column: Subject key (One character - Case sensitive - Optional)
+- 2nd column: Subject name (mandatory)
+- 3rd column: Description of subject (optional)
 
 Select all cells of your spreadsheet (++ctrl+a++), copy to clipboard (++ctrl+c++).
 Click the **Import from clipboard** button.
-
 
 !!! Note
 
     If you open a project file created with a version older than v.7 BORIS
     will ask you to convert the upper case behavior and subject keys to
     lower case.
-
 
 ## Define the Independent variables
 
@@ -742,14 +619,13 @@ Click the **Import from clipboard** button.
   <figcaption>Independent variables</figcaption>
 </figure>
 
-
 BORIS allows adding information about the observation using
 **Independent variables**. This can be used to specify factors that may
 influence the behaviors (e.g. group composition, temperature, weather
 conditions) but will not change during a single observation within a
 project. Each independent variable can be defined by a **Label** (e.g.
 weather), a **Description** (e.g. weather conditions), a **Type**
-(*text*, *numeric*, *value from set* or *timestamp*).
+(_text_, _numeric_, _value from set_ or _timestamp_).
 
 The values of a set are defined in the **Set of values** column
 separating the available values with a comma (**,**). Please note that
@@ -763,25 +639,19 @@ your ethogram from scratch** for info). The independent variables can
 also be imported from an existing BORIS project using the **Import
 Variables from a BORIS project**.
 
-
 <figure markdown>
   ![Image title](images/independent_variables2.png){ width="80%"}
   <figcaption>Example of an independent variable (Weather) defined as "set of values"</figcaption>
 </figure>
 
-
 The predefined value must be contained in the set of value.
 
-
-
 ## Converters' table
-
 
 Converters are used for plotting external data when the timestamp values
 are not expressed in seconds. Converters can be written by the user,
 loaded from file or loaded from the repository of the BORIS web site
 (<http://www.boris.unito.it/static/converters.json>).
-
 
 <figure markdown>
   ![Image title](images/converter_tab_empty.png){ width="80%"}
@@ -798,7 +668,6 @@ external data file (for example 01:22:32).
 The **OUTPUT** variable must contain the converted value in seconds (the
 dot must be used for decimal separator).
 
-
 Example code to convert `HH:MM:SS` format to seconds:
 
     h, m, s = INPUT.split(':')
@@ -808,8 +677,6 @@ The Python function **strptime()** from the **datetime** module can be
 useful for converting time values:
 <https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior>
 
-
-
 Example code to convert a date in ISO 8601 format to seconds using the `strptime()` function:
 
     import datetime
@@ -818,15 +685,11 @@ Example code to convert a date in ISO 8601 format to seconds using the `strptime
 
     OUTPUT = (datetime.datetime.strptime(INPUT, datetime_format) - epoch).total_seconds()
 
-
 **File** \> **Edit project** \> **Converters**
 
 ![writing/modifying a converter](images/converter_writing.png){width="100.0%"}
 
-
-
 ### Load converters from BORIS web site
-
 
 Click **Load converters from BORIS repository** and select the
 converters to be added to your project.
@@ -836,15 +699,12 @@ converters to be added to your project.
   <figcaption>Converters selection from repository</figcaption>
 </figure>
 
-
 <figure markdown>
   ![Image title](images/converter_tab.png){ width="80%"}
   <figcaption>Converters tab with 2 converters defined</figcaption>
 </figure>
 
-
 ### Writing a converter
-
 
 See [Converters for external data values](tools.md#converters-for-external-data-values)
 
