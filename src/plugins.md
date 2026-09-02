@@ -22,9 +22,9 @@ BORIS loads plugins from two sources.
 
 :   Personal plugins are loaded from the directory selected in **Preferences** > **Analysis plugins** > **Personal plugins**.
     BORIS loads Python files (`.py`) and R files (`.R`) found directly in that directory.
-    Files whose name starts with `_` are ignored.
+    Files whose names start with `_` are ignored.
 
-If an official plugin and a personal plugin use the same plugin name, the official plugin is kept and the duplicate personal plugin is not loaded.
+If an official plugin and a personal plugin use the same plugin name, the official plugin is kept, and the duplicate personal plugin is not loaded.
 
 
 ## Managing plugins in Preferences
@@ -35,19 +35,20 @@ Open **File** > **Preferences** > **Analysis plugins**.
 
 The **Official BORIS plugins** section contains:
 
-- the directory currently used for the official plugin repository;
-- a **Browse** button to select another official plugin repository directory;
-- a **Release** drop-down list to select the release of the BORIS plugins
-- a **Load releases** button to update the available releases
-- a **Download/Update** button to download or update the official BORIS plugins directory from the BORIS plugins GitHub repository (https://github.com/olivierfriard/BORIS_plugins)[https://github.com/olivierfriard/BORIS_plugins];
-- a list of official plugins with check boxes.
+- The directory currently used for the official plugin repository;
+- A **Browse** button to select another official plugin repository directory;
+- A **Release** drop-down list to select the release of the BORIS plugins;
+- A **Load releases** button to update the available releases;
+- A **Download/Update** button to download or update the official BORIS plugins directory from the BORIS plugins GitHub repository
+[https://github.com/olivierfriard/BORIS_plugins](https://github.com/olivierfriard/BORIS_plugins);
+- A list of official plugins with check boxes.
 
 The **Personal plugins** section contains:
 
-- the directory currently used for personal plugins;
-- a **Browse** button to select a personal plugins directory;
-- a **Clear** button to remove the saved personal plugin path without deleting the directory or its files;
-- a list of personal plugins with check boxes.
+- The directory currently used for personal plugins;
+- A **Browse** button to select a personal plugins directory;
+- A **Clear** button to remove the saved personal plugin path without deleting the directory or its files;
+- A list of personal plugins with check boxes.
 
 Plugin lists show the plugin version next to the plugin name when a version is available.
 Click a plugin in the list to display its metadata and source code.
@@ -76,9 +77,9 @@ BORIS lists official plugins first. Personal plugins are listed after a separato
 
 When a plugin is started, BORIS asks you to select:
 
-- the observations to analyze;
-- the subjects and behaviors to include;
-- the time interval or observation interval to use.
+- The observations to analyze;
+- The subjects and behaviors to include;
+- The time interval or observation interval to use.
 
 The plugin result is displayed in a result window.
 
@@ -175,7 +176,7 @@ __author__ = "AUTHOR - INSTITUTION"
 __description__ = "Short plugin description"
 ```
 
-You can optionally define the `__require_boris_version__` constant. This ensures that the plugin runs only with the allowed BORIS versions:
+You can optionally define the `__require_boris_version__` constant. This ensures that the plugin runs only with specific BORIS versions:
 
 
 ```
@@ -184,9 +185,9 @@ __require_boris_version__ = ">= 9.12"
 
 The `run` function can return:
 
-- a string;
-- a Pandas DataFrame;
-- a tuple of results.
+- A string;
+- A Pandas DataFrame;
+- A tuple of results.
 
 Each result can optionally be returned as `(title, payload)`, where `payload` is a string or a Pandas DataFrame.
 For a single titled result, return it inside a tuple of results:

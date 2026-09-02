@@ -4,51 +4,51 @@
 
 #### Media file information
 
-Obtain information about your media file like duration, resolution, FPS, bitrate ...
+Obtain information about your media file, such as duration, resolution, FPS, bitrate, etc.
 
 
 #### Re-encode / resize video
 
-BORIS can re-encode and resize your video files in order to reduce the
-size of the files and have a smooth coding (especially when two video
+BORIS can re-encode and resize your video files to reduce their
+size and ensure smooth coding (especially when two video
 files play simultaneously). The re-encoding and resizing operations are
-done with the embedded ffmpeg program with high quality parameters
+performed using the embedded ffmpeg program with high-quality parameters
 (bitrate 2000k).
 
-Select the files you want to re-encode and resize and select the horizontal
+Select the files you want to re-encode and resize, and select the horizontal
 resolution in pixels (the default is 1024). The aspect ratio will be
 maintained.
 
 You can continue to use BORIS during the re-encoding/resizing operation.
 
-The re-encoded/resized video files are renamed by adding the re-encoded.avi extension to the original files.
+The re-encoded/resized video files are renamed by adding the re-encoded.avi extension to the original file names.
 
 
 
 #### Rotate video
 
-BORIS can rotate your video files in order to code them using the right
-view. The rotating operation is done with the embedded ffmpeg program
-using the same quality parameters as the original video.
+BORIS can rotate your video files to allow coding with the correct
+view. The rotation operation is performed using the embedded ffmpeg program
+with the same quality parameters as the original video.
 
-Select the files you want to rotate and select the rotation angle: **Rotate 90 clockwise**, **Rotate 90 counter clockwise**, or **Rotate 180**.
+Select the files you want to rotate and select the rotation angle: **Rotate 90 clockwise**, **Rotate 90 counter-clockwise**, or **Rotate 180**.
 
 The aspect ratio will be maintained.
 
 You can continue to use BORIS during the rotation operation.
 
-The rotated video files are renamed by adding the **rotated\<ANGLE\>**
+The rotated video files are renamed by adding **rotated\<ANGLE\>**
 to the original file name.
 
 
 #### Merge media files
 
-Use this function to concatenate various media files together.
+Use this function to concatenate multiple media files together.
 
 
 #### Create video spectrogram
 
-Create a video with the spectrogram of the audio track
+Create a video with the spectrogram of the audio track.
 
 
 ## Plot events in real-time
@@ -102,8 +102,8 @@ results are expressed in real units such as centimeters or meters.
     (with the distance tool; see the next section for details) and enter the
     pixel distance in the **Pixel** text box.
 
-2.  Set the real size of the reference object in the **Reference** text
-    box (must be a number without unit).
+2.  Enter the real size of the reference object in the **Reference** text
+    box (must be a number without units).
 
 
 
@@ -119,10 +119,10 @@ Select the **Point** radio button. Click the left mouse button on the video/imag
 ### Distance measurements
 
 Select the **Distance** radio button. Click the left mouse button on the
-frame bitmap to set the start of the segment that will be measured. A
+frame bitmap to set the start of the segment to be measured. A
 circle with a cross will be drawn. Click the right mouse button to set
 the end. A red circle with a cross will be drawn. The distance between
-the two selected points will be available in the text area of the
+the two selected points will be displayed in the text area of the
 **Measurements window**.
 
 ![distances measurement](images/geometric_measurements_polyline.png)
@@ -136,7 +136,7 @@ the two selected points will be available in the text area of the
 Select the **Area** radio button. Click the left mouse button on the
 frame bitmap to set the area vertices. Circles with a cross will be
 drawn. Click the right mouse button to close the area. The area of the
-drawn polygon will be available in the text area of the **Measurements
+drawn polygon will be displayed in the text area of the **Measurements
 window**.
 
 
@@ -149,7 +149,7 @@ Select the **Angle** radio button. Click the left mouse button on the
 frame bitmap to set the angle vertex. A red circle with a cross will be
 drawn. Click the right mouse button to set the two segments. Circles
 with a cross will be drawn. The angle between the two drawn segments
-will be available in the text area of the **Measurements window**.
+will be displayed in the text area of the **Measurements window**.
 
 
 
@@ -157,7 +157,7 @@ will be available in the text area of the **Measurements window**.
 ### Persistent measurements
 
 If the **Measurements are persistent** checkbox is selected, the
-measurement overlays will remain available on all frames; otherwise, they will
+measurement overlays will remain visible on all frames; otherwise, they will
 be cleared between frames.
 
 The marks selected on other frames will be drawn in red.
@@ -206,9 +206,9 @@ subjects list.
 
 ## Transitions flow diagram
 
-BORIS can generate DOT scripts and flow diagrams from the transitions
-matrices (See Observations \> Create transition matrix for obtaining the
-transitions matrices).
+BORIS can generate DOT scripts and flow diagrams from the transition
+matrices (see Observations \> Create transition matrix to obtain the
+transition matrices).
 
 
 
@@ -217,7 +217,7 @@ transitions matrices).
 
 **Tools \> Transitions flow diagram \> Create transitions DOT script**
 
-Choose one or more transition matrix files and BORIS will create the corresponding DOT script file(s).
+Choose one or more transition matrix files, and BORIS will create the corresponding DOT script file(s).
 
 The DOT script files can then be used with
 [Graphviz](http://www.graphviz.org) (Graph Visualization Software) or
@@ -233,13 +233,13 @@ for details.
 ### Flow diagram
 
 If [Graphviz](http://www.graphviz.org) (Graph Visualization Software) is
-installed on your system (and the **dot** program available in the path),
+installed on your system (and the **dot** program is available in the path),
 BORIS can generate a flow diagram (PNG format) from a transition matrix
 file.
 
 **Tools \> Transitions flow diagram \> Create transitions flow diagram**
 
-Choose one or more transition matrix files and BORIS will create the
+Choose one or more transition matrix files, and BORIS will create the
 corresponding flow diagrams.
 
 

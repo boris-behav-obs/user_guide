@@ -31,12 +31,12 @@ Various formats are available:
     function](https://rdrr.io/r/base/readRDS.html))
 
 
-If many observations are selected, BORIS will ask you to choose a directory in which to save
+If many observations are selected, BORIS will ask you to choose a directory to save
 the files. For spreadsheet formats (XLSX and ODS), the events can be
 exported to multiple worksheets within a single workbook. All these formats are
 suitable for further analysis.
 
-Select the subjects, the behaviors and the time interval.
+Select the subjects, behaviors, and time interval.
 
 Set the time interval to **Observed events**.
 
@@ -88,10 +88,10 @@ Various formats are available:
 
 If two or more observations are selected, you can choose to group all
 results into one file. If you do not want to group the results, BORIS will ask
-you to choose a directory in which to save the files (the observation ID will be
+you to choose a directory to save the files (the observation ID will be
 used as the file name).
 
-The **State events** are paired and in this case the event duration is
+State events are paired, and in this case, the event duration is
 available.
 
 An arbitrary time interval can be selected by checking the **Limit to time
@@ -104,11 +104,11 @@ The following fields are available in the output:
 -   Observation date and time
 -   Observation description
 -   Observation type (Media file / Live / Pictures)
--   Source (for media file and pictures)
+-   Source (for media files and pictures)
 -   Total duration (in seconds, the duration of the observation based on
     the selected time interval)
--   Media duration(s) (in seconds, for media file observation)
--   FPS (frame/s, for video file, number of images per second)
+-   Media duration(s) (in seconds, for media file observations)
+-   FPS (frames/s, for video files, number of images per second)
 -   Independent variables (one column per variable)
 -   Subject name
 -   Observation duration by subject
@@ -119,15 +119,15 @@ The following fields are available in the output:
 -   Start (seconds)
 -   Stop (seconds)
 -   Duration (seconds, duration of the event for STATE events)
--   Media file name (for media file observation, media in which the
+-   Media file name (for media file observations, the media file in which the
     event occurs)
--   Image index start (for observations from pictures, index of the
+-   Image index start (for observations from pictures, the index of the
     image where the event starts)
--   Image index stop (for observations from pictures, index of the image
+-   Image index stop (for observations from pictures, the index of the image
     where the event stops)
--   Image file path start (for observations from pictures, path of the
-    image where the event stops)
--   Image file path stop (for observations from pictures, path of the
+-   Image file path start (for observations from pictures, the path of the
+    image where the event starts)
+-   Image file path stop (for observations from pictures, the path of the
     image where the event stops)
 -   Comment start
 -   Comment stop
@@ -163,7 +163,7 @@ Example of SQL export of aggregated events:
 ## Export events as behavioral sequences
 
 
-**Observations** \> **Export events** **as behavioral sequences**
+**Observations** > **Export events** > **as behavioral sequences**
 
 Behavioral strings can be used with the **Behatrix** program:
 [Behatrix](https://www.boris.unito.it/behatrix)
@@ -187,7 +187,7 @@ Example:
 ## Export events as [Praat](http://www.fon.hum.uva.nl/praat/) [TextGrid](http://www.fon.hum.uva.nl/praat/manual/TextGrid.html)
 
 
-**Observations** \> **Export events** **as Praat TextGrid**
+**Observations** \> **Export events** > **as Praat TextGrid**
 
 Example:
 
@@ -233,10 +233,9 @@ quantitative analysis of behavior.
 Events coded with BORIS can be exported for analysis with
 JWatcher.
 
-Click **Observations** \> **Export events** \> **for analysis with
-JWatcher** to export the coded events.
+Click **Observations** \> **Export events** \> **for analysis with JWatcher** to export the coded events.
 
-BORIS will ask you to select a directory. After that, for each
+BORIS will ask you to select a directory. Then, for each
 combination of selected observation and selected subject, the following
 files will be created:
 
@@ -253,7 +252,7 @@ These files can be used to analyze your observations with JWatcher.
 **Observations** \> **Export events** **as Behaviors Binary Table**
 
 A time interval will be requested (in seconds). The observation
-will be checked every n seconds and the presence (1, absence: 0) of the
+will be checked every n seconds, and the presence (1, absence: 0) of the
 selected behaviors will be exported in a table for each selected
 subject.
 
@@ -317,30 +316,30 @@ Example for a time interval of 1 second:
 ## Extract clips from media files corresponding to coded events
 
 
-Sequences of media file corresponding to coded events can be extracted
+Media sequences corresponding to coded events can be extracted
 from media files:
 
-1.  Click on **Observations** \> **Extract clips from media files**  option.
+1.  Click on **Observations** \> **Extract clips from media files**.
 
 2.  Choose the observation(s).
 
 3.  Select the subjects and events to be extracted.
-Modifiers con be included 
+Modifiers can be included.
 
-4.  Select the time interval around the events (in seconds, the default value is 0).
+4.  Select the time interval around the events (in seconds; the default value is 0).
 
-5. Select the tracks to include in clips:
+5.  Select the tracks to include in clips:
     * Video and audio
     * Only video
     * Only audio
 
-6.  Select a destination directory that will contain the extracted
+6.  Select a destination directory to contain the extracted
     clips.
 
 
-The time offset will be substracted from the starting time of event and
-added to the stopping time. All the extracted clips will be saved in
-the selected directory followind the file name format:
+The time offset will be subtracted from the event start time and
+added to the stop time. All extracted clips will be saved in
+the selected directory following the file name format:
 
 {observation id}\_{player}\_{subject}\_{behavior}\_{start time}-{stop
 time}
@@ -355,24 +354,23 @@ time}_{modifiers concatenated with +}
 ## Extract frames corresponding to coded events
 
 
-The frames corresponding to coded events can be extracted and saved as
+Frames corresponding to coded events can be extracted and saved as
 images.
 
-1.  Click on **Observations** \> **Extract frames from media files**
-    option.
+1.  Click on **Observations** \> **Extract frames from media files**.
 
 2.  Choose the observation(s).
 
 3.  Select the subjects and events to be extracted.
-Modifiers con be included
+Modifiers can be included.
 
-4.  Select the time interval around the events (in seconds, the default value is 0).
+4.  Select the time interval around the events (in seconds; the default value is 0).
 
-5. Select the image format:
+5.  Select the image format:
     * JPG - small size / low quality
-    * PNG - big size / high quality
+    * PNG - large size / high quality
 
-6.  Select a destination directory that will contain the extracted
+6.  Select a destination directory to contain the extracted
     frames.
 
 
@@ -381,9 +379,9 @@ Modifiers con be included
 ## Export transitions matrix
 
 
-3 transitions matrix outputs are available: The matrix of frequencies of
-transitions, the matrix of frequencies of transition after each behavior
-and the matrix of number of transitions.
+Three transition matrix outputs are available: the matrix of frequencies of
+transitions, the matrix of frequencies of transitions after each behavior,
+and the matrix of the number of transitions.
 
 
 ### Matrix of frequencies of transitions
@@ -399,7 +397,7 @@ Example of frequencies of transitions matrix:
     sleep    0.143     0.0    0.143
     walk     0.286     0.0      0.0
 
-In this matrix you can see that the **eat** behavior precedes the
+In this matrix, you can see that the **eat** behavior precedes the
 **sleep** behavior with a frequency of **0.286** of the total number of
 transitions.
 
@@ -417,8 +415,8 @@ Example:
     sleep   0.5      0.0      0.5
     walk    1.0      0.0      0.0
 
-In this example you can see that **sleep** follows **eat** with a
-frequency of **0.667** and **walk** follows with a frequency of
+In this example, you can see that **sleep** follows **eat** with a
+frequency of **0.667**, and **walk** follows with a frequency of
 **0.333**.
 
 

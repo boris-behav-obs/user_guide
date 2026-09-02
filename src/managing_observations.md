@@ -6,24 +6,24 @@ observations contained in the current BORIS project.
 
 The following values are displayed:
 
-- the observation id (**id**)
+- The observation id (**id**)
 
-- the **description** of the observation
+- The **description** of the observation
 
-- the coded subjects (**subjects**)
+- The coded subjects (**subjects**)
 
-- the **observation duration** (as the difference between the last recorded event and the first one)
+- The **observation duration** (the difference between the last recorded event and the first one)
 
-- the percent of **exhaustivity** of the coding (as the sum of the length of the coded events divided by the observation duration)
+- The percentage of **exhaustivity** of the coding (the sum of the length of the coded events divided by the observation duration)
 
-- the **media** file path, **LIVE** for a live observation, or the pictures directory path for an observation based on pictures
+- The **media** file path, **LIVE** for a live observation, or the pictures directory path for an observation based on pictures
 
-- the values of the independent variables (if defined)
+- The values of the independent variables (if defined)
 
 ![Observations list](images/observations_list.png)
 
 The observations can be sorted by clicking the desired column header
-(alphabetic order ascending or descending).
+(alphabetical order, ascending or descending).
 
 
 ### Checking the observations
@@ -42,8 +42,8 @@ These UNPAIRED observations will not be analyzed. See [Fix unpaired state events
 
 The observations list can be filtered by selecting a field and a condition from the drop-down lists.
 
-In the following example observations are filtered: only observations
-with **description** containing the **In the pool** subject are shown:
+In the following example, observations are filtered: only observations
+with **description** containing **In the pool** are shown:
 
 
 
@@ -54,10 +54,10 @@ with **description** containing the **In the pool** subject are shown:
 
 
 
-Observations can be filtered with **Independent variables** values.
+Observations can be filtered by **Independent variables** values.
 
 The following example displays only the observations that do not contain
-"Sunny" in the **Weather** independent variable :
+"Sunny" in the **Weather** independent variable:
 
 
 <figure markdown>
@@ -66,7 +66,7 @@ The following example displays only the observations that do not contain
 </figure>
 
 
-Observations with a value of **Temperature** independent variable between 18 and 22:
+Observations with a **Temperature** independent variable value between 18 and 22:
 
 <figure markdown>
   ![Image title](images/observations_list2_filtered2.png)
@@ -75,7 +75,7 @@ Observations with a value of **Temperature** independent variable between 18 and
 
 
 
-Observations with a value of **Visitors** independent variable greater than 1000:
+Observations with a **Visitors** independent variable value greater than 1000:
 
 <figure markdown>
   ![Image title](images/observations_list2_filtered3.png)
@@ -99,9 +99,9 @@ Select the observations you want to delete.
 
 Click the **OK** button and confirm the deletion.
 
-Deletion is irreversible, and deleted observations cannot be restored.
+Deletion is irreversible; deleted observations cannot be restored.
 
-It's a good idea to back up your project before proceeding with removing observations.
+It is a good idea to back up your project before removing observations.
 
 
 ## Create observations in bulk
@@ -133,8 +133,8 @@ Two formats are available for importing observations:
 
 Choose the BORIS project file and then the observations to import. BORIS will check
 whether observations with the same ID already exist in the current
-project. BORIS will also check if behaviors and/or subjects used in the
-imported observations are not defined in the current project.
+project. BORIS will also check if the behaviors and/or subjects used in the
+imported observations are defined in the current project.
 
 
 ### From a spreadsheet file
@@ -142,11 +142,11 @@ imported observations are not defined in the current project.
 Observations can be imported from:
 
 - OpenDocument (ODS)
-- Microsoft-Excel (XLSX)
+- Microsoft Excel (XLSX)
 
 
 
-Choose the spreadsheet file
+Choose the spreadsheet file.
 
 
 
@@ -164,4 +164,4 @@ The data frame will contain the following columns:
 * Description
 * Subjects
 * Media files/Live observation
-* independent variables
+* Independent variables

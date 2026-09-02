@@ -16,7 +16,7 @@ Click **Observations** > **New observation** to open the **New observation** win
 
 
 
-This window lets you enter several observation details:
+This window allows you to enter several observation details:
 
 -   a mandatory **Observation id** (must be unique across all
     observations in the open project);
@@ -28,8 +28,8 @@ This window lets you enter several observation details:
 -   **Description**, which can contain any relevant information about
     your observation, or it can be left empty.
 
--   **Independent variables** (e.g. to specify factors that may
-    influence the behaviors but will not change during the observation
+-   **Independent variables** (e.g., to specify factors that may
+    influence behaviors but will not change during the observation
     within a project). See the [independent variables](create_project.md#define-the-independent-variables) section for
     details.
 
@@ -41,7 +41,7 @@ This window lets you enter several observation details:
 
 
 You must then indicate whether you want to create an observation based on
-**pre-recorded media (audio / video)** or a **live observation**.
+**pre-recorded media (audio/video)** or a **live observation**.
 
 
 
@@ -51,7 +51,7 @@ You must then indicate whether you want to create an observation based on
 ## Live observation
 
 
-During a live observation, BORIS shows a timer that is used to record event times.
+During a live observation, BORIS displays a timer used to record event times.
 
 Click on the **Live observation** radio button to create a live observation.
 
@@ -86,7 +86,7 @@ If the **Epoch time** option is checked, the start time will be the number of
 seconds since January 1, 1970 (`1970-01-01`). See [Unix
 time](https://en.wikipedia.org/wiki/Unix_time) for details. This option
 is useful for long observations lasting several days or for observations that start
-before midnight and end after it.
+before midnight and end after midnight.
 
 
 
@@ -94,7 +94,7 @@ before midnight and end after it.
 
 ### Start the observation
 
-Click the **Start** button to begin the live observation or **Save** to
+Click the **Start** button to begin the live observation, or **Save** to
 save it in the [Observations list](#observations-list).
 
 The main window during a live observation will look like this:
@@ -149,7 +149,7 @@ Click the **Media files** tab and add one or more media files using the **Add me
 
 Information about the selected media file will be extracted and
 displayed in the media list: media file path, media duration, number of
-frames per second (FPS), the presence of a video stream, and the presence of
+frames per second (FPS), presence of a video stream, and presence of
 an audio stream.
 
 
@@ -161,7 +161,7 @@ an audio stream.
   <figcaption>Media files</figcaption>
 </figure>
 
-You can choose to use the media file name as **Observation id** by clicking the **Use media file name as observation id** button.
+You can use the media file name as the **Observation id** by clicking the **Use media file name as observation id** button.
 
 
 The drop-down list in the first column lets you choose a player (up to
@@ -176,7 +176,7 @@ you must use consecutive players starting from 1. See the example below:
 </figure>
 
 
-If you need to synchronize 2 or more videos, you can use the **Offset**
+If you need to synchronize two or more videos, you can use the **Offset**
 column to indicate when the second player should start. For example, if
 the video loaded in the second player starts 15 seconds after the first
 video, enter **15** in the **Offset** cell. If the second
@@ -185,13 +185,13 @@ video starts before the first player, you can enter a negative value in the
 
 If you want to play several videos sequentially, select the same
 player (#1) for all loaded videos. This means that an event
-occurring at time t~x~ in the media file queued as second (e.g.
+occurring at time t~x~ in the media file queued second (e.g.,
 second\_video.mp4) in the playlist will be recorded at time
-t~1~ + t~x~ (where t~1~ is the duration of the first media file, e.g.
+t~1~ + t~x~ (where t~1~ is the duration of the first media file, e.g.,
 first_video.mp4).
 
-The **Remove selected media** button can be used to remove all the
-selected media files.
+The **Remove selected media** button can be used to remove all selected
+media files.
 
 BORIS can play all media types supported by the MPV player.
 
@@ -202,7 +202,7 @@ media file name as the **observation id**.
 
 ### Spectrogram and waveform visualization
 
-BORIS can display audio information — such as the sound spectrogram and/or waveform — during media coding.
+BORIS can display audio information, such as the sound spectrogram and/or waveform, during media coding.
 In the **Display** column, choose the type of plot you want to visualize.
 
 <figure markdown>
@@ -281,10 +281,10 @@ Example of a plain text data file with 5 columns separated by comma
     1,854,499,549.333,0.00305776367895305
     [...]
 
-In the above example the 4th column contains the timestamp and the 5th
-the value to be plotted.
+In the above example, the 4th column contains the timestamp and the 5th
+contains the value to be plotted.
 
-Input the index of the column containing the timestamp and the index of
+Enter the index of the column containing the timestamp and the index of
 the column containing the value to be plotted. The two indices must be
 separated by a comma (,). Click **OK** to close the window.
 
@@ -305,7 +305,7 @@ A new row will be added in the data files table.
 
 
 
-You can modify/complete the following parameters by directly typing in
+You can modify or complete the following parameters by typing directly in
 the table cells:
 
 -   Columns to plot
@@ -314,22 +314,22 @@ the table cells:
 -   Converters: Used if the timestamp is not expressed in seconds (see
     below for details)
 -   Time interval: The time interval that will be plotted (in seconds)
--   Start position: the start position of data for synchronisation with
+-   Start position: the start position of data for synchronization with
     the media (in seconds)
--   Substract first value: if the timestamp does not start with a 0
-    value you can choose to substract the first value to all timestamp
+-   Subtract first value: if the timestamp does not start with a zero
+    value, you can choose to subtract the first value from all timestamp
     values.
--   Color: the color of the color
+-   Color: the color of the plot
 
-**NOTE** : if you want to record the value of the plotted variable in a
-modifier of a behavior (see [Value from external data file modifier](create_project.md#value-from-external-data-file-modifier))
+**NOTE**: If you want to record the value of the plotted variable in a
+modifier of a behavior (see [Value from external data file modifier](create_project.md#value-from-external-data-file-modifier)),
 the modifier must have the same **variable name**.
 
-You can check if the data from file can be correctly plotted by using
-the **Show plot** button. If the data are compatible you will see a plot
-otherwise you will obtain a message with an explanation.
+You can check if the data from the file can be correctly plotted by using
+the **Show plot** button. If the data are compatible, you will see a plot;
+otherwise, you will receive a message with an explanation.
 
-For now only 2 values can be plotted synchronously with your media file.
+Currently, only two values can be plotted synchronously with your media file.
 The values can come from the same file or from two different files.
 
 During the observation, the values you selected in the external data files will be plotted synchronously with the media file.
@@ -347,7 +347,7 @@ If the values in the timestamp column are not expressed in seconds (e.g., 12.45)
 See the [Converters' table](create_project.md#converters-table) in the project configuration.
 
 A **double-click** on the converters cell will allow you to select a
-converter for each column to be plotted
+converter for each column to be plotted.
 
 
 
@@ -366,14 +366,14 @@ converter for each column to be plotted
 
 
 Use the **Show plot** button to verify if your external data can be
-plotted without problem. The **Close plot** button will close the plot
+plotted without issues. The **Close plot** button will close the plot
 window.
 
 ![image](images/external_data_show_plot.png)
 
-Converters can also be used to convert values that are not time value.
+Converters can also be used to convert values that are not time values.
 
-Example of a converter for inverting value:
+Example of a converter for inverting a value:
 
     OUTPUT = - float(INPUT)
 
@@ -384,8 +384,8 @@ Example of a converter for inverting value:
 ### Start the observation
 
 Click the **Start** button to start coding. The **Observation** window
-will be closed and you'll be transferred to the main **BORIS** window.
-If you do not want to start the observation click the **Save** button.
+will close, and you'll be transferred to the main **BORIS** window.
+If you do not want to start the observation, click the **Save** button.
 The observation will be saved in the [observations list](observations_list.md).
 
 The main window during the observation of a single media file will look
@@ -412,29 +412,29 @@ observation based on pictures.
   <figcaption>Observation from pictures tab</figcaption>
 </figure>
 
-Use the **Add directory** to select a directory containing the pictures
-you want to code. You can select many directories, in this case the
-pictures will be browsed in the order of the directories were added.
+Use the **Add directory** button to select a directory containing the pictures
+you want to code. You can select multiple directories; in this case, the
+pictures will be browsed in the order the directories were added.
 
 The **Use the pictures directory as observation id** button will set the
-directory name as **observation id**
+directory name as the **observation id**.
 
 ### Time
 
-You have 3 option for the coding time:
+You have three options for the coding time:
 
 -   No time: no time will be recorded. The image index (the position of
-    image in the directory) and the image file path will be recorded.
+    the image in the directory) and the image file path will be recorded.
 -   Use the EXIF DateTimeOriginal tag: the time will be extracted from
-    the EXIF tag of the picture file (if any).
--   Time lapse: this option will let you define the time interval
-    between the pictures.
+    the EXIF tag of the picture file (if available).
+-   Time lapse: this option allows you to define the time interval
+    between pictures.
 
 ### Start the observation
 
 Click the **Start** button to start coding. The **Observation** window
-will be closed and you\'ll be transferred to the main **BORIS** window.
-If you do not want to start the observation click the **Save** button.
+will close, and you'll be transferred to the main **BORIS** window.
+If you do not want to start the observation, click the **Save** button.
 The observation will be saved in the [observations
 list](#observations-list).
 
@@ -458,11 +458,11 @@ See the [Media based coding](coding.md#media-based-coding) section to start codi
 ### Scan sampling (Live and media observation)
 
 You can select a time for **Scan sampling** observation.
-In this case the timer will stop at every time offset you indicated and all the coded events will have the same time value.
+In this case, the timer will stop at every time offset you indicated, and all coded events will have the same time value.
 
 
 ### Limit observation to a time interval (Live and media observation)
 
-This option can be used to limit the observation to a time interval for live or media based observations.
+This option can be used to limit the observation to a time interval for live or media-based observations.
 
 ![image](images/limit_obs_time_interval.png){width="80.0%"}

@@ -14,11 +14,11 @@
 
 :   Allows you to go to a specific time in the current media file.
 
-The time selection widget will pop-up:
+The time selection widget will pop up:
 
 ![The time selection widget](images/select_time1.png)
 
-3 formats are available to select the time:
+Three time formats are available:
 
 - Decimal seconds:
 
@@ -55,7 +55,7 @@ The zoom level can also be set using the menu **Playback** > **Zoom level**
 
 ### Using the keyboard
 
-Click the media player you want to set the zoom level.
+Click on the media player for which you want to set the zoom level.
 
 **Zoom in**  ++ctrl+plus++ or ++ctrl+page-up++
 
@@ -71,7 +71,7 @@ Click the media player you want to set the zoom level.
 
 ### Using the mouse
 
-Click the media player you want to set the zoom level.
+Click on the media player for which you want to set the zoom level.
 
 **Zoom in**  ++ctrl++ + **Mouse Wheel Up**  or Double click on left mouse button
 
@@ -87,7 +87,7 @@ Click the media player you want to set the zoom level.
 
 ## Pan video
 
-Click the media player you want to pan.
+Click on the media player you want to pan.
 
 ### Using the keyboard
 
@@ -138,8 +138,8 @@ The available rotation angles are: 0, 90, 180 and 270.
 
 ## Display subtitles
 
-Select to display or hide the subtitles using the menu **Playback** > **Display subtitles**. The subtitles file must have
-exactly the same name of the video file except for the extension and be
+Select to display or hide subtitles using the menu **Playback** > **Display subtitles**. The subtitles file must have
+exactly the same name as the video file, except for the extension, and be
 placed in the same directory.
 
 ![Display subtitles](images/display_subtitles.png)
@@ -149,12 +149,12 @@ placed in the same directory.
 
 ## Image overlay on video
 
-Select an image overlay to be displayed on the video **Playback** > **Image overlay on video** > **Add**.
-If the selected image does not have a transparent background the transparency can be set
+Select an image overlay to display on the video via **Playback** > **Image overlay on video** > **Add**.
+If the selected image does not have a transparent background, transparency can be set
 from 0 (full transparency) to 255 (no transparency).
 
-The image must be in PNG format, if the image is smaller than the video
-resolution the image position can be set from the top-left corner (x:
+The image must be in PNG format. If the image is smaller than the video
+resolution, its position can be set from the top-left corner (x:
 horizontally, y: vertically).
 
 ![Image overlay](images/select_image_overlay.png)
@@ -167,6 +167,6 @@ Select **\> Playback \> Image overlay on video \> Remove** to remove the image o
 
 **Playback** > **Video equalizer**
 
-Using this function the **brightness**, the **contrast**, the **saturation**, the **gamma** and the **Hue** can be set for each player.
+This function allows you to adjust the **brightness**, **contrast**, **saturation**, **gamma**, and **hue** for each player.
 
 ![Video equalizer](images/video_equalizer.jpg)

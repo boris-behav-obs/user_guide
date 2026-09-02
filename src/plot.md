@@ -9,7 +9,7 @@ Recorded events can be plotted along a time axis.
 
 
 Select the **observations** you want to plot.
-If more than one observation is selected, BORIS will ask you to choose a directory in which to save the plots.
+If more than one observation is selected, BORIS will ask you to choose a directory to save the plots.
 
 
 
@@ -23,7 +23,7 @@ The **subjects** and **behaviors** to include in the plot can be selected in the
 
 ![Time budget](images/time_budget_parameters2.png)
 
-You can choose to include or not the behavior modifiers (if any) and to
+You can choose whether to include behavior modifiers (if any) and to
 exclude behaviors without coded events.
 
 The time interval can be selected (see time budget).
@@ -38,7 +38,7 @@ edited with the [Inkscape vector graphics editor](https://inkscape.org).
     "The STATE behavior XXX is not paired"
 
 
-This function creates one plot by subject on one figure.
+This function creates one plot per subject on a single figure.
 
 Behavior colors can be customized. See [Plot colors](preferences.md#plot-colors).
 
@@ -78,11 +78,11 @@ edited with the [Inkscape vector graphics editor](https://inkscape.org).
     "The STATE behavior XXX is not paired"
 
 
-This function creates 2 plots including all subjects for each observation:
+This function creates two plots including all subjects for each observation:
 
--   a plot of the behavior durations for the behaviors defined as STATE
-    event.
--   a plot of the number of occurrences for all the behaviors.
+-   A plot of the behavior durations for behaviors defined as STATE
+    events.
+-   A plot of the number of occurrences for all behaviors.
 
 Behavior colors can be customized. See [Plot colors](preferences.md#plot-colors).
 

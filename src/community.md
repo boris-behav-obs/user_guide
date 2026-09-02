@@ -7,7 +7,7 @@
 
 ## Acknowledgement
 
-The authors would like to thank all users who report bugs and request new features for their valuable help.
+The authors would like to thank all users who report bugs and request new features for their valuable contributions.
 
 
 
@@ -23,8 +23,7 @@ If you use BORIS in a publication, please cite:
 
 You can also send us a [nice postcard](https://www.boris.unito.it/postcards/).
 
-
-Please consider giving a star to the [BORIS GitHub repository](https://github.com/olivierfriard/BORIS).
+Please consider starring the [BORIS GitHub repository](https://github.com/olivierfriard/BORIS).
 
 
 
@@ -44,13 +43,13 @@ Before reporting a bug, please:
 -   Check whether the issue has already been reported on GitHub.
 -   Delete the configuration file and try again (see [configuration file](various.md#configuration-files)).
 
-Remember to indicate:
+Remember to include:
 
--   your operating system
--   your operating system version
--   the computer you are using (model, RAM, etc.)
--   the BORIS version you are using
--   information about the media file you are coding, if any. See `Tools > Media file information`
+-   Your operating system
+-   Your operating system version
+-   Your computer specifications (model, RAM, etc.)
+-   The BORIS version you are using
+-   Information about the media file you are coding, if applicable. See `Tools > Media file information`
 
 Provide all the information needed to reproduce the bug, such as a detailed procedure or a screen recording.
 
@@ -65,5 +64,5 @@ In case of a crash, please send the `boris_error.log` file generated in your hom
 
 !!! note
 
-    If the bug you reported is fixed, please remember to close the issue.
+    If the bug you reported has been fixed, please remember to close the issue.
 

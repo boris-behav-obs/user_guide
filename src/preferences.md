@@ -27,7 +27,7 @@ You can customize BORIS in the Preferences window
     disables automatic backup. The project will be saved only if it has
     already been saved and an observation is open.
 
-**Separator for behavioural strings**
+**Separator for behavioral strings**
 
 :   Character or string used to separate behaviors when exporting
     events as behavioral strings. See also Behatrix.
@@ -63,11 +63,11 @@ You can customize BORIS in the Preferences window
 
 
 **Fast forward/backward value (seconds)**
-:   This option allows the user to customize the amount of time for "jumping" forward or backward in media.
+:   This option allows you to customize the jump amount (in seconds) when moving forward or backward in media.
 
 
-**Adapt the fast for/backward jump to playback speed**
-:   The jump value will be adapted to the playback speed.
+**Adapt the fast forward/backward jump to playback speed**
+:   The jump value will be adjusted to the playback speed.
 
 **Playback speed step value**
 
@@ -80,12 +80,12 @@ You can customize BORIS in the Preferences window
 
 :   This value indicates the time offset used when repositioning the media
     after double-clicking an event row in the *Events* table. For
-    example, `-4` means that after a double-click the media
+    example, `-4` means that after a double-click, the media
     will be repositioned 4 seconds before the recorded event.
 
 **Play sound when a key is pressed**
 
-:   Plays a sound after each keypress event.
+:   Plays a sound after each keypress.
 
 
 
@@ -110,7 +110,7 @@ You can customize BORIS in the Preferences window
 
 **Alert if focal subject is not set**
 
-:   If this option is enabled, BORIS will show an alert box if no focal
+:   If this option is enabled, BORIS will display an alert if no focal
     subject is selected.
 
 
@@ -139,7 +139,7 @@ The plugin lists show the plugin version when available.
 
 :   Remove the saved personal plugins path without deleting the directory or any plugin file.
 
-See [Analysis plugins](plugins.md) for details about plugin loading, writing plugins, and running plugins.
+See [Analysis plugins](plugins.md) for details about plugin loading, writing, and running.
 
 
 ## FFmpeg framework
@@ -153,10 +153,9 @@ The FFmpeg framework is required to run BORIS.
 
 
 **FFmpeg cache directory**
-:   Indicates the directory that will be used as the image cache for
+:   Specifies the directory used as the image cache for
     frame-by-frame mode and spectrogram visualization. If you do not
-    specify a path, BORIS will use the default temporary directory of
-    your system.
+    specify a path, BORIS will use your system's default temporary directory.
 
 
 
@@ -172,7 +171,7 @@ The FFmpeg framework is required to run BORIS.
   See [Matplotlib colormaps](http://matplotlib.org/users/colormaps.html) for details.
 
 **Default time interval**
-:   Selects the time interval, in seconds, used to display the spectrogram and waveform.
+:   Selects the time interval (in seconds) used to display the spectrogram and waveform.
 
 **Window type**
 :   Selects the window type: Hanning, Hamming, or Blackmanharris.
@@ -189,8 +188,8 @@ The FFmpeg framework is required to run BORIS.
 ## Plot colors 
 
 Behavior colors used in the plotting functions can be customized.
-The first color will be associated to the first behavior in your
-ethogram, the second color to the second behavior and so on. Various
+The first color will be associated with the first behavior in your
+ethogram, the second color with the second behavior, and so on. Various
 color formats can be used to specify a color: **named color** or **hex
 RGB** (like #0F0F0F). See <https://matplotlib.org/api/colors_api.html>
 and <https://matplotlib.org/examples/color/named_colors.html> for

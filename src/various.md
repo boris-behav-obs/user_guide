@@ -18,11 +18,11 @@ operation is irreversible. After removal, the full path of your media
 will be lost and cannot be recovered.
 
 **If you choose not to store the full path of media/data files, the
-path of the media/data files must contain the path of your BORIS project
+media/data files must be located within the directory tree of your BORIS project
 file.**
 
-Example: if your BORIS project file is saved in
-`/home/user/projects/test.project` your media/data files can be saved in
+Example: If your BORIS project file is saved in
+`/home/user/projects/test.project`, your media/data files can be saved in
 the `/home/user/projects/videos` directory but **NOT** in the
 `/home/user/videos` directory.
 
@@ -36,8 +36,8 @@ the `/home/user/projects/videos` directory but **NOT** in the
 
 
 All elements, including all media players, can be undocked from the
-main window and positioned wherever you prefer (e.g. they can be on the
-same desktop over one or many screens).
+main window and positioned wherever you prefer (e.g., they can be on the
+same desktop across one or more screens).
 
 The position of the various widgets is saved in the [configuration
 file](#configuration-files) at the end of the work session.
@@ -47,7 +47,7 @@ file](#configuration-files) at the end of the work session.
 Clicking the icon in the top-right corner of the widget (on macOS,
 the icon is located in the top-left corner) undocks the widget so that it
 can be repositioned in another docking area or moved outside the main
-window. Double-clicking the top bar of the widget docks it back into
+window. Double-clicking the title bar of the widget docks it back into
 the main window.
 
 For Linux:
@@ -65,7 +65,7 @@ For MacOS:
 If you prefer not to move dock widgets, you can lock them in the
 main window by enabling **Lock dockwidgets** (see **Tools**
 \> **Lock dockwidgets**). All dock widgets will be docked in the main
-window and locked on it except the player dockwidgets.
+window and locked, except for the player dockwidgets.
 
 
 
@@ -78,17 +78,17 @@ BORIS saves the configuration (user preferences, window positions,
 widget positions) in a configuration file named **.boris**,
 stored in the home directory of the current user:
 
-    for Linux:
+    For Linux:
     /home/USERNAME/.boris
 
-    for Microsoft-Windows:
+    For Microsoft-Windows:
     C:\Users\USERNAME\.boris
 
-    for MacOS:
+    For MacOS:
     /Users/USERNAME/.boris
 
 If you have trouble using BORIS, try closing the program, deleting
-this file and relaunch BORIS.
+this file, and relaunching BORIS.
 
 The **recent projects list** is saved in the
 **.boris\_recent\_projects** file in the home directory of the current
@@ -100,8 +100,8 @@ user.
 
 ## Lock the dockwidgets
 
-The dockwidgets (except the player dockwidgets) can be locked on the
-main window (See **Tools** \> **Lock dockwidgets**).
+The dockwidgets (except the player dockwidgets) can be locked to the
+main window (see **Tools** \> **Lock dockwidgets**).
 
 
 
@@ -113,10 +113,9 @@ main window (See **Tools** \> **Lock dockwidgets**).
 
 BORIS distinguishes between lowercase and uppercase characters.
 
-
-* keys from a to z
-* keys from A to Z
-* keys from 0 to 9
-* function keys from F1 to F12
+* Keys from a to z
+* Keys from A to Z
+* Keys from 0 to 9
+* Function keys from F1 to F12
 * à é è ù ì ç
 * ! " £ $ % & / ( ) = ? ^ [ ] { } @ | § ° #

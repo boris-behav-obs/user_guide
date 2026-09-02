@@ -5,7 +5,7 @@
 ## Time budget analysis
 
 The **Time budget analysis** can be performed by behavior (including or excluding
-modifiers) or by behavioral category. Choose the option from the
+modifiers) or by behavioral category. Select the option from the
 **Analysis** menu.
 
 The **Time budget analysis** can be performed on one or more observations. If
@@ -23,7 +23,7 @@ behaviors you want to include in the time budget analysis:
 
 ![Select subject and behaviors for time budget analysis](images/time_budget_parameters2.png)
 
-All behaviors can be selected or deselected by clicking the Category name (in bold).
+All behaviors can be selected or deselected by clicking on the category name (in bold).
 
 You can choose whether to include behavior modifiers in the time
 budget analysis and to exclude behaviors without coded events.
@@ -38,7 +38,7 @@ The time budget analysis can be restricted to part of the observation:
     observed event to the last observed event.
 
 The last dialog window allows you to subtract the duration of one or
-more behaviors from the total duration of the observation. This can be useful,
+more behaviors from the total observation duration. This can be useful,
 for example, if you have defined an "out-of-sight" code in your ethogram:
 
 ![subtract behavior from the total duration](images/subtract_behavior.png)
@@ -108,10 +108,10 @@ except that the behaviors are grouped into **behavioral categories**.
 
 ## Synthetic time budget
 
-The synthetic time budget is similar to the time budget analysis, but with fewer
+The synthetic time budget is similar to the time budget analysis but with fewer
 parameters and a different organization of results. Results from all
 selected observations are organized in columns on a single page. Two
-parameters are currently provided: **number of occurrences** and **total
+parameters are currently available: **number of occurrences** and **total
 duration** (for behaviors defined as state events).
 
 ![Results of the time budget analysis](images/synthetic_time_budget.png)
@@ -173,11 +173,11 @@ The **time budget with time bin** results can be saved in various formats for fu
 
 ## Inter-rater reliability
 
-The Cohen's kappa coefficient can be calculated (**Analysis** > **Inter-rater reliability** > **Cohen\'s kappa**).
+The Cohen's kappa coefficient can be calculated (**Analysis** > **Inter-rater reliability** > **Cohen's kappa**).
 
 [Cohen's kappa on Wikipedia](https://en.wikipedia.org/wiki/Cohen%27s_kappa)
 
-After selecting 2 observations and a time window (in seconds) for the
+After selecting two observations and a time window (in seconds) for the
 analysis (the default value is 10 seconds), Cohen's kappa will be
 displayed in the results window.
 
@@ -188,14 +188,14 @@ displayed in the results window.
 
 ### Implementation of IRR Cohen's Kappa in BORIS
 
-If a time window of n seconds is set, the 2 selected observations will be
+If a time window of n seconds is set, the two selected observations will be
 checked every n seconds for agreement or disagreement, from the first event
-to the last event of the 2 observations. In the case of a point event, the
+to the last event of the two observations. In the case of a point event, the
 presence of a corresponding event in the other observation will be
 verified using a time window of n seconds centered on the point event.
 
 An IRR Cohen's Kappa analysis is available in the GSEQ program
-(<http://www2.gsu.edu/~psyrab/gseq>). For this the coded events can be
+(<http://www2.gsu.edu/~psyrab/gseq>). For this purpose, the coded events can be
 exported as aggregated events in SDIS format.
 See [export aggregated events](export_events.md#export-aggregated-events).
 
@@ -220,13 +220,13 @@ This function allows you to determine the co-occurrence of 2 behaviors.
 
 
 This function allows filtering events from one or more observations by
-selecting subjects, behaviors and logical operators.
+selecting subjects, behaviors, and logical operators.
 
-To use the filter, select a subject, select a behavior and click on the
-button with the green arrow on the side of the behaviors list. The tuple
-subject/behavior will be added in the **filter text edit**. A complex
-filter query can be constructed by adding parenthesis and logical
-operator **&** (AND) or **|** (OR) for combining various subjects and behaviors.
+To use the filter, select a subject, select a behavior, and click on the
+button with the green arrow next to the behaviors list. The tuple
+subject/behavior will be added to the **filter text edit**. A complex
+filter query can be constructed by adding parentheses and logical
+operators **&** (AND) or **|** (OR) to combine various subjects and behaviors.
 
 
 Example of a summarized output showing the occurrences of Himal resting
@@ -259,7 +259,7 @@ The results can be saved in a Tab Separated Values (TSV) file using the
 
 ## Latency
 
-The latency will analyze the time between one or more markers (arbitrary behaviors(s)) and other behaviors.
+The latency analysis calculates the time between one or more markers (arbitrary behaviors) and other behaviors.
 
 
 

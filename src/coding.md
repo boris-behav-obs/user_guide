@@ -4,7 +4,7 @@ When looking at the BORIS main window, the window title bar shows the
 **Observation id** - **Project name** - **BORIS**. The media (the first
 in the queue) will be loaded in the media player and paused.
 
-On macOS, the video is not embedded in the BORIS main window, so it is **VERY IMPORTANT to click on the BORIS main window** before coding as usual.
+On macOS, the video is not embedded in the BORIS main window, so it is **VERY IMPORTANT to click on the BORIS main window** before coding.
 
 
 ## Media based coding
@@ -35,7 +35,6 @@ On macOS, the video is not embedded in the BORIS main window, so it is **VERY IM
 
 :fontawesome-solid-backward:   **Fast backward** jumps back by *n* seconds in the media (see [preferences](preferences.md))
 
-
 :fontawesome-solid-forward:   **Fast forward** jumps forward by *n* seconds in the media (see [preferences](preferences.md))
 
 
@@ -57,7 +56,7 @@ On macOS, the video is not embedded in the BORIS main window, so it is **VERY IM
 
 :fontawesome-solid-arrow-right:    **Move one frame forward**
 
-<i class="fa-solid  fa-2x"></i>   **Real time plot of events**
+<i class="fa-solid  fa-2x"></i>   **Real-time plot of events**
 
 :fontawesome-solid-table-list:   **Time budget of the current observation**
 
@@ -94,9 +93,9 @@ Media can also be controlled with dedicated keyboard shortcuts:
 
 ++arrow-down++ Jump backward in the current media
 
-++home++ Increase the playback speed (See [Observations preferences](preferences.md#observations) to set the step value)
+++home++ Increase the playback speed (see [Observations preferences](preferences.md#observations) to set the step value)
 
-++end++ Decrease the playback speed (See [Observations preferences](preferences.md#observations) to set the step value)
+++end++ Decrease the playback speed (see [Observations preferences](preferences.md#observations) to set the step value)
 
 ++backspace++  Set the playback speed to 1x
 
@@ -138,7 +137,7 @@ Pressing a key records the corresponding behavior, which then appears in the **E
 
 The behaviors shown in the Ethogram widget can be filtered:
 
-**Right-click** on ethogram widget > **Filter behaviors**
+**Right-click** on the ethogram widget > **Filter behaviors**
 
 Check or uncheck individual behaviors, or double-click a behavioral category.
 
@@ -168,7 +167,7 @@ indicates the keyboard shortcut assigned to each subject, if any.
 
 The subjects shown in the Subjects widget can be filtered:
 
-**Right-click** on subjects widget \> **Filter subjects**
+**Right-click** on the subjects widget \> **Filter subjects**
 
 Check or uncheck subjects to show or hide them in the Subjects table.
 
@@ -189,8 +188,7 @@ Check or uncheck subjects to show or hide them in the Subjects table.
 ![3 media players](images/observation_3video_2.png){width="100.0%"}
 
 
-You can adjust the media position with the horizontal slider. Each media player is equipped with its own audio volume control, which can be adjusted using the vertical slider located on the right side of the player and a mute/unmute button for easy sound management.
-
+You can adjust the media position with the horizontal slider. Each media player is equipped with its own audio volume control, which can be adjusted using the vertical slider located on the right side of the player, and a mute/unmute button for easy sound management.
 
 The arrangement of different widgets can be personalized to suit your preferences. In the screenshot provided, all widgets are detached from the main program window. This feature is particularly useful when using a multi-monitor setup.
 
@@ -219,7 +217,7 @@ The following parameters are displayed:
 
 -   **Time**, the time at which the event occurred;
 
--   **Frame index** the frame index corresponding to the event;
+-   **Frame index**, the frame index corresponding to the event;
 
 -   **Subject**, the focal subject (if any);
 
@@ -229,12 +227,12 @@ The following parameters are displayed:
 
 -   **Modifier**, indicates the modifier(s) that was/were selected (if any);
 
--   **Comment**, is an open field where the user can add notes.
+-   **Comment**, an open field where the user can add notes.
 
 A tracking cursor (red triangle) marks the current event. This cursor can be positioned above the current event; see [tracking cursor position](preferences.md#tracking-cursor-above-current-event) in the **Preferences** window.
 
-A double-click on a row will reposition the media player to the moment
-of the corresponding event. See [Time offset for media reposition](preferences.md#time-offset-for-media-reposition-seconds) in **Preferences** window to customize the time offset for media repositioning.
+A double-click on a row will reposition the media player to the time
+of the corresponding event. See [Time offset for media reposition](preferences.md#time-offset-for-media-reposition-seconds) in the **Preferences** window to customize the time offset for media repositioning.
 
 
 ### Live observation
@@ -250,11 +248,11 @@ The following parameters are displayed:
 
 -   **Code**, the behavior code;
 
--   **Type**, in case of a **state event** indicates whether the time  corresponds to the start or to the stop. Empty for a **point event**;
+-   **Type**, in case of a **state event**, indicates whether the time corresponds to the start or the stop. Empty for a **point event**;
 
 -   **Modifier**, indicates the modifier(s) that was/were selected (if any);
 
--   **Comment**, is an open field where the user can add notes.
+-   **Comment**, an open field where the user can add notes.
 
 
 ### Observation from pictures
@@ -271,18 +269,18 @@ The following parameters are displayed:
 
 -   **Code**, the behavior code;
 
--   **Type**, in case of a **state event** indicates whether the time  corresponds to the start or to the stop. Empty for a **point event**;
+-   **Type**, in case of a **state event**, indicates whether the time corresponds to the start or the stop. Empty for a **point event**;
 
 -   **Modifier**, indicates the modifier(s) that was/were selected (if any);
 
--   **Comment**, is an open field where the user can add notes;
+-   **Comment**, an open field where the user can add notes;
 
--   **Image index**, the image index (in the directory) corresponding to the event,
+-   **Image index**, the image index (in the directory) corresponding to the event;
 
 -   **Image path**, the path of the image corresponding to the event (can be relative or absolute).
 
 
-To simplify the **events table** the relevant behaviors and subjects can be filtered see [Filter events](coding.md#filter-events)
+To simplify the **events table**, the relevant behaviors and subjects can be filtered; see [Filter events](coding.md#filter-events).
 
 
 ## Events
@@ -290,8 +288,8 @@ To simplify the **events table** the relevant behaviors and subjects can be filt
 
 ### Recording an event
 
-An event is a unique combination of a **time**, a **subject** and a **behavior**.
-If the subject is not set it will be **No focal subject**.
+An event is a unique combination of a **time**, a **subject**, and a **behavior**.
+If the subject is not set, it will be **No focal subject**.
 
 
 Once ready to begin your coding, you can start the media player using
@@ -299,20 +297,20 @@ the **Play** :fontawesome-solid-play: button or the **Space bar**.
 
 An **event** can be recorded by:
 
-- pressing the predefined **key** of the keyboard corresponding to the behavior to record.
+- Pressing the predefined **key** on the keyboard corresponding to the behavior to record.
 
-- double-clicking to the corresponding row in the **Ethogram** table.
+- Double-clicking the corresponding row in the **Ethogram** table.
 
-- using the **Coding pad** (See [coding pad](tools.md#coding-pad)).
+- Using the **Coding pad** (see [coding pad](tools.md#coding-pad)).
 
 
 The **focal subject** can be selected by:
 
--  pressing the predefined **key** of the keyboard corresponding to the subject to select.
+-  Pressing the predefined **key** on the keyboard corresponding to the subject to select.
 
-- double-clicking to the corresponding row in the **Subjects** table.
+- Double-clicking the corresponding row in the **Subjects** table.
 
-- using the **Subject pad** (See [subject pad](tools.md#subject-pad)).
+- Using the **Subject pad** (see [subject pad](tools.md#subject-pad)).
 
 
 <figure markdown>
@@ -322,8 +320,8 @@ The **focal subject** can be selected by:
 
 
 If the pressed key defines a single event, the corresponding event will
-be recorded directly in the **Events** table. In the case you have specified the
-same key for two (or more) events (e.g. key **d** in the figure below),
+be recorded directly in the **Events** table. If you have specified the
+same key for two (or more) events (e.g., key **d** in the figure below),
 BORIS will prompt you for the desired behavior.
 
 
@@ -338,10 +336,10 @@ BORIS will prompt you for the desired behavior.
 
 
 
-In the case you have specified modifiers (one or more sets), BORIS will
-prompt you for the desired modifier(s) if any (e.g. **ball** or
+If you have specified modifiers (one or more sets), BORIS will
+prompt you for the desired modifier(s), if any (e.g., **ball** or
 **opponent** in the figure below). You can select the modifiers using
-the mouse or the keyboard (++1++, ++2++, ++3++, ++4++, ++5++ or ++6++ key)
+the mouse or the keyboard (++1++, ++2++, ++3++, ++4++, ++5++, or ++6++).
 
 
 
@@ -351,19 +349,19 @@ the mouse or the keyboard (++1++, ++2++, ++3++, ++4++, ++5++ or ++6++ key)
 </figure>
 
 
-If no keys are defined for the modifier selection, you can type the
+If no keys are defined for modifier selection, you can type the
 first character of the modifier and use the **Up arrow** and **Down
 arrow** keyboard keys to select the correct modifier.
 
-In the case your behavior type is a **Point event with coding map** or a
+If your behavior type is a **Point event with coding map** or a
 **State event with coding map**, BORIS will show the **Coding map**
-window and will allow selecting the desired area(s). In case you click a
-part of the map in which two (or more) areas overlap, the corresponding
+window and allow you to select the desired area(s). If you click on a
+part of the map where two (or more) areas overlap, the corresponding
 codes will be recorded.
 
 A recorded event can be edited (once selected) using the
 **Observations** \> **Edit event** menu option. The resulting *Edit
-event parameters* allows modifying every parameter (e.g. time, subject,
+event parameters* window allows modifying every parameter (e.g., time, subject,
 code, modifiers, and comment).
 
 The **Observations** \> **Add event** menu option allows adding a new
@@ -377,7 +375,7 @@ event by specifying its time and the other parameters.
 
 
 Some functions are available in the Events table context menu.
-Right-click on the Events table and the menu will pop-up.
+Right-click on the Events table to open the menu.
 
 ![Events table menu](images/events_table_menu.png)
 
@@ -385,9 +383,9 @@ The various functions available in the menu are described below.
 The same functions and others are available in the **Observations** menu.
 
 
-### Undo an even recording
+### Undo an event recording
 
-A wrong event can be removed from the events list using the **Undo** function (++ctrl+z++). You can go back till 25 events recorded events.
+A wrong event can be removed from the events list using the **Undo** function (++ctrl+z++). You can undo up to 25 recorded events.
 
 
 
@@ -420,18 +418,18 @@ all selected events.
 
 ### Edit time of selected event(s)
 
-This option allows to add or subtract a time value (in seconds) to all
-selected events. For subtracting a value use a negative value.
+This option allows you to add or subtract a time value (in seconds) from all
+selected events. To subtract a value, use a negative number.
 
 ![Edit time of selected events](images/edit_time_events.png)
 
 
 ### Copy events
 
-This option allows to copy the selected events in the clipboard. The
+This option allows you to copy the selected events to the clipboard. The
 clipboard will contain the values of the selected events (except the
-**type** field) separated by a **<TAB\>** character.
-The copied values are: **Time**, **Subject**, **Behavior**, **Modifier(s)**, **Frame index**
+**type** field) separated by a **<TAB>** character.
+The copied values are: **Time**, **Subject**, **Behavior**, **Modifier(s)**, **Frame index**.
 
 Example of clipboard content:
 
@@ -476,7 +474,7 @@ Example of clipboard content:
 
 ### Paste events
 
-This option allows to paste the clipboard content into the events table. The clipboard must respect the format described in the previous section: 5 columns separated by a **<TAB\>** character.
+This option allows you to paste the clipboard content into the events table. The clipboard must follow the format described in the previous section: 5 columns separated by a **<TAB>** character.
 
 
 
@@ -484,7 +482,7 @@ This option allows to paste the clipboard content into the events table. The cli
 
 ### Find in events
 
-This option allows to search for a string in the various field of
+This option allows you to search for a string in the various fields of
 events. Select the fields to be searched. The find/replace operation can
 be restricted to the selected events.
 
@@ -496,8 +494,8 @@ be restricted to the selected events.
 
 ### Find/Replace in events
 
-This option allows to search for a string and replace it by a new value
-in the various field of events. Select the fields to be searched. The
+This option allows you to search for a string and replace it with a new value
+in the various fields of events. Select the fields to be searched. The
 find operation can be restricted to the selected events.
 
 ![Find / replace in events](images/find_replace_in_events.png){width="60.0%"}
@@ -507,7 +505,7 @@ find operation can be restricted to the selected events.
 
 ### Filter events
 
-This option allows to filter the events by field value (Subject and Behavior).
+This option allows you to filter events by field value (Subject and Behavior).
 
 ![Filter events](images/filter_events.png)
 
@@ -516,15 +514,15 @@ This option allows to filter the events by field value (Subject and Behavior).
 
 ### Show all events
 
-This option reverts the previous one and allows to visualize all coded events.
+This option reverts the previous one and allows you to visualize all coded events.
 
 
 
 
 ### Check state events
 
-This option allows to check if the **state events** are **PAIRED**, if
-they have a **START** and a **STOP** occurrence.
+This option allows you to check if the **state events** are **PAIRED**, i.e.,
+if they have both a **START** and a **STOP** occurrence.
 
 
 
@@ -533,36 +531,36 @@ they have a **START** and a **STOP** occurrence.
 ### Delete selected events
 
 
-This option allows to delete the selected events. This operation is irreversible!
+This option allows you to delete the selected events. This operation is irreversible!
 
 ### Delete all events
 
 This option is not present in the context menu but only in the main menu (**Observations** \> **Delete all events**).
 
-This option allows to delete all the events in the current observation.
+This option allows you to delete all events in the current observation.
 This operation is irreversible!
 
 
 ### Fix unpaired state
 
 
-You can use the **Fix unpaired events** function to fix the **state events** without a STOP event.
+You can use the **Fix unpaired events** function to fix **state events** without a STOP event.
 
 **Observations** > **Fix unpaired events** (keyboard shortcut: ++ctrl+u++)
 
-The program will ask for a time at which insert the STOP events for all unpaired **state events**
+The program will ask for a time at which to insert the STOP events for all unpaired **state events**.
 
 This function can be run on a set of selected observations (when no
-observation is open). In this case the STOP events will be inserted at
-the end of observation.
+observation is open). In this case, the STOP events will be inserted at
+the end of the observation.
 
 
 
 ### Add frame indexes
 
 
-This function can be used for the observations from a video.
-The frame index corresponding to the coded events will be added in the events table.
+This function can be used for observations from a video.
+The frame index corresponding to the coded events will be added to the events table.
 
 
 ### Run external program with selected events
@@ -574,18 +572,18 @@ This function is not yet implemented.
 ### Explore project
 
 
-You can search information in various fields in all observations in the
+You can search for information in various fields in all observations in the
 current project (Observations \> Explore project).
 
-The searchable fields are: **subject**, **behavior**, **modifier** and **comment**.
+The searchable fields are: **subject**, **behavior**, **modifier**, and **comment**.
 
-If more than one field is searched a logic **AND** will apply.
+If more than one field is searched, a logical **AND** will apply.
 
 ![Explore project](images/explore_project.png)
 
 The events that were found are listed in a table. By double-clicking on
-the row the corresponding observation will be opened and the
-visualization will be scrolled to the row corresponding to the event.
+a row, the corresponding observation will be opened, and the
+visualization will scroll to the row corresponding to the event.
 
 ![Explore project](images/explore_project_results.png)
 
@@ -595,8 +593,8 @@ visualization will be scrolled to the row corresponding to the event.
 
 You can switch between the media player and the frame-by-frame mode using the **arrow buttons** in the toolbar:
 
-In frame-by-frame mode the video will stop playing and the user will
-visualize the video frame by frame.
+In frame-by-frame mode, the video will stop playing, and the user can
+view the video frame by frame.
 
 
 !!! note
@@ -604,7 +602,7 @@ visualize the video frame by frame.
 
 
 You can move between frames by using the arrow keys in the toolbar (on
-the right) or by using keyboard special keys:
+the right) or by using special keyboard keys:
 
 ++arrow-left++ Go to the **previous frame**
 
@@ -612,16 +610,16 @@ the right) or by using keyboard special keys:
 
 ++page-up++   Switch to the **next media**
 
-++page-up++  Switch to the **previous media**
+++page-down++  Switch to the **previous media**
 
 ++arrow-up++ **Jump forward** in the current media
 
 ++arrow-down++ **Jump backward** in the current media
 
-If you have a numeric keypad you can use the following keys in alternative:
+If you have a numeric keypad, you can use the following keys as an alternative:
 
 -   The key **/** will allow you to view the previous frame
 -   The key *\** will allow you to view the next frame
 
-To return in the media player mode press the **Play** :fontawesome-solid-play: button in the
+To return to the media player mode, press the **Play** :fontawesome-solid-play: button in the
 toolbar.
