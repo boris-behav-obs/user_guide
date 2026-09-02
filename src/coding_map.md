@@ -42,7 +42,7 @@ Enter a name for the new **Behaviors coding map**
 
 ### Loading a bitmap for a behaviors coding map
 
-Click the **Load bitmap** button in the bottom of the window and select
+Click the **Load bitmap** button at the bottom of the window and select
 a bitmap image (PNG and JPEG formats are accepted).
 
 If the size of your bitmap image is bigger than 640 x 640 pixels BORIS
@@ -53,9 +53,9 @@ The bitmap will be displayed
 
 ![Behaviors coding map](images/behaviors_coding_map1.png){width="70.0%"}
 
-### Adding areas corresponding the behaviors
+### Adding areas corresponding to the behaviors
 
-Click the **New behavior area** button in the bottom of the window and
+Click the **New behavior area** button at the bottom of the window and
 select a behavior by clicking on the **Select behavior** button.
 
 ![Behaviors coding map](images/behaviors_coding_map2.png){width="70.0%"}

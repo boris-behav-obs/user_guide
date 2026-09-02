@@ -10,12 +10,12 @@ Obtain information about your media file like duration, resolution, FPS, bitrate
 #### Re-encode / resize video
 
 BORIS can re-encode and resize your video files in order to reduce the
-size of the files and have a smooth coding (specially with two video
-files playing together). The re-encoding and resizing operations are
+size of the files and have a smooth coding (especially when two video
+files play simultaneously). The re-encoding and resizing operations are
 done with the embedded ffmpeg program with high quality parameters
 (bitrate 2000k).
 
-Select the files you want re-encode and resize and select the horizontal
+Select the files you want to re-encode and resize and select the horizontal
 resolution in pixels (the default is 1024). The aspect ratio will be
 maintained.
 
